@@ -1,0 +1,7 @@
+/* main.css */
+
+
+@import url("../main_page/smartphone.css");
+@import url("../main_page/tablet.css");
+@import url("../main_page/laptop.css");
+@import url("../main_page/desktop.css");

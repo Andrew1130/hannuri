@@ -1,0 +1,31 @@
+
+/*? common.css */
+:root { font-size: 16px; }
+
+.clearfix:after,
+.clearfix::after { content: ""; display: block; width: 100%; height: 0; clear: both; }
+/* 자식 요소가 float 처리되었을 때, 부모 요소가 높이를 갖지 못할 경우 높이를 갖도록 처리 */
+
+
+.none { display: none; }
+
+
+/** blind */
+.blind_area a {
+  display: block; width: 100%; height: 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.blind_area a > span,
+.blind_area button > span,
+.blind {
+  display: block; position: absolute; z-index: -1;
+  width: 0; height: 0;
+  overflow: hidden;
+}
+
+
+/** layout */
+
+

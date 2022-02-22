@@ -1,0 +1,32 @@
+/* desktop.css */
+
+
+@media screen and (min-width: 1440px) {
+  /*? 기준 디바이스 크기 : 1440px */
+
+  
+/*? headBox ---------------------------- */
+#headBox {}
+
+
+/*? slideBox ---------------------------- */
+#slideBox {}
+
+
+/*? introBox ---------------------------- */
+#introBox {}
+
+
+/*? booklistBox ---------------------------- */
+#booklistBox {}
+
+
+/*? eventBox ---------------------------- */
+#eventBox {}
+
+
+/*? footBox ---------------------------- */
+#footBox {}
+
+
+} /* @media screen and (min-width: 1440px) */
