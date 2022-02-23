@@ -4,28 +4,583 @@
 @media screen and (min-width: 600px) and (max-width: 1023px) {
   /*? 기준 디바이스 크기 : 600px */
 
+  #wrap {
+    width: 100%; min-width: 20rem;
+  }  
+  
   /*? headBox ---------------------------- */
-#headBox {}
+  #headBox { 
+    position: fixed; top: 0;
+    width: 100%;
+    min-width: 20rem; height: 3.125rem; 
+    background-color: #fff;
+    box-shadow: 0 0.2rem 0.2rem #999;
+    z-index: 2000;
+  }
+  
+  .headbox_logo {
+    float: left;
+    width: 5.625rem; height: 2.125rem;
+    margin-left: 0.9375rem; margin-top: 0.5rem;
+    background-image: url("../../img/01_smartphone/01_headbox/Hannuri_logo.svg");
+    background-image: url("../../img/01_smartphone/01_headbox/Hannuri_logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  
+  .headbox_navbtn {
+    float: right;
+    width: 1.25rem; height: 0.9375rem;
+    margin-top: 1.125rem; margin-right: 0.9375rem;
+    background-image: url("../../img/01_smartphone/01_headbox/navbtn.svg");
+    background-image: url("../../img/01_smartphone/01_headbox/navbtn.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  
+  
+  /* 네비게이션 박스 */
+  .navBox {
+    display: none;
+    position: absolute; top: 0;
+    width: 100%; height: 27rem;
+    z-index: 2100;
+    background-image: url("../../img/02_tablet/01_headbox/nav_bg.svg");
+    background-image: url("../../img/02_tablet/01_headbox/nav_bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  .navBox_logo {
+    float: left;
+    width: 5.625rem; height: 2.1875rem; 
+    margin-top: 0.5rem; margin-left: 0.9375rem;
+    background-image: url("../../img/01_smartphone/01_headbox/Hannuri_logo_white.svg");
+    background-image: url("../../img/01_smartphone/01_headbox/Hannuri_logo_white.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  .navBox_navbtn {
+    float: right;
+    width: 1.25rem; height: 0.9375rem; 
+    margin-top: 1.125rem; margin-right: 0.9375rem;
+    background-image: url("../../img/01_smartphone/01_headbox/navbtn_white.svg");
+    background-image: url("../../img/01_smartphone/01_headbox/navbtn_white.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  
+  .nav_contents { margin-top: 104px; }
+  .nav_contents ul { width: 600px; margin: auto; }
+  .nav_contents li {
+    display: block; float: left;
+    border-radius: 10px; border: 3px solid #fff;
+    margin-bottom: 20px;
+    text-align: center; color: #fff;
+  }
 
+  .nav_contents li:nth-child(1), 
+  .nav_contents li:nth-child(2) {
+    min-width: 254px; 
+    height: 24px;
+    font-size: 24px; 
+    padding-top: 39px; padding-bottom: 39px;
+    text-align: center;
+  }
 
-/*? slideBox ---------------------------- */
-#slideBox {}
+  .nav_contents li:nth-child(1) { 
+    margin-left: 30px; margin-right: 20px;  
+  }
+  .nav_contents li:nth-child(2) { margin-right: 30px; }
 
+  .nav_contents li:nth-child(3), 
+  .nav_contents li:nth-child(4), 
+  .nav_contents li:nth-child(5) {
+    min-width: 154px; 
+    height: 20px;
+    font-size: 20px; 
+    padding-top: 41px; padding-bottom: 41px;
+    text-align: center; margin-right: 30px;
+  }
 
-/*? introBox ---------------------------- */
-#introBox {}
-
-
-/*? booklistBox ---------------------------- */
-#booklistBox {}
-
-
-/*? eventBox ---------------------------- */
-#eventBox {}
-
-
-/*? footBox ---------------------------- */
-#footBox {}
+  .nav_contents li:nth-child(3) { margin-left: 30px; }
+  .nav_contents li:nth-child(5) { margin-right: 30px; }
+  
+  
+  
+  /*? slideBox ---------------------------- */
+  #slideBox {
+    width: 100%;
+    min-width: 20rem; height: 37.5rem;
+    padding-top: 3.125rem;
+  }
+  
+  .slideBox_wrap {
+    position: relative;
+    width: 100%; height: 37.5rem;
+    background-image: url("../../img/01_smartphone/02_slidebox/slidebox_bg_phone.svg");
+    background-image: url("../../img/01_smartphone/02_slidebox/slidebox_bg_phone.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  
+  .slideBox_title {
+    text-align: center;
+    padding-top: 11.5rem; 
+    margin-bottom: 1rem;
+    font-size: 2.5rem; font-weight: 700;
+  }
+  
+  .slideBox_contents {
+    width: 75%; min-width: 13.75rem; height: auto;
+    margin: auto; margin-bottom: 2.8125rem;
+    font-size: 1.125rem;
+    text-align: center;
+  }
+  
+  .slideBox_btn {
+    position: relative;
+    width: 13.75rem; height: 3.125rem;
+    margin: auto;
+    border-radius: 0.5rem;
+    background-color: #FED56D;
+    cursor: pointer;
+  }
+  
+  .slideBox_btn:active { box-shadow: inset 0.2rem 0.2rem 0.2rem #555; }
+  
+    .slideBox_btn p {
+      position: absolute; left: 50%;
+      transform: translateX(-50%);
+      display: block;
+      font-size: 1.375rem; text-align: center;
+      font-weight: 700;
+    }
+  
+  
+  /* 슬라이드 좌우 버튼 */
+  .slideBox_nextbtn { 
+    position: absolute; top: 260px; right: 0;
+    width: 40px; height: 80px;
+    background-image: url("../../img/02_tablet/02_slidebox/slidebox_nextbtn.svg");
+    background-image: url("../../img/02_tablet/02_slidebox/slidebox_nextbtn.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    cursor: pointer;
+   } 
+  
+  .slideBox_prevbtn { 
+    position: absolute; top: 260px; left: 0;
+    width: 40px; height: 80px;
+    background-image: url("../../img/02_tablet/02_slidebox/slidebox_prevbtn.svg");
+    background-image: url("../../img/02_tablet/02_slidebox/slidebox_prevbtn.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    cursor: pointer;
+   }
+  
+  .slideBox_nextbtn:active {
+    background-image: url("../../img/01_smartphone/02_slidebox/slidebox_nextbtn_act.svg");
+    background-image: url("../../img/01_smartphone/02_slidebox/slidebox_nextbtn_act.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    box-shadow: inset 0.2rem 0.3rem 0.2rem #777;
+  }
+  
+  .slideBox_prevbtn:active {
+    background-image: url("../../img/01_smartphone/02_slidebox/slidebox_prevbtn_act.svg");
+    background-image: url("../../img/01_smartphone/02_slidebox/slidebox_prevbtn_act.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    box-shadow: inset 0.2rem 0.3rem 0.2rem #777;
+  }
+  
+  
+  
+  /*? introBox ---------------------------- */
+  #introBox {
+    width: 100%;
+    min-width: 20rem; height: 43.75rem;
+    background-color: #fff;
+  }
+  
+  .introBox_title {
+    margin-top: 3.125rem; margin-bottom: 0.9375rem; 
+    font-size: 2.25rem; font-weight: 700;
+    text-align: center;
+  }
+  
+  .introBox_bottom_text {
+    display: block;
+    margin: auto; margin-bottom: 2.5rem;
+    width: 15rem; height: 4.6875rem;
+    font-size: 1.125rem;
+    text-align: center;
+  }
+  
+  
+  /* 카드 영역 */
+  .introBox_card_wrap {
+    position: relative;
+    width: 80%; min-width: 17.5rem; height: 23.125rem;
+    margin: auto;
+    border-radius: 0.625rem;
+    padding-top: 5.625rem;
+  
+    background-image: url("../../img/01_smartphone/03_introbox/introbox_wrap.svg");
+    background-image: url("../../img/01_smartphone/03_introbox/introbox_wrap.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  
+  .introBox_card_title {
+    font-size: 1.75rem; 
+    margin-bottom: 0.9375rem; margin-left: 2.5rem;
+  }
+  .introBox_card_contents {
+    width: 75%;
+    min-width: 12.5rem; height: auto;
+    margin-left: 2.5rem;
+    font-size: 1rem;
+  }
+  .introBox_card_btn {
+    position: absolute;
+    left: 1.875rem; bottom: 2.1875rem;
+    width: 8.625rem; height: 2.5rem;
+    background-color: #FED56D;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+  .introBox_card_btn p {
+    display: block;
+    margin-top: 0.625rem; margin-left: 1.375rem;
+    font-size: 1.25rem; text-align: center;
+    font-weight: 700;
+  }
+  
+  
+  /* 카드 좌상단, 우하단 버튼 */
+  .introBox_nextbtn {
+    width: 6.25rem; height: 6.25rem;
+    position: absolute;
+    bottom: 0; right: 0;
+  
+    background-image: url("../../img/01_smartphone/03_introbox/introbox_nextbtn_bg.svg");
+    background-image: url("../../img/01_smartphone/03_introbox/introbox_nextbtn_bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  .intro_arrow_next {
+    margin-top: 4rem; margin-left: 4.1875rem;
+    width: 1.125rem; height: 1.125rem;
+  
+    background-image: url("../../img/01_smartphone/03_introbox/next_arrow.svg");
+    background-image: url("../../img/01_smartphone/03_introbox/next_arrow.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  
+  .introBox_prevbtn {
+    width: 100px; height: 100px;
+    position: absolute;
+    top: 0; left: 0;
+  
+    background-image: url("../../img/01_smartphone/03_introbox/introbox_prevbtn_bg.svg");
+    background-image: url("../../img/01_smartphone/03_introbox/introbox_prevbtn_bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  .intro_arrow_prev {
+    margin-top: 1.0625rem; margin-left: 1.25rem;
+    width: 1.125rem; height: 1.125rem;
+  
+    background-image: url("../../img/01_smartphone/03_introbox/prev_arrow.svg");
+    background-image: url("../../img/01_smartphone/03_introbox/prev_arrow.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  
+    .intro_arrow_next:active,
+    .intro_arrow_prev:active { width: 1.3125rem; height: 1.3125rem; }
+  
+  
+  /*? booklistBox ---------------------------- */
+  #booklistBox {
+    width: 100%;
+    min-width: 20rem; height: 43.75rem;
+    background-color: #F5E6BE;
+  }
+  
+  .booklistBox_title {
+    padding-top: 3.125rem; margin-bottom: 0.9375rem; 
+    font-size: 2.25rem; font-weight: 700;
+    text-align: center;
+  }
+  
+  .booklistBox_bottom_text {
+    display: block;
+    margin: auto; margin-bottom: 1.5625rem;
+    width: 15rem; height: 4.6875rem;
+    font-size: 1.125rem;
+    text-align: center;
+  }
+  
+  
+  /* 카드 영역 */
+  .booklistBox_wrap {
+    position: relative;
+    margin: auto;
+    width: 17.5rem; height: 25rem;
+    background-color: #fff;
+    border-radius: 0.625rem;
+  }
+  
+  .booklistBox_card_inner {
+    position: absolute; top: 3.125rem; left: 50%;
+    transform: translateX(-50%);
+    width: 12.5rem; height: 19.375rem;
+  }
+  
+  .booklistBox_card_img {
+    width: 11.5rem; height: 15rem;
+    margin: auto; margin-top: 0.5625rem; margin-bottom: 0.5625rem;
+    border-radius: 0.625rem;
+  
+    background-image: url("../../img/01_smartphone/04_booklistbox/booklist_img_01.png");
+    background-image: url("../../img/01_smartphone/04_booklistbox/booklist_img_01.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  
+  .booklistBox_card_title { 
+    width: 11.5rem; height: 2.75rem; margin: auto; 
+  }
+  .booklistBox_card_title p { 
+    display: block; 
+    margin: auto; margin-top: 0.5rem;
+    text-align: center;
+    font-size: 1.75rem; font-weight: 700;
+   }
+  
+  
+  /* 카드 좌우 버튼 */
+  .booklistBox_nextbtn {
+    position: absolute; top: 10.3125rem; right: 0;
+    width: 1.25rem; height: 4.375rem;
+    border-radius: 0.3125rem;
+  
+    background-image: url("../../img/01_smartphone/04_booklistbox/booklistbox_nextbtn.png");
+    background-image: url("../../img/01_smartphone/04_booklistbox/booklistbox_nextbtn.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  .booklistBox_prevbtn {
+    position: absolute; top: 10.3125rem; left: 0;
+    width: 1.25rem; height: 4.375rem;
+    border-radius: 0.3125rem;
+  
+    background-image: url("../../img/01_smartphone/04_booklistbox/booklistbox_prevbtn.png");
+    background-image: url("../../img/01_smartphone/04_booklistbox/booklistbox_prevbtn.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  
+  
+  /*? eventBox ---------------------------- */
+  #eventBox {
+    width: 100%;
+    min-width: 20rem; height: 52.5rem;
+    /* background-color: #ccc; */
+  }
+  
+  .eventBox_title {
+    padding-top: 3.125rem; margin-bottom: 0.9375rem; 
+    font-size: 2.25rem; font-weight: 700;
+    text-align: center;
+  }
+  
+  .eventBox_bottom_text {
+    display: block;
+    margin: auto; margin-bottom: 3.125rem;
+    width: 15rem; height: 4.6875rem;
+    font-size: 1.125rem;
+    text-align: center;
+  }
+  
+  
+  /* 카드 영역 (펼쳐짐) */
+  .eventBox_card_wrap_01 {
+    position: relative;
+    width: 80%; min-width: 17.5rem; height: 23.125rem;
+    border-radius: 0.625rem;
+    margin: auto; margin-bottom: 1.25rem;
+  
+    background-image: url("../../img/01_smartphone/05_eventbox/eventbox_img_01.png");
+    background-image: url("../../img/01_smartphone/05_eventbox/eventbox_img_01.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  
+  .eventBox_card_title {
+    padding-top: 1.875rem; 
+    margin-bottom: 0.9375rem; margin-left: 1.5625rem;
+    font-size: 1.75rem;
+  }
+  .eventBox_card_contents {
+    width: 80%; min-width: 13.75rem; height: auto;
+    margin-left: 1.875rem;
+    font-size: 1rem;
+  }
+  
+  .eventBox_card_viewbtn {
+    position: absolute; top: 16.75rem; left: 50%;
+    transform: translateX(-50%);
+    width: 11.25rem; height: 2.5rem;
+    border-radius: 0.5rem;
+    background-color: #FED56D;
+  }
+  
+  .eventBox_card_joinbtn {
+    position: absolute; top: 19.8125rem; left: 50%;
+    transform: translateX(-50%);
+    width: 11.25rem; height: 2.5rem;
+    border-radius: 0.5rem;
+    background-color: #FBEC6B;
+  }
+    .eventBox_card_viewbtn p,
+    .eventBox_card_joinbtn p {
+      margin-top: 0.6875rem;
+      font-size: 1.125rem; font-weight: 700;
+    }
+  
+    .eventBox_card_viewbtn p { margin-left: 3rem; } 
+    .eventBox_card_joinbtn p { margin-left: 3.5rem; } 
+  
+  
+  /* 카드 영역 (접힘) */
+  .eventBox_card_wrap_02 {
+    width: 80%; min-width: 17.5rem; height: 3.125rem;
+    border-radius: 0.625rem;
+    margin: auto; margin-bottom: 1.25rem;
+  
+    background-image: url("../../img/01_smartphone/05_eventbox/eventbox_img_02.png");
+    background-image: url("../../img/01_smartphone/05_eventbox/eventbox_img_02.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%; 
+  }
+  .eventBox_card_wrap_03 {
+    width: 80%; min-width: 17.5rem; height: 3.125rem;
+    border-radius: 0.625rem;
+    margin: auto;
+  
+    background-image: url("../../img/01_smartphone/05_eventbox/eventbox_img_03.png");
+    background-image: url("../../img/01_smartphone/05_eventbox/eventbox_img_03.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  
+  
+  /*? footBox ---------------------------- */
+  #footBox {
+    width: 100%;
+    min-width: 20rem; height: 28.125rem;
+    background-color: #171717;
+  }
+  
+  .footBox_logo {
+    width: 155px; height: 85px; 
+    padding-top: 35px; margin: auto; margin-bottom: 40px;
+    background-image: url("../../img/01_smartphone/06_footbox/hannuri_logo_footbox.png");
+    background-image: url("../../img/01_smartphone/06_footbox/hannuri_logo_footbox.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  
+  
+  /** 사이드박스 ---------------------- */
+  /* SNS */
+  .footBox_sns_wrap {
+    width: 180px; height: 60px; 
+    margin: auto; margin-bottom: 10px;
+  }
+  
+    .footBox_sns_wrap li {
+      display: block; float: left;
+      width: 40px; height: 40px; margin-right: 30px;
+      /* background-color: #ccc;  */
+    }
+  
+    .footBox_sns_wrap li:nth-child(1) {
+      background-image: url("../../img/01_smartphone/06_footbox/facebook.png");
+      background-image: url("../../img/01_smartphone/06_footbox/facebook.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
+    .footBox_sns_wrap li:nth-child(2) {
+      background-image: url("../../img/01_smartphone/06_footbox/instagram.png");
+      background-image: url("../../img/01_smartphone/06_footbox/instagram.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
+    .footBox_sns_wrap li:last-child { 
+      background-image: url("../../img/01_smartphone/06_footbox/twitter.png");
+      background-image: url("../../img/01_smartphone/06_footbox/twitter.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      margin-right: 0; 
+    }
+  
+  
+  /* 패밀리사이트 & bottom box */
+  .footBox_family_site {
+    margin: auto; margin-bottom: 10px;
+    width: 185px; height: 30px;
+    border-radius: 3px;
+    background-color: #fff;
+  }
+    .footBox_family_site p {
+      font-size: 12px; padding-top: 9px;
+      margin-left: 10px;
+      text-transform: capitalize;
+    }
+  .footBox_bottom_smallbox {
+    margin: auto; 
+    width: 185px; height: 45px;
+    border-radius: 3px;
+    background-color: #fff;
+    margin-bottom: 60px;
+  }
+  
+  
+  /* rights */
+  .footBox_rights { width: 203px; height: 12px; margin: auto; }
+  .footBox_rights p {
+    font-size: 12px; color: #fff;
+  }
 
 
 } /* @media screen and (min-width: 600px) and (max-width: 1023px) */

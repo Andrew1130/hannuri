@@ -41,6 +41,54 @@
 }
 
 
+/* 네비게이션 박스 */
+.navBox {
+  display: none;
+  position: absolute; top: 0;
+  width: 100%; height: 35rem;
+  z-index: 2100;
+  background-image: url("../../img/01_smartphone/01_headbox/nav_bg.svg");
+  background-image: url("../../img/01_smartphone/01_headbox/nav_bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.navBox_logo {
+  float: left;
+  width: 5.625rem; height: 2.1875rem; 
+  margin-top: 0.5rem; margin-left: 0.9375rem;
+  background-image: url("../../img/01_smartphone/01_headbox/Hannuri_logo_white.svg");
+  background-image: url("../../img/01_smartphone/01_headbox/Hannuri_logo_white.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.navBox_navbtn {
+  float: right;
+  width: 1.25rem; height: 0.9375rem; 
+  margin-top: 1.125rem; margin-right: 0.9375rem;
+  background-image: url("../../img/01_smartphone/01_headbox/navbtn_white.svg");
+  background-image: url("../../img/01_smartphone/01_headbox/navbtn_white.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.nav_contents { margin-top: 6.5rem; }
+.nav_contents li {
+  display: block; 
+  margin: auto;
+  width: 70%;  min-width: 16.5rem; 
+  height: 2rem; border-radius: 0.625rem;
+  border: 0.1875rem solid #fff;
+  margin-bottom: 0.9375rem;
+  padding-top: 0.875rem; padding-bottom: 0.875rem;
+
+  text-align: center;
+  font-size: 1.375rem; color: #fff;
+}
+
+
 
 /*? slideBox ---------------------------- */
 #slideBox {
@@ -438,8 +486,8 @@
 }
 
 .footBox_logo {
-  width: 155px; height: 85px; 
-  padding-top: 35px; margin: auto; margin-bottom: 40px;
+  width: 9.6875rem; height: 5.3125rem; 
+  padding-top: 2.1875rem; margin: auto; margin-bottom: 2.5rem;
   background-image: url("../../img/01_smartphone/06_footbox/hannuri_logo_footbox.png");
   background-image: url("../../img/01_smartphone/06_footbox/hannuri_logo_footbox.svg");
   background-size: contain;
@@ -451,13 +499,13 @@
 /** 사이드박스 ---------------------- */
 /* SNS */
 .footBox_sns_wrap {
-  width: 180px; height: 60px; 
-  margin: auto; margin-bottom: 10px;
+  width: 11.25rem; height: 3.75rem; 
+  margin: auto; margin-bottom: 0.625rem;
 }
 
   .footBox_sns_wrap li {
     display: block; float: left;
-    width: 40px; height: 40px; margin-right: 30px;
+    width: 2.5rem; height: 2.5rem; margin-right: 1.875rem;
     /* background-color: #ccc;  */
   }
 
@@ -487,27 +535,27 @@
 
 /* 패밀리사이트 & bottom box */
 .footBox_family_site {
-  margin: auto; margin-bottom: 10px;
-  width: 185px; height: 30px;
-  border-radius: 3px;
+  margin: auto; margin-bottom: 0.625rem;
+  width: 11.5625rem; height: 1.875rem;
+  border-radius: 0.1875rem;
   background-color: #fff;
 }
   .footBox_family_site p {
-    font-size: 12px; padding-top: 9px;
-    margin-left: 10px;
+    font-size: 0.75rem; padding-top: 0.5625rem;
+    margin-left: 0.625rem;
     text-transform: capitalize;
   }
 .footBox_bottom_smallbox {
   margin: auto; 
-  width: 185px; height: 45px;
-  border-radius: 3px;
+  width: 11.5625rem; height: 2.8125rem;
+  border-radius: 0.1875rem;
   background-color: #fff;
-  margin-bottom: 60px;
+  margin-bottom: 3.75rem;
 }
 
 
 /* rights */
-.footBox_rights { width: 203px; height: 12px; margin: auto; }
+.footBox_rights { width: 12.6875rem; height: 0.75rem; margin: auto; }
 .footBox_rights p {
   font-size: 12px; color: #fff;
 }
