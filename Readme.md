@@ -133,8 +133,6 @@
 - pdf
 1. Hannuri_design.fig
 ---
-1. index
-1. Hannuri_design.fig
-1. Hannuri_design.pdf
+1. index.html
 1. readme.md
 
