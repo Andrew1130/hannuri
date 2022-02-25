@@ -197,13 +197,15 @@
   text-align: center;
 }
 
-.introBox_bottom_text {
+.introBox_bottom_text_phone {
   display: block;
   margin: auto; margin-bottom: 2.5rem;
   width: 15rem; height: 4.6875rem;
   font-size: 1.125rem;
   text-align: center;
 }
+
+.introBox_bottom_text { display: none; }
 
 
 /* 카드 영역 */
@@ -223,6 +225,7 @@
 
 .introBox_card_title {
   font-size: 1.75rem; 
+  font-weight: 500;
   margin-bottom: 0.9375rem; margin-left: 2.5rem;
 }
 .introBox_card_contents {

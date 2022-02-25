@@ -214,27 +214,28 @@
   }
   
   .introBox_title {
-    margin-top: 3.125rem; margin-bottom: 0.9375rem; 
-    font-size: 2.25rem; font-weight: 700;
-    text-align: center;
+    margin-top: 3.75rem; margin-bottom: 0.9375rem; 
+    margin-left: 40px;
+    font-size: 2.5rem; font-weight: 700;
   }
   
+  .introBox_bottom_text_phone { display: none; }
   .introBox_bottom_text {
     display: block;
-    margin: auto; margin-bottom: 2.5rem;
-    width: 15rem; height: 4.6875rem;
+    margin-bottom: 2.8125rem;
+    margin-left: 2.8125rem;
+    width: 18.75rem; height: 3.125rem;
     font-size: 1.125rem;
-    text-align: center;
   }
   
   
   /* 카드 영역 */
   .introBox_card_wrap {
     position: relative;
-    width: 80%; min-width: 17.5rem; height: 23.125rem;
+    width: 90%; min-width: 34.375rem; height: 23.125rem;
     margin: auto;
     border-radius: 0.625rem;
-    padding-top: 5.625rem;
+    padding-top: 4.375rem;
   
     background-image: url("../../img/main_page/01_smartphone/03_introbox/introbox_wrap.svg");
     background-image: url("../../img/main_page/01_smartphone/03_introbox/introbox_wrap.png");
@@ -244,71 +245,72 @@
   }
   
   .introBox_card_title {
-    font-size: 1.75rem; 
-    margin-bottom: 0.9375rem; margin-left: 2.5rem;
+    font-size: 2rem; 
+    font-weight: 500;
+    margin-bottom: 0.9375rem; margin-left: 6rem;
   }
   .introBox_card_contents {
     width: 75%;
-    min-width: 12.5rem; height: auto;
-    margin-left: 2.5rem;
-    font-size: 1rem;
+    min-width: 21.875rem; height: auto;
+    margin-left: 6.25rem;
+    font-size: 1.125rem;
   }
   .introBox_card_btn {
     position: absolute;
-    left: 1.875rem; bottom: 2.1875rem;
-    width: 8.625rem; height: 2.5rem;
+    left: 5.375rem; bottom: 2.5rem;
+    width: 13.75rem; height: 3.125rem;
     background-color: #FED56D;
     border-radius: 0.5rem;
     cursor: pointer;
   }
   .introBox_card_btn p {
     display: block;
-    margin-top: 0.625rem; margin-left: 1.375rem;
-    font-size: 1.25rem; text-align: center;
+    margin-top: 0.875rem; margin-left: 3.5625rem;
+    font-size: 1.375rem; text-align: center;
     font-weight: 700;
   }
   
   
   /* 카드 좌상단, 우하단 버튼 */
   .introBox_nextbtn {
-    width: 6.25rem; height: 6.25rem;
+    width: 8.75rem; height: 8.75rem;
     position: absolute;
     bottom: 0; right: 0;
   
-    background-image: url("../../img/main_page/01_smartphone/03_introbox/introbox_nextbtn_bg.svg");
-    background-image: url("../../img/main_page/01_smartphone/03_introbox/introbox_nextbtn_bg.png");
+    background-image: url("../../img/main_page/02_tablet/03_introbox/introbox_nextbtn_bg.svg");
+    background-image: url("../../img/main_page/02_tablet/03_introbox/introbox_nextbtn_bg.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
   .intro_arrow_next {
-    margin-top: 4rem; margin-left: 4.1875rem;
-    width: 1.125rem; height: 1.125rem;
+    margin-top: 5.9375rem; margin-left: 5.8125rem;
+    width: 1.625rem; height: 1.625rem;
   
-    background-image: url("../../img/main_page/01_smartphone/03_introbox/next_arrow.svg");
-    background-image: url("../../img/main_page/01_smartphone/03_introbox/next_arrow.png");
+    background-image: url("../../img/main_page/02_tablet/03_introbox/next_arrow.svg");
+    background-image: url("../../img/main_page/02_tablet/03_introbox/next_arrow.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
   
   .introBox_prevbtn {
-    width: 100px; height: 100px;
+    width: 8.75rem; height: 8.75rem;
     position: absolute;
     top: 0; left: 0;
   
-    background-image: url("../../img/main_page/01_smartphone/03_introbox/introbox_prevbtn_bg.svg");
-    background-image: url("../../img/main_page/01_smartphone/03_introbox/introbox_prevbtn_bg.png");
+    background-image: url("../../img/main_page/02_tablet/03_introbox/introbox_prevbtn_bg.svg");
+    background-image: url("../../img/main_page/02_tablet/03_introbox/introbox_prevbtn_bg.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
   .intro_arrow_prev {
-    margin-top: 1.0625rem; margin-left: 1.25rem;
-    width: 1.125rem; height: 1.125rem;
+    margin-top: 1.4375rem; margin-left: 1.6875rem;
+    width: 1.625rem; height: 1.625rem;
   
-    background-image: url("../../img/main_page/01_smartphone/03_introbox/prev_arrow.svg");
-    background-image: url("../../img/main_page/01_smartphone/03_introbox/prev_arrow.png");
+    background-image: url("../../img/main_page/02_tablet/03_introbox/prev_arrow.svg");
+    background-image: url("../../img/main_page/02_tablet/03_introbox/prev_arrow.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 50% 50%;
