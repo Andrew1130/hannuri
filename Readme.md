@@ -10,7 +10,7 @@
 - Hannuri_design.fig 
 - pdf 폴더 내 pdf 파일들
 
-## 폴더 및 파일 구성 (불릿 : 폴더 / 번호 : 파일)
+## 폴더 및 파일 구성 (순서 없는 리스트 : 폴더 / 순서 있는 리스트 : 파일)
 ### html
 1. main.html (메인 html)  
 1. login.html (로그인 페이지 html)
