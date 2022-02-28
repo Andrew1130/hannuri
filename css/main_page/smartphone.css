@@ -29,6 +29,11 @@
   background-position: 50% 50%;
 }
 
+  .headbox_logo a {
+    display: block;
+    width: 5.625rem; height: 2.125rem;
+  }
+
 .headbox_navbtn {
   float: right;
   width: 1.25rem; height: 0.9375rem;
@@ -38,6 +43,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  cursor: pointer;
 }
 
 
@@ -72,6 +78,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  cursor: pointer;
 }
 
 .nav_contents { margin-top: 6.5rem; }
@@ -273,6 +280,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  cursor: pointer;
 }
 
 .introBox_prevbtn {
@@ -295,6 +303,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  cursor: pointer;
 }
 
   .intro_arrow_next:active,
@@ -376,6 +385,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  cursor: pointer;
 }
 .booklistBox_prevbtn {
   position: absolute; top: 10.3125rem; left: 0;
@@ -387,6 +397,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  cursor: pointer;
 }
 
 .booklistBox_nextbtn:active {
@@ -460,6 +471,7 @@
   width: 11.25rem; height: 2.5rem;
   border-radius: 0.5rem;
   background-color: #FED56D;
+  cursor: pointer;
 }
 
 .eventBox_card_joinbtn {
@@ -468,6 +480,7 @@
   width: 11.25rem; height: 2.5rem;
   border-radius: 0.5rem;
   background-color: #FBEC6B;
+  cursor: pointer;
 }
 
 .eventBox_card_viewbtn:active,
@@ -493,7 +506,8 @@
   background-image: url("../../img/main_page/01_smartphone/05_eventbox/eventbox_img_02.svg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 50% 50%; 
+  background-position: 50% 50%;
+  cursor: pointer; 
 }
 .eventBox_card_wrap_03 {
   width: 80%; min-width: 17.5rem; height: 3.125rem;
@@ -505,6 +519,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  cursor: pointer;
 }
 
 
@@ -534,7 +549,8 @@
   margin: auto; margin-bottom: 0.625rem;
 }
 
-  .footBox_sns_wrap li {
+  .footBox_sns_wrap li,
+  .footBox_sns_wrap li a {
     display: block; float: left;
     width: 2.5rem; height: 2.5rem; margin-right: 1.875rem;
     /* background-color: #ccc;  */

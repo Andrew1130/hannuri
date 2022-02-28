@@ -4,29 +4,724 @@
 @media screen and (min-width: 1440px) {
   /*? 기준 디바이스 크기 : 1440px */
 
-  
+#wrap {
+  width: 100%; min-width: 20rem;
+}  
+
 /*? headBox ---------------------------- */
-#headBox {}
+#headBox { 
+  position: fixed; top: 0;
+  width: 100%;
+  min-width: 64rem; height: 6.25rem; 
+  background-color: #fff;
+  box-shadow: 0 0.2rem 0.2rem #999;
+  z-index: 2000;
+}
+
+.headBox_wrap {
+  width: 85%; height: 6.25rem;
+  max-width: 93.75rem;
+  margin: auto;
+}
+
+.headbox_logo {
+  float: left;
+  width: 121px; height: 85px;
+  margin-left: 40px; margin-top: 5px;
+  background-image: url("../../img/main_page/03_laptop/01_headbox/Hannuri_logo.png");
+  background-image: url("../../img/main_page/03_laptop/01_headbox/Hannuri_logo.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+  .headbox_logo a {
+    display: block;
+    width: 121px; height: 85px;
+  }
+
+
+/* 네비게이션 영역 */
+.navBox { 
+  float: right; 
+  margin-top: 2.1875rem; margin-right: 0.75rem;
+  width: auto; height: 1.125rem; 
+}
+.nav_contents li {
+  float: left;
+  padding-top: 1rem; padding-bottom: 1rem;
+  margin-right: 1.25rem; font-size: 1.125rem; 
+}
+
 
 
 /*? slideBox ---------------------------- */
-#slideBox {}
+#slideBox {
+  width: 100%;
+  min-width: 64rem; height: 37.5rem;
+  padding-top: 6.25rem;
+
+  background-image: url("../../img/main_page/03_laptop/02_slidebox/slidbox_area_01.png");
+  background-image: url("../../img/main_page/03_laptop/02_slidebox/slidbox_area_01.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.slideBox_wrap {
+  position: relative;
+  width: 58.75rem; height: 25rem;
+  margin: auto;  margin-top: 100px;
+  background-image: url("../../img/main_page/03_laptop/02_slidebox/slidebox_wrap_01.png");
+  background-image: url("../../img/main_page/03_laptop/02_slidebox/slidebox_wrap_01.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.slideBox_title {
+  text-align: center;
+  padding-top: 6.875rem;
+  margin-bottom: 1rem;
+  font-size: 2.5rem; font-weight: 700;
+}
+
+.slideBox_contents {
+  width: 60%; min-width: 13.75rem; height: auto;
+  margin: auto; margin-bottom: 2.8125rem;
+  font-size: 1.125rem;
+  text-align: center;
+}
+
+.slideBox_btn {
+  position: relative;
+  width: 13.75rem; height: 3.125rem;
+  margin: auto;
+  border-radius: 0.5rem;
+  background-color: #FED56D;
+  cursor: pointer;
+}
+
+.slideBox_btn:active { box-shadow: inset 0.2rem 0.2rem 0.2rem #555; }
+
+  .slideBox_btn p {
+    position: absolute; left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    font-size: 1.375rem; text-align: center;
+    font-weight: 700;
+  }
+
+
+/* 슬라이드 좌우 버튼 */
+.slideBox_nextbtn { 
+  position: absolute; top: 10.3125rem; right: 0;
+  width: 2.5rem; height: 5rem;
+  background-image: url("../../img/main_page/03_laptop/02_slidebox/slidebox_nextbtn.png");
+  background-image: url("../../img/main_page/03_laptop/02_slidebox/slidebox_nextbtn.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  cursor: pointer;
+  } 
+
+.slideBox_prevbtn { 
+  position: absolute; top: 10.3125rem; left: 0;
+  width: 2.5rem; height: 5rem;
+  background-image: url("../../img/main_page/03_laptop/02_slidebox/slidebox_prevbtn.png");
+  background-image: url("../../img/main_page/03_laptop/02_slidebox/slidebox_prevbtn.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  cursor: pointer;
+  }
+
+.slideBox_nextbtn:hover {
+  border-radius: 0.625rem;
+  background-image: url("../../img/main_page/03_laptop/02_slidebox/slidebox_nextbtn_hover.png");
+  background-image: url("../../img/main_page/03_laptop/02_slidebox/slidebox_nextbtn_hover.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  /* box-shadow: inset 0.2rem 0.3rem 0.2rem #777; */
+}
+
+.slideBox_prevbtn:hover {
+  border-radius: 0.625rem;
+  background-image: url("../../img/main_page/03_laptop/02_slidebox/slidebox_prevbtn_hover.png");
+  background-image: url("../../img/main_page/03_laptop/02_slidebox/slidebox_prevbtn_hover.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  /* box-shadow: inset 0.2rem 0.3rem 0.2rem #777; */
+}
+
 
 
 /*? introBox ---------------------------- */
-#introBox {}
+#introBox {
+  width: 100%;
+  min-width: 20rem; height: 43.75rem;
+  background-color: #fff;
+}
+
+.introBox_title {
+  width: 58.75rem;
+  padding-top: 6.25rem; 
+  padding-bottom: 0.9375rem;
+  margin: auto;
+  font-size: 2.5rem; font-weight: 700;
+}
+
+.introBox_bottom_text_phone,
+.introBox_bottom_text_tablet { display: none; }
+.introBox_bottom_text {
+  display: block;
+  width: 58.75rem; height: auto;
+  margin: auto;
+  padding-bottom: 2.8125rem;
+  font-size: 1.125rem;
+}
+
+
+/* 카드 영역 */
+.introBox_card_wrap {
+  position: relative;
+  width: 58.75rem; height: 23.125rem;
+  margin: auto;
+  border-radius: 0.625rem;
+  padding-top: 2.5rem;
+
+  background-image: url("../../img/main_page/01_smartphone/03_introbox/introbox_wrap.png");
+  background-image: url("../../img/main_page/01_smartphone/03_introbox/introbox_wrap.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.dividing_box {
+  position: absolute; top: -0.1875rem; left: 38%;
+  width: 7.5%; height: 27.6rem;
+  background-color: #fff;
+}
+
+.introBox_card_title {
+  position: absolute; left: 50%;
+  font-size: 2rem; 
+  font-weight: 500;
+}
+.introBox_card_contents {
+  position: absolute; left: 50%; top: 8.125rem;
+  width: 45%;
+  min-width: 26.875rem; height: auto;
+  font-size: 1.125rem;
+}
+.introBox_card_btn {
+  position: absolute;
+  left: 50%; bottom: 2.5rem;
+  width: 13.75rem; height: 3.125rem;
+  background-color: #FED56D;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.introBox_card_btn:active { box-shadow: inset 0.2rem 0.2rem 0.2rem #555; }
+.introBox_card_btn p {
+  display: block;
+  margin-top: 0.875rem; margin-left: 3.5625rem;
+  font-size: 1.375rem; text-align: center;
+  font-weight: 700;
+}
+
+
+/* 카드 좌상단, 우하단 버튼 */
+.introBox_nextbtn {
+  width: 8.75rem; height: 8.75rem;
+  position: absolute;
+  bottom: 0; right: 0;
+
+  background-image: url("../../img/main_page/02_tablet/03_introbox/introbox_nextbtn_bg.png");
+  background-image: url("../../img/main_page/02_tablet/03_introbox/introbox_nextbtn_bg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.intro_arrow_next {
+  margin-top: 5.9375rem; margin-left: 5.8125rem;
+  width: 1.625rem; height: 1.625rem;
+
+  background-image: url("../../img/main_page/02_tablet/03_introbox/next_arrow.png");
+  background-image: url("../../img/main_page/02_tablet/03_introbox/next_arrow.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  cursor: pointer;
+}
+
+.introBox_prevbtn {
+  width: 8.75rem; height: 8.75rem;
+  position: absolute;
+  top: 0; left: 0;
+
+  background-image: url("../../img/main_page/02_tablet/03_introbox/introbox_prevbtn_bg.png");
+  background-image: url("../../img/main_page/02_tablet/03_introbox/introbox_prevbtn_bg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.intro_arrow_prev {
+  margin-top: 1.4375rem; margin-left: 1.6875rem;
+  width: 1.625rem; height: 1.625rem;
+
+  background-image: url("../../img/main_page/02_tablet/03_introbox/prev_arrow.png");
+  background-image: url("../../img/main_page/02_tablet/03_introbox/prev_arrow.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  cursor: pointer;
+}
+
+  .intro_arrow_next:hover,
+  .intro_arrow_prev:hover { width: 1.9rem; height: 1.9rem; }
 
 
 /*? booklistBox ---------------------------- */
-#booklistBox {}
+#booklistBox {
+  width: 100%;
+  min-width: 20rem; height: 43.75rem;
+  background-color: #F5E6BE;
+}
+
+.booklistBox_title {
+  width: 58.75rem;
+  margin: auto;
+  padding-top: 6.25rem; padding-bottom: 0.625rem; 
+  font-size: 2.5rem; font-weight: 700;
+}
+
+.booklistBox_bottom_text_phone { display: none; }
+.booklistBox_bottom_text {
+  display: block;
+  margin: auto;
+  padding-bottom: 1.5625rem;
+  width: 58.75rem; height: 1.5625rem;
+  font-size: 1.125rem;
+}
+
+
+/** 카드 영역 */
+.booklistBox_wrap {
+  position: relative;
+  margin: auto; 
+  width: 58.75rem; height: 25rem;
+  background-color: #fff;
+  border-radius: 0.625rem;
+}
+
+/* 카드 외곽 영역 */
+.booklistBox_card_inner_01 {
+  float: left;
+  width: 13.125rem; height: 18.75rem;
+  padding-top: 3.125rem; margin-left: 3.125rem;
+}
+.booklistBox_card_inner_02 {
+  position: absolute; top: 1.875rem; left: 50%;
+  transform: translateX(-50%);
+  width: 15.625rem; height: 21.875rem;
+  background-color: #fff;
+  z-index: 10;
+}
+.booklistBox_card_inner_03 {
+  float: right;
+  width: 13.125rem; height: 18.75rem;
+  padding-top: 3.125rem; margin-right: 3.125rem ;
+}
+
+/* 카드 이미지 */
+.booklistBox_card_img_01 {
+  width: 11.875rem; height: 14.375rem; 
+  margin: auto; margin-top: 0.625rem; margin-bottom: 0.625rem;
+  border-radius: 0.625rem;
+
+  background-image: url("../../img/main_page/02_tablet/04_booklistbox/booklist_img_02.png");
+  background-image: url("../../img/main_page/02_tablet/04_booklistbox/booklist_img_02.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.booklistBox_card_img_02 {
+  width: 14.375rem; height: 16.875rem;
+  margin: auto; margin-top: 0.625rem; margin-bottom: 0.625rem;
+  border-radius: 0.625rem;
+
+  background-image: url("../../img/main_page/02_tablet/04_booklistbox/booklist_img_01.png");
+  background-image: url("../../img/main_page/02_tablet/04_booklistbox/booklist_img_01.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.booklistBox_card_img_03 {
+  width: 11.875rem; height: 14.375rem; 
+  margin: auto; margin-top: 0.625rem; margin-bottom: 0.625rem;
+  border-radius: 0.625rem;
+
+  background-image: url("../../img/main_page/02_tablet/04_booklistbox/booklist_img_03.png");
+  background-image: url("../../img/main_page/02_tablet/04_booklistbox/booklist_img_03.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+/* 카드 텍스트 */
+
+.booklistBox_card_title_01,
+.booklistBox_card_title_03 { 
+  width: 11.875rem; height: 1.375rem; 
+  margin: auto; margin-bottom: 0.625rem;
+  text-transform: capitalize;
+}
+.booklistBox_card_title_01 p,
+.booklistBox_card_title_03 p { 
+  display: block; 
+  margin: auto; 
+  padding-top: 0.5625rem; padding-bottom: 0.5625rem;
+  text-align: center;
+  font-size: 1.375rem; 
+  }
+
+.booklistBox_card_title_02 { 
+  width: 14.375rem; height: 1.75rem; 
+  margin: auto; margin-bottom: 0.625rem;
+  text-transform: capitalize;
+  z-index: 10;
+}
+.booklistBox_card_title_02 p { 
+  display: block; 
+  margin: auto; 
+  padding-top: 0.6875rem; padding-bottom: 0.6875rem;
+  text-align: center;
+  font-size: 1.75rem; font-weight: 700;
+  z-index: 10;
+  }
+
+
+/* 카드 좌우 버튼 */
+.booklistBox_nextbtn {
+  position: absolute; top: 10.3125rem; right: 0;
+  width: 1.875rem; height: 4.375rem;
+  border-radius: 0.3125rem;
+
+  background-image: url("../../img/main_page/02_tablet/04_booklistbox/booklistbox_nextbtn.png");
+  background-image: url("../../img/main_page/02_tablet/04_booklistbox/booklistbox_nextbtn.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  cursor: pointer;
+}
+.booklistBox_prevbtn {
+  position: absolute; top: 10.3125rem; left: 0;
+  width: 1.875rem; height: 4.375rem;
+  border-radius: 0.3125rem;
+
+  background-image: url("../../img/main_page/02_tablet/04_booklistbox/booklistbox_prevbtn.png");
+  background-image: url("../../img/main_page/02_tablet/04_booklistbox/booklistbox_prevbtn.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  cursor: pointer;
+}
+
+.booklistBox_nextbtn:hover {
+  background-image: url("../../img/main_page/02_tablet/04_booklistbox/booklistbox_nextbtn_active.png");
+  background-image: url("../../img/main_page/02_tablet/04_booklistbox/booklistbox_nextbtn_active.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  }
+.booklistBox_prevbtn:hover { 
+  background-image: url("../../img/main_page/02_tablet/04_booklistbox/booklistbox_prevbtn_active.png");
+  background-image: url("../../img/main_page/02_tablet/04_booklistbox/booklistbox_prevbtn_active.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  }
 
 
 /*? eventBox ---------------------------- */
-#eventBox {}
+#eventBox {
+  width: 100%;
+  min-width: 37.5rem; height: 43.75rem;
+}
+
+.eventBox_title {
+  width: 58.75rem;
+  margin: auto;
+  padding-top: 6.25rem; padding-bottom: 0.625rem; 
+  font-size: 2.5rem; font-weight: 700;
+}
+
+.eventBox_bottom_text_tablet,
+.eventBox_bottom_text_phone { display: none; }
+.eventBox_bottom_text {
+  display: block; width: 58.75rem; height: auto;
+  margin: auto;
+  padding-bottom: 1.875rem;
+  font-size: 1.125rem;
+}
+
+
+/* 카드 영역 */
+.eventBox_card_wrap_01 {
+  position: relative;
+  width: 940px; height: 23.125rem;
+  border-radius: 0.625rem;
+  margin: auto; margin-bottom: 5rem;
+
+  background-color: #fff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.eventBox_img_area {
+  float: left;
+  width: 39%; height: 23.125rem; 
+  border-radius: 0.625rem;
+  
+  background-image: url("../../img/main_page/03_laptop/05_eventbox/eventbox_img_01.png");
+  background-image: url("../../img/main_page/03_laptop/05_eventbox/eventbox_img_01.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.eventBox_content_area {
+  float: right;
+  width: 54%; height: 370px; 
+  border-radius: 10px;
+  background-color: #F1F1F1; 
+}
+
+.eventBox_card_title {
+  padding-top: 2.8125rem; 
+  margin-bottom: 1.375rem; margin-left: 2rem;
+  font-size: 2rem; font-weight: 500;
+}
+.eventBox_card_contents {
+  width: 80%; min-width: 23.75rem; height: 6.75rem;
+  margin-left: 2.125rem;
+  font-size: 1.125rem;
+}
+
+.eventBox_card_viewbtn {
+  position: relative;
+  float: left;
+  margin-top: 4.375rem; margin-left: 2rem; 
+  margin-right: 4%;
+  width: 36%; min-width: 12.5rem; height: 3.125rem;
+  border-radius: 0.5rem;
+  background-color: #FED56D;
+}
+
+.eventBox_card_joinbtn {
+  position: relative;
+  float: left;
+  margin-top: 4.375rem;
+  width: 32%; min-width: 11.25rem; height: 3.125rem;
+  border-radius: 8px;
+  background-color: #FBEC6B;
+}
+
+.eventBox_card_viewbtn:active,
+.eventBox_card_joinbtn:active { box-shadow: inset 0.2rem 0.2rem 0.2rem #555; }
+
+  .eventBox_card_viewbtn p,
+  .eventBox_card_joinbtn p {
+    width: 7.5rem;
+    font-size: 1.375rem; font-weight: 700;
+  }
+
+  .eventBox_card_viewbtn p,
+  .eventBox_card_joinbtn p { 
+    position: absolute; left: 50%;
+    transform: translateX(-50%);
+  }
+
+
+/* 버튼 영역 */
+.eventBox_nextbtn {
+  position: absolute; top: 0; right: 0;
+  width: 1.875rem; height: 23.125rem;
+
+  background-image: url("../../img/main_page/02_tablet/05_eventbox/eventbox_nextbtn.png");
+  background-image: url("../../img/main_page/02_tablet/05_eventbox/eventbox_nextbtn.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  cursor: pointer;
+}
+.eventBox_prevbtn {
+  position: absolute; top: 0; left: 0;
+  width: 1.875rem; height: 23.125rem;
+
+  background-image: url("../../img/main_page/02_tablet/05_eventbox/eventbox_prevbtn.png");
+  background-image: url("../../img/main_page/02_tablet/05_eventbox/eventbox_prevbtn.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  cursor: pointer;
+}
+
+.eventBox_nextbtn:hover {
+  background-image: url("../../img/main_page/02_tablet/05_eventbox/eventbox_nextbtn_active.png");
+  background-image: url("../../img/main_page/02_tablet/05_eventbox/eventbox_nextbtn_active.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.eventBox_prevbtn:hover {
+  background-image: url("../../img/main_page/02_tablet/05_eventbox/eventbox_prevbtn_active.png");
+  background-image: url("../../img/main_page/02_tablet/05_eventbox/eventbox_prevbtn_active.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
 
 
 /*? footBox ---------------------------- */
-#footBox {}
+#footBox {
+  position: relative;
+  width: 100%;
+  min-width: 20rem; height: 28.125rem;
+  background-color: #171717;
+  border-top: 1px solid #171717;
+}
+
+.footBox_wrap {
+  position: relative;
+  width: 85%; height: 28.125rem;
+  max-width: 93.75rem;
+  margin: auto; padding-top: 5.3125rem;
+  box-sizing: border-box;
+}
+
+.footBox_logo {
+  width: 9.6875rem; height: 5.3125rem; 
+  margin: auto; 
+  /* margin-top: 5.3125rem;  */
+  margin-bottom: 2.1875rem;
+  background-image: url("../../img/main_page/01_smartphone/06_footbox/hannuri_logo_footbox.png");
+  background-image: url("../../img/main_page/01_smartphone/06_footbox/hannuri_logo_footbox.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+
+/** info 박스 --------------------- */
+.footBox_info {
+  position: absolute; top: 13.4375rem; left: 2.1875rem;
+  width: 33.75rem; height: 8.75rem;
+}
+
+  .footBox_info_nav { height: 1.875rem; }
+  .footBox_info_nav li {
+    float: left; 
+    font-size: 0.75rem; color: #fff;
+    margin-right: 1rem;
+  }
+  .footBox_info_nav li:first-child { margin-left: 0.25rem; }
+
+  .footBox_info_detail { width: 25rem; height: 3.125rem; }
+  .footBox_info_detail address {
+    font-size: 0.75rem; color: #fff;
+    padding-left: 0.25rem; padding-right: 0.25rem;
+    margin-bottom: 0.25rem;
+  }
+  .footBox_info_detail dt,
+  .footBox_info_detail dd { 
+    float: left; 
+    font-size: 0.75rem; color: #fff;
+    padding-left: 0.25rem; padding-right: 0.25rem;
+    margin-bottom: 0.25rem;
+    text-transform: capitalize;
+  }
+
+  .footBox_info_detail dd { border-right: 0.0625rem solid #fff; }
+  .footBox_info_detail dd:first-of-type { border-right: 0 }
+
+
+/** 사이드박스 ---------------------- */
+.footBox_side {  
+  float: right; margin-right: 1.875rem;
+}
+
+/* SNS */
+.footBox_sns_wrap {
+  width: 11.25rem; height: auto; 
+  margin: auto; margin-bottom: 0.9375rem;
+}
+
+  .footBox_sns_wrap li,
+  .footBox_sns_wrap li a {
+    display: block; float: left;
+    width: 2.5rem; height: 2.5rem; margin-right: 1.875rem;
+    /* background-color: #ccc;  */
+  }
+
+  .footBox_sns_wrap li:nth-child(1) {
+    background-image: url("../../img/main_page/01_smartphone/06_footbox/facebook.png");
+    background-image: url("../../img/main_page/01_smartphone/06_footbox/facebook.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  .footBox_sns_wrap li:nth-child(2) {
+    background-image: url("../../img/main_page/01_smartphone/06_footbox/instagram.png");
+    background-image: url("../../img/main_page/01_smartphone/06_footbox/instagram.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  .footBox_sns_wrap li:last-child { 
+    background-image: url("../../img/main_page/01_smartphone/06_footbox/twitter.png");
+    background-image: url("../../img/main_page/01_smartphone/06_footbox/twitter.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    margin-right: 0; 
+  }
+
+
+/* 패밀리사이트 & bottom box */
+.footBox_family_site {
+  margin: auto; margin-bottom: 0.625rem;
+  width: 11.5625rem; height: 1.875rem;
+  border-radius: 0.1875rem;
+  background-color: #fff;
+}
+  .footBox_family_site p {
+    font-size: 0.75rem; padding-top: 0.5625rem;
+    margin-left: 0.625rem;
+    text-transform: capitalize;
+  }
+.footBox_bottom_smallbox {
+  margin: auto; 
+  width: 11.5625rem; height: 2.8125rem;
+  border-radius: 0.1875rem;
+  background-color: #fff;
+  margin-bottom: 3.75rem;
+}
+
+
+/* rights */
+.footBox_rights { 
+  position: absolute; top: 20.9375rem; left: 2.4375rem;
+  width: 12.6875rem; height: 0.75rem;  }
+.footBox_rights p {
+  font-size: 0.75rem; color: #fff;
+}
 
 
 } /* @media screen and (min-width: 1440px) */
