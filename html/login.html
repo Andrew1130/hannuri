@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<!-- login.html -->
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" >
+
+    <link rel="stylesheet" href="../css/common/reset.css">
+    <link rel="stylesheet" href="../css/common/common.css">
+    <link rel="stylesheet" href="../css/src/login.css">
+    <script src="../ie/modernizr-custom.js"></script>
+
+    <title>login</title>
+</head>
+<body>
+  <div id="wrap">
+    <header id="headBox">
+      <div class="headBox_wrap">
+        <h2 class="blind">로고 및 네비게이션</h2>
+        <div class="headbox_logo"><a href="./main.html"></a></div>
+        <div class="headbox_navbtn"></div>
+
+        <nav class="navBox">
+          <div class="navBox_logo"></div>
+          <div class="navBox_navbtn"></div>
+          <div class="nav_contents">
+            <ul class="clearfix">
+              <li><a href="#">로그인</a></li>
+              <li><a href="#">회원가입</a></li>
+              <li><a href="#">한누리소개</a></li>
+              <li><a href="#">도서목록</a></li>
+              <li><a href="#">이벤트</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div id="loginBox">
+      <div class="loginBox_wrap">
+      <div class="loginBox_logo"></div>
+        <div class="loginBox_login_area">
+          <h2 class="loginBox_title">login</h2>
+          <form action="#" method="POST"> 
+
+            <fieldset class="loginBox_input">
+              <legend>사용자 계정 입력</legend>
+
+              <div class="user_input">
+                <label for="user_email">
+                  <span class="blind">계정 이메일주소를 입력하세요.</span>
+                </label>
+                <input type="text" id="user_email" name="user_email" value="" placeholder="이메일을 입력하세요." required />
+              </div>
+
+              <div class="user_input">
+                <label for="user_password">
+                  <span class="blind">비밀번호를 입력하세요.</span>
+                </label>
+                <input type="password" id="user_password" name="user_password" value="" placeholder="비밀번호를 입력하세요." required />
+              </div>
+
+            </fieldset>
+
+            <fieldset>
+              <legend>로그인</legend>
+                <div class="user_login">
+                  <input type="submit" value="로그인">
+                </div>
+            </fieldset>
+
+          </form>
+
+          <div class="loginBox_btn_etc">
+            <div class="loginBox_searchId"><a href="#">계정 찾기</a></div>
+            <div class="loginBox_join"><a href="#">회원가입</a></div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <footer id="footBox">
+
+      <div class="footBox_wrap">
+        <h2 class="blind">회사정보, SNS, 사이트맵</h2>
+        <div class="footBox_logo"></div>
+
+        <div class="footBox_info">
+          <div class="footBox_info_nav">
+            <ul class="clearfix">
+              <li><a href="#">이용약관</a></li>
+              <li><a href="#">개인정보처리방침</a></li>
+              <li><a href="#">운영정책</a></li>
+              <li><a href="#">권리침해신고안내</a></li>
+              <li><a href="#">공지사항</a></li>
+              <li>contact us</li>
+            </ul>
+          </div>
+          <div class="footBox_info_detail">
+            <dl class="clearfix">
+              <address>서울특별시 관악구 성현동 000 00빌딩 (서울특별시 관악구 성현동 000-00)</address>
+              <dt>tel</dt>
+              <dd>02-0000-0000</dd>
+              <dt>fax</dt>
+              <dd>02-0000-0001</dd>
+              <dt>사업자등록번호</dt>
+              <dd>100-00-00000</dd>
+              <dt>통신판매업 신고</dt>
+              <dd>관악 제 000000호</dd>
+              <dt>대표이사</dt>
+              <dd>000</dd>
+            </dl>
+          </div>
+        </div>
+
+        <div class="footBox_side">
+          <div class="footBox_sns_wrap">
+            <ul class="clearfix">
+              <li><span class="blind">facebook</span><a href="#"></a></li>
+              <li><span class="blind">instagram</span><a href="#"></a></li>
+              <li><span class="blind">twitter</span><a href="#"></a></li>
+            </ul>
+          </div>
+
+          <div class="footBox_family_site">
+            <p>family site</p>
+          </div>
+          <div class="footBox_bottom_smallbox"></div>
+        </div>
+        
+        <div class="footBox_rights">
+          <p>&#169; Hannuri Corp. All rights reserved.</p>
+        </div>
+      </div>
+
+    </footer>
+  </div>  
+  
+  <!-- layout -->
+
+  <!-- javascript -->
+
+</body>
+</html>

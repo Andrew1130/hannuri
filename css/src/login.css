@@ -1,0 +1,292 @@
+/* login.css */
+
+
+
+#wrap {
+  width: 100%; min-width: 20rem;
+}  
+
+/*? headBox ---------------------------- */
+#headBox { 
+  position: fixed; top: 0;
+  width: 100%;
+  min-width: 64rem; height: 6.25rem; 
+  background-color: #fff;
+  box-shadow: 0 0.2rem 0.2rem #999;
+  z-index: 2000;
+}
+
+.headBox_wrap {
+  width: 85%; height: 6.25rem;
+  max-width: 93.75rem;
+  margin: auto;
+}
+
+.headbox_logo {
+  float: left;
+  width: 121px; height: 85px;
+  margin-left: 40px; margin-top: 5px;
+  background-image: url("../../img/main_page/03_laptop/01_headbox/Hannuri_logo.png");
+  background-image: url("../../img/main_page/03_laptop/01_headbox/Hannuri_logo.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+  .headbox_logo a {
+    display: block;
+    width: 121px; height: 85px;
+  }
+
+
+/* 네비게이션 영역 */
+.navBox { 
+  float: right; 
+  margin-top: 2.1875rem; margin-right: 0.75rem;
+  width: auto; height: 1.125rem; 
+}
+.nav_contents li {
+  float: left;
+  padding-top: 1rem; padding-bottom: 1rem;
+  margin-right: 1.25rem; font-size: 1.125rem; 
+}
+
+
+
+/*? loginBox ---------------------------- */
+.loginBox_wrap {
+  width: 100%; height: 75rem; padding-top: 6.25rem;
+  background-image: url("../../img/login_page/loginbox_wrap.png");
+  background-image: url("../../img/login_page/loginbox_wrap.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.loginBox_logo {
+  width: 16.5625rem; height: 6.875rem;
+  margin: auto;  margin-top: 8.125rem; 
+  background-image: url("../../img/login_page/hannuri_logo.png");
+  background-image: url("../../img/login_page/hannuri_logo.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+
+/* 로그인 영역 */
+.loginBox_login_area {
+  width: 42.5rem; height: 43.75rem; border-radius: 0.625rem;
+  margin: auto;  margin-top: 2.5rem; 
+  background-color: #fff;
+}
+
+.loginBox_title {
+  width: auto; height: 3.125rem; 
+  padding-top: 4.375rem; text-align: center;
+  font-size: 3.125rem; font-weight: 500;
+  text-transform: uppercase;
+}
+
+
+
+/* 계정 및 비밀번호 영역 */
+/** form 이하 속성들이 가진 기본값 reset */
+form, fieldset, input { margin: 0; padding: 0; border: 0; }
+legend { display: none; }
+
+
+/** css 세팅 */
+.user_input, .user_input > input {
+  width: 34.375rem; height: 5rem; margin: auto;
+  text-align: center; font-size: 1.375rem;
+  color: #c4c4c4;
+}
+
+.loginBox_input > div:first-of-type {
+  margin-top: 2.1875rem; margin-bottom: 1.875rem;
+  border-bottom: 0.0625rem solid #171717;
+}
+.loginBox_input > div:last-of-type { 
+  margin-bottom: 3.75rem; 
+  border-bottom: 0.0625rem solid #171717;
+}
+
+
+/* 로그인 및 기타 버튼 영역 */
+/** 로그인 */
+.user_login > input { background-color: rgba(254, 213, 109, 0.7); }
+.user_login, .user_login > input {
+  width: 31.25rem; height: 4.375rem; 
+  margin: auto; margin-bottom: 1.5625rem;
+  border-radius: 0.625rem;
+  text-align: center; 
+  font-size: 1.625rem; font-weight: 700;
+  cursor: pointer;
+}
+
+.user_login:hover > input { background-color: rgba(251, 236, 107, 0.7); }
+
+/** 기타 버튼 */
+.loginBox_btn_etc {
+  width: 500px; height: 70px; margin: auto;
+}
+.loginBox_searchId, .loginBox_searchId a { 
+  float: left; width: 250px; border-radius: 10px;
+}
+  .loginBox_searchId {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    height: 70px;
+  }
+  .loginBox_searchId a { 
+    background-color: #fff; height: 26px;
+    text-align: center; font-size: 26px;
+    padding-top: 22px; padding-bottom: 22px;
+   }
+
+.loginBox_join, .loginBox_join a { 
+  float: left; width: 220px; border-radius: 10px;
+}
+  .loginBox_join { margin-left: 30px; height: 70px; }
+  .loginBox_join a {
+    background-color: rgba(251, 236, 107, 0.7); height: 26px;
+    text-align: center; font-size: 26px;
+    padding-top: 22px; padding-bottom: 22px;
+  }
+
+  .loginBox_join a:hover { background-color: rgba(254, 213, 109, 0.7); }
+
+
+/*? footBox ---------------------------- */
+#footBox {
+  position: relative;
+  width: 100%;
+  min-width: 20rem; height: 28.125rem;
+  background-color: #171717;
+  border-top: 1px solid #171717;
+}
+
+.footBox_wrap {
+  position: relative;
+  width: 85%; height: 28.125rem;
+  max-width: 93.75rem;
+  margin: auto; padding-top: 5.3125rem;
+  box-sizing: border-box;
+}
+
+.footBox_logo {
+  width: 9.6875rem; height: 5.3125rem; 
+  margin: auto; 
+  /* margin-top: 5.3125rem;  */
+  margin-bottom: 2.1875rem;
+  background-image: url("../../img/main_page/01_smartphone/06_footbox/hannuri_logo_footbox.png");
+  background-image: url("../../img/main_page/01_smartphone/06_footbox/hannuri_logo_footbox.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+
+/** info 박스 --------------------- */
+.footBox_info {
+  position: absolute; top: 13.4375rem; left: 2.1875rem;
+  width: 33.75rem; height: 8.75rem;
+}
+
+  .footBox_info_nav { height: 1.875rem; }
+  .footBox_info_nav li {
+    float: left; 
+    font-size: 0.75rem; color: #fff;
+    margin-right: 1rem;
+  }
+  .footBox_info_nav li:first-child { margin-left: 0.25rem; }
+
+  .footBox_info_detail { width: 25rem; height: 3.125rem; }
+  .footBox_info_detail address {
+    font-size: 0.75rem; color: #fff;
+    padding-left: 0.25rem; padding-right: 0.25rem;
+    margin-bottom: 0.25rem;
+  }
+  .footBox_info_detail dt,
+  .footBox_info_detail dd { 
+    float: left; 
+    font-size: 0.75rem; color: #fff;
+    padding-left: 0.25rem; padding-right: 0.25rem;
+    margin-bottom: 0.25rem;
+    text-transform: capitalize;
+  }
+
+  .footBox_info_detail dd { border-right: 0.0625rem solid #fff; }
+  .footBox_info_detail dd:first-of-type { border-right: 0 }
+
+
+/** 사이드박스 ---------------------- */
+.footBox_side {  
+  float: right; margin-right: 1.875rem;
+}
+
+/* SNS */
+.footBox_sns_wrap {
+  width: 11.25rem; height: auto; 
+  margin: auto; margin-bottom: 0.9375rem;
+}
+
+  .footBox_sns_wrap li,
+  .footBox_sns_wrap li a {
+    display: block; float: left;
+    width: 2.5rem; height: 2.5rem; margin-right: 1.875rem;
+    /* background-color: #ccc;  */
+  }
+
+  .footBox_sns_wrap li:nth-child(1) {
+    background-image: url("../../img/main_page/01_smartphone/06_footbox/facebook.png");
+    background-image: url("../../img/main_page/01_smartphone/06_footbox/facebook.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  .footBox_sns_wrap li:nth-child(2) {
+    background-image: url("../../img/main_page/01_smartphone/06_footbox/instagram.png");
+    background-image: url("../../img/main_page/01_smartphone/06_footbox/instagram.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  .footBox_sns_wrap li:last-child { 
+    background-image: url("../../img/main_page/01_smartphone/06_footbox/twitter.png");
+    background-image: url("../../img/main_page/01_smartphone/06_footbox/twitter.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    margin-right: 0; 
+  }
+
+
+/* 패밀리사이트 & bottom box */
+.footBox_family_site {
+  margin: auto; margin-bottom: 0.625rem;
+  width: 11.5625rem; height: 1.875rem;
+  border-radius: 0.1875rem;
+  background-color: #fff;
+}
+  .footBox_family_site p {
+    font-size: 0.75rem; padding-top: 0.5625rem;
+    margin-left: 0.625rem;
+    text-transform: capitalize;
+  }
+.footBox_bottom_smallbox {
+  margin: auto; 
+  width: 11.5625rem; height: 2.8125rem;
+  border-radius: 0.1875rem;
+  background-color: #fff;
+  margin-bottom: 3.75rem;
+}
+
+
+/* rights */
+.footBox_rights { 
+  position: absolute; top: 20.9375rem; left: 2.4375rem;
+  width: 12.6875rem; height: 0.75rem;  }
+.footBox_rights p {
+  font-size: 0.75rem; color: #fff;
+}
