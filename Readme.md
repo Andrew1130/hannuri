@@ -90,6 +90,12 @@
 1. slideBox_data
 1. introBox_data
 
+### page
+- common
+  1. headBox.html
+  2. footBox.html
+- main
+
 ### img : 디렉토리만 기재
 - main_page
   - 01_smartphone

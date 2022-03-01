@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!-- join.html -->
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" >
+
+    <link rel="stylesheet" href="../css/common/reset.css">
+    <link rel="stylesheet" href="../css/common/common.css">
+    <link rel="stylesheet" href="../css/src/join.css">
+    <script src="../ie/modernizr-custom.js"></script>
+
+    <title>join</title>
+</head>
+<body>
+  <div id="wrap">
+    <header id="headBox"></header>
+
+    <div id="joinBox">
+      <div class="joinBox_wrap">
+      <div class="joinBox_logo"></div>
+        <div class="joinBox_join_area">
+
+          <h2 class="joinBox_title">회원가입</h2>
+          <form action="#" method="POST">
+            <fieldset class="joinBox_idpw">
+
+              <legend>계정 생성</legend>
+              <h3>e-mail & password</h3>
+
+              <div class="user_input">
+                <label for="join_email">
+                  <span class="blind">사용하실 이메일을 입력하세요.</span>
+                </label>
+                <input type="text" id="join_email" name="join_email" value="" placeholder="사용하실 이메일을 입력하세요." required />
+              </div>
+
+              <div class="user_input">
+                <label for="join_password">
+                  <span class="blind">사용하실 비밀번호를 입력하세요.</span>
+                </label>
+                <input type="password" id="join_password" name="join_password" value="" placeholder="사용하실 비밀번호를 입력하세요." required />
+              </div>
+
+              <div class="user_input">
+                <label for="join_password_check">
+                  <span class="blind">비밀번호를 다시 입력해 주세요.</span>
+                </label>
+                <input type="password" id="join_password_check" name="join_password_check" value="" placeholder="비밀번호를 다시 입력해 주세요." required />
+              </div>
+
+            </fieldset>
+              
+
+              
+            <fieldset class="joinBox_etc">
+              <legend>추가 정보</legend>
+              <h3>추가 정보</h3>
+
+              <div class="user_input">
+                <label for="join_phone">
+                  <span class="blind">휴대폰 번호를 입력해 주세요.</span>
+                </label>
+                <input type="tel" id="join_phone" name="join_phone" value="" placeholder="휴대폰 번호를 입력해 주세요." required />
+              </div>
+
+              <div class="user_input">
+                <label for="join_address">
+                  <span class="blind">주소를 입력해 주세요.</span>
+                </label>
+                <input type="text" id="join_address" name="join_address" value="" placeholder="주소를 입력해 주세요." />
+              </div>
+
+            </fieldset>
+
+
+
+            <fieldset class="joinBox_buttons">
+              <legend>회원가입 및 입력취소</legend>
+              <div class="user_reset">
+                <input type="reset" value="취소">
+              </div>
+              <div class="user_join">
+                <input type="submit" value="회원가입">
+              </div>
+            </fieldset>
+          </form>
+
+        </div>
+      </div>
+    </div>
+
+    <footer id="footBox"></footer>
+  </div>  
+  
+  <!-- layout -->
+
+  <!-- javascript -->
+  <script src="../js/common/jquery-3.6.0.min.js"></script>
+  <script src="../js/common/jquery-ui.min.js"></script>
+  <script src="../js/src/common_import.js"></script>
+
+</body>
+</html>
