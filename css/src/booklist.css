@@ -316,6 +316,27 @@
 
 
 /* 인디케이터 */
+.menu_indicator_wrap {
+  width: 270px; height: 50px;
+  margin: auto;
+}
+
+.menu_indicator_wrap li,
+.menu_indicator_wrap li > a  {
+  float: left;
+  width: 50px; height: 50px; border-radius: 100%;
+  margin-right: 60px;
+}
+
+.menu_indicator_wrap li > a { background-color: #ccc; }
+
+.menu_indicator_wrap li.on > a {
+  background-color: rgba(254, 213, 109, 1);
+
+}
+
+.menu_indicator_wrap li:last-child { margin-right: 0; }
+
 
 
 
