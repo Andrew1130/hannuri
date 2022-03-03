@@ -68,17 +68,30 @@
     background-position: 50% 50%;
   }
   
+
+  /* 슬라이드 내용 */
+  /** 보이는 영역 */
   .slideBox_wrap {
     position: relative;
     width: 58.75rem; height: 25rem;
     margin: auto;  margin-top: 100px;
+    overflow: hidden;
+  }
+
+
+  /** 움직이는 영역 및 각 항목들 */
+  .slideBox_inner { width: 500%; height: 100%; }
+  .slideBox_contents_01 { 
+    width: 20%; height: 100%; 
     background-image: url("../../img/main_page/03_laptop/02_slidebox/slidebox_wrap_01.png");
     background-image: url("../../img/main_page/03_laptop/02_slidebox/slidebox_wrap_01.svg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
+
   
+  /** 각 항목 내부 내용 */
   .slideBox_title {
     text-align: center;
     padding-top: 6.875rem;
@@ -113,7 +126,7 @@
     }
   
   
-  /* 슬라이드 좌우 버튼 */
+  /** 좌우 버튼 */
   .slideBox_nextbtn { 
     position: absolute; top: 10.3125rem; right: 0;
     width: 2.5rem; height: 5rem;
@@ -185,18 +198,12 @@
   
   
   /* 카드 영역 */
+  /** 카드 틀 영역 */
   .introBox_card_wrap {
     position: relative;
     width: 58.75rem; height: 23.125rem;
     margin: auto;
     border-radius: 0.625rem;
-    padding-top: 2.5rem;
-  
-    background-image: url("../../img/main_page/01_smartphone/03_introbox/introbox_wrap.png");
-    background-image: url("../../img/main_page/01_smartphone/03_introbox/introbox_wrap.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
   }
 
   .dividing_box {
@@ -205,6 +212,13 @@
     background-color: #fff;
   }
   
+  /** 카드 내용 (공통) */
+  .introBox_contents {
+    padding-top: 2.5rem;
+    box-sizing: border-box;
+    width: 100%; height: 100%; 
+    border-radius: 0.625rem;
+  }
   .introBox_card_title {
     position: absolute; left: 50%;
     font-size: 2rem; 
@@ -224,17 +238,51 @@
     border-radius: 0.5rem;
     cursor: pointer;
   }
+
+  .introBox_card_btn > button { width: 100%; height: 100%; }
+
   .introBox_card_btn:active { box-shadow: inset 0.2rem 0.2rem 0.2rem #555; }
   .introBox_card_btn p {
     display: block;
-    margin-top: 0.875rem; margin-left: 3.5625rem;
     font-size: 1.375rem; text-align: center;
     font-weight: 700;
   }
+
+
+  /** 카드 내용 (개별) */
+  .introBox_contents_01 {
+    background-image: url("../../img/main_page/01_smartphone/03_introbox/introbox_contents_01.png");
+    background-image: url("../../img/main_page/01_smartphone/03_introbox/introbox_contents_01.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  
+  .introBox_contents_02 {
+    display: none;
+    position: absolute; 
+    top: 0; bottom: 0; left: 0; right: 0;
+    background-image: url("../../img/main_page/01_smartphone/03_introbox/introbox_contents_02.png");
+    background-image: url("../../img/main_page/01_smartphone/03_introbox/introbox_contents_02.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  
+  .introBox_contents_03 {
+    display: none;
+    position: absolute; 
+    top: 0; bottom: 0; left: 0; right: 0;
+    background-image: url("../../img/main_page/01_smartphone/03_introbox/introbox_contents_03.png");
+    background-image: url("../../img/main_page/01_smartphone/03_introbox/introbox_contents_03.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
   
   
-  /* 카드 좌상단, 우하단 버튼 */
-  .introBox_nextbtn {
+  /** 카드 좌상단, 우하단 버튼 */
+  .introBox_nextbtn_area {
     width: 8.75rem; height: 8.75rem;
     position: absolute;
     bottom: 0; right: 0;
@@ -245,7 +293,7 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
-  .intro_arrow_next {
+  .introBox_nextbtn {
     margin-top: 5.9375rem; margin-left: 5.8125rem;
     width: 1.625rem; height: 1.625rem;
   
@@ -257,7 +305,7 @@
     cursor: pointer;
   }
   
-  .introBox_prevbtn {
+  .introBox_prevbtn_area {
     width: 8.75rem; height: 8.75rem;
     position: absolute;
     top: 0; left: 0;
@@ -268,7 +316,7 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
-  .intro_arrow_prev {
+  .introBox_prevbtn {
     margin-top: 1.4375rem; margin-left: 1.6875rem;
     width: 1.625rem; height: 1.625rem;
   
@@ -280,8 +328,8 @@
     cursor: pointer;
   }
   
-    .intro_arrow_next:hover,
-    .intro_arrow_prev:hover { width: 1.9rem; height: 1.9rem; }
+    .introBox_prevbtn:hover,
+    .introBox_nextbtn:hover { width: 1.9rem; height: 1.9rem; }
   
   
   /*? booklistBox ---------------------------- */
@@ -308,104 +356,112 @@
   }
   
   
-  /** 카드 영역 */
+
+  /* 슬라이드 영역 */
+  /** 전체 영역 */
   .booklistBox_wrap {
     position: relative;
     margin: auto; 
     width: 58.75rem; height: 25rem;
     background-color: #fff;
     border-radius: 0.625rem;
+    overflow: hidden;
   }
-  
-  /* 카드 외곽 영역 */
-  .booklistBox_card_inner_01 {
+
+  /** 보이는 영역 */
+  .card_visible_area {
+    width: 52.5rem; height: 25rem;
+    background-color: #fff; margin: auto;
+    overflow: hidden;
+  }
+
+  /** 슬라이드 전체 영역 */
+  .booklistBox_cards_total { 
+    width: 700%; height: 100%; border-radius: 0.625rem;
+  }
+
+
+  /** 카드 영역 (공통) */
+  .booklistBox_card {
     float: left;
     width: 13.125rem; height: 18.75rem;
     padding-top: 3.125rem; margin-left: 3.125rem;
   }
-  .booklistBox_card_inner_02 {
-    position: absolute; top: 1.875rem; left: 50%;
-    transform: translateX(-50%);
-    width: 15.625rem; height: 21.875rem;
-    background-color: #fff;
-    z-index: 10;
-  }
-  .booklistBox_card_inner_03 {
-    float: right;
-    width: 13.125rem; height: 18.75rem;
-    padding-top: 3.125rem; margin-right: 3.125rem ;
+  
+  .booklistBox_card_title {
+    display: block;
+    width: 11.875rem; height: 1.375rem; 
+    margin: auto; margin-bottom: 0.625rem;
+    padding-top: 0.5625rem; padding-bottom: 0.5625rem;
+    text-align: center; font-size: 1.375rem; 
+    text-transform: capitalize;
   }
   
-  /* 카드 이미지 */
-  .booklistBox_card_img_01 {
+
+  /** 카드 영역 (개별) */
+  .booklistBox_card > div {
     width: 11.875rem; height: 14.375rem; 
     margin: auto; margin-top: 0.625rem; margin-bottom: 0.625rem;
     border-radius: 0.625rem;
+  }
 
-    background-image: url("../../img/main_page/02_tablet/04_booklistbox/booklist_img_02.png");
-    background-image: url("../../img/main_page/02_tablet/04_booklistbox/booklist_img_02.svg");
-    background-size: cover;
+  .booklistBox_card_img_01 {
+    background-image: url("../../img/booklist_page/popular_book_01.png");
+    background-image: url("../../img/booklist_page/popular_book_01.svg");
     background-repeat: no-repeat;
+    background-size: cover;
     background-position: 50% 50%;
   }
 
   .booklistBox_card_img_02 {
-    width: 14.375rem; height: 16.875rem;
-    margin: auto; margin-top: 0.625rem; margin-bottom: 0.625rem;
-    border-radius: 0.625rem;
-  
-    background-image: url("../../img/main_page/02_tablet/04_booklistbox/booklist_img_01.png");
-    background-image: url("../../img/main_page/02_tablet/04_booklistbox/booklist_img_01.svg");
-    background-size: cover;
+    background-image: url("../../img/booklist_page/popular_book_02.png");
+    background-image: url("../../img/booklist_page/popular_book_02.svg");
     background-repeat: no-repeat;
+    background-size: cover;
     background-position: 50% 50%;
   }
 
   .booklistBox_card_img_03 {
-    width: 11.875rem; height: 14.375rem; 
-    margin: auto; margin-top: 0.625rem; margin-bottom: 0.625rem;
-    border-radius: 0.625rem;
-
-    background-image: url("../../img/main_page/02_tablet/04_booklistbox/booklist_img_03.png");
-    background-image: url("../../img/main_page/02_tablet/04_booklistbox/booklist_img_03.svg");
-    background-size: cover;
+    background-image: url("../../img/booklist_page/popular_book_03.png");
+    background-image: url("../../img/booklist_page/popular_book_03.svg");
     background-repeat: no-repeat;
+    background-size: cover;
     background-position: 50% 50%;
   }
-  
-  /* 카드 텍스트 */
 
-  .booklistBox_card_title_01,
-  .booklistBox_card_title_03 { 
-    width: 11.875rem; height: 1.375rem; 
-    margin: auto; margin-bottom: 0.625rem;
-    text-transform: capitalize;
+  .booklistBox_card_img_04 {
+    background-image: url("../../img/booklist_page/popular_book_04.png");
+    background-image: url("../../img/booklist_page/popular_book_04.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
   }
-  .booklistBox_card_title_01 p,
-  .booklistBox_card_title_03 p { 
-    display: block; 
-    margin: auto; 
-    padding-top: 0.5625rem; padding-bottom: 0.5625rem;
-    text-align: center;
-    font-size: 1.375rem; 
-   }
 
-  .booklistBox_card_title_02 { 
-    width: 14.375rem; height: 1.75rem; 
-    margin: auto; margin-bottom: 0.625rem;
-    text-transform: capitalize;
-    z-index: 10;
+  .booklistBox_card_img_05 {
+    background-image: url("../../img/booklist_page/popular_book_05.png");
+    background-image: url("../../img/booklist_page/popular_book_05.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
   }
-  .booklistBox_card_title_02 p { 
-    display: block; 
-    margin: auto; 
-    padding-top: 0.6875rem; padding-bottom: 0.6875rem;
-    text-align: center;
-    font-size: 1.75rem; font-weight: 700;
-    z-index: 10;
-   }
-  
-  
+
+  .booklistBox_card_img_06 {
+    background-image: url("../../img/booklist_page/popular_book_06.png");
+    background-image: url("../../img/booklist_page/popular_book_06.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+
+  .booklistBox_card_img_07 {
+    background-image: url("../../img/booklist_page/popular_book_07.png");
+    background-image: url("../../img/booklist_page/popular_book_07.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+
+
   /* 카드 좌우 버튼 */
   .booklistBox_nextbtn {
     position: absolute; top: 10.3125rem; right: 0;
@@ -472,28 +528,27 @@
   
   
   /* 카드 영역 */
-  .eventBox_card_wrap_01 {
+  /** 전체 영역 */
+  .eventBox_card_total {
     position: relative;
-    width: 940px; height: 23.125rem;
+    width: 58.75rem; height: 23.125rem;
     border-radius: 0.625rem;
     margin: auto; margin-bottom: 5rem;
-  
-    background-color: #fff;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
+  }
+
+  /** 공통 부분 */
+  .eventBox_card_total > div {
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    width: 58.75rem; height: 23.125rem;
+    border-radius: 0.625rem;
+    margin: auto;
   }
 
   .eventBox_img_area {
     float: left;
-    width: 39%; height: 23.125rem; 
+    width: 38%; min-width: 23.125rem; height: 23.125rem;
     border-radius: 0.625rem;
-    
-    background-image: url("../../img/main_page/03_laptop/05_eventbox/eventbox_img_01.png");
-    background-image: url("../../img/main_page/03_laptop/05_eventbox/eventbox_img_01.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
   }
 
   .eventBox_content_area {
@@ -502,7 +557,7 @@
     border-radius: 10px;
     background-color: #F1F1F1; 
   }
-  
+
   .eventBox_card_title {
     padding-top: 2.8125rem; 
     margin-bottom: 1.375rem; margin-left: 2rem;
@@ -522,6 +577,7 @@
     width: 36%; min-width: 12.5rem; height: 3.125rem;
     border-radius: 0.5rem;
     background-color: #FED56D;
+    font-size: 1.375rem; font-weight: 700;
   }
   
   .eventBox_card_joinbtn {
@@ -531,25 +587,44 @@
     width: 32%; min-width: 11.25rem; height: 3.125rem;
     border-radius: 8px;
     background-color: #FBEC6B;
+    font-size: 1.375rem; font-weight: 700;
   }
 
   .eventBox_card_viewbtn:active,
   .eventBox_card_joinbtn:active { box-shadow: inset 0.2rem 0.2rem 0.2rem #555; }
 
-    .eventBox_card_viewbtn p,
-    .eventBox_card_joinbtn p {
-      width: 7.5rem;
-      font-size: 1.375rem; font-weight: 700;
-    }
+
+  /** 개별 부분 */  
+  .eventBox_card_wrap_01 > .eventBox_img_area {
+    background-image: url("../../img/main_page/03_laptop/05_eventbox/eventbox_img_01.png");
+    background-image: url("../../img/main_page/03_laptop/05_eventbox/eventbox_img_01.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
   
-    .eventBox_card_viewbtn p,
-    .eventBox_card_joinbtn p { 
-      position: absolute; left: 50%;
-      transform: translateX(-50%);
-    }
+  .eventBox_card_wrap_02 > .eventBox_img_area {
+    display: none;
+    background-image: url("../../img/main_page/03_laptop/05_eventbox/eventbox_img_02.png");
+    background-image: url("../../img/main_page/03_laptop/05_eventbox/eventbox_img_02.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  .eventBox_card_wrap_02 { display: none; }
+  
+  .eventBox_card_wrap_03 > .eventBox_img_area {
+    display: none;
+    background-image: url("../../img/main_page/03_laptop/05_eventbox/eventbox_img_03.png");
+    background-image: url("../../img/main_page/03_laptop/05_eventbox/eventbox_img_03.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  .eventBox_card_wrap_03 { display: none; }
+  
 
-
-  /* 버튼 영역 */
+  /** 버튼 영역 */
   .eventBox_nextbtn {
     position: absolute; top: 0; right: 0;
     width: 1.875rem; height: 23.125rem;
@@ -560,6 +635,7 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
     cursor: pointer;
+    z-index: 10;
   }
   .eventBox_prevbtn {
     position: absolute; top: 0; left: 0;
@@ -571,6 +647,7 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
     cursor: pointer;
+    z-index: 10;
   }
 
   .eventBox_nextbtn:hover {

@@ -25,19 +25,29 @@
     <header id="headBox"></header>
 
     <section id="slideBox">
+      <h2 class="blind">슬라이드 영역</h2>
       <div class="slideBox_wrap">
-        <div class="slideBox_total_contents">
-          <h2 class="slideBox_title">박스 제목</h2>
-          <p class="slideBox_contents">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium nihil doloribus harum illum molestiae delectus distinctio inventore maxime sit.
-          </p>
-          <div class="slideBox_btn">
-            <button type="button"><p>바로가기</p></button>
-          </div>
+
+      <button type="button" class="slideBox_nextbtn">
+        <span class="blind">슬라이드박스 다음 버튼</span>
+      </button>
+      <button type="button" class="slideBox_prevbtn">
+        <span class="blind">슬라이드박스 이전 버튼</span>
+      </button>
+        <div class="slideBox_inner">
+          <div class="slideBox_contents_01">
+            <div class="slideBox_total_contents">
+              <h3 class="slideBox_title">박스 제목</h3>
+              <p class="slideBox_contents">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium nihil doloribus harum illum molestiae delectus distinctio inventore maxime sit.
+              </p>
+              <div class="slideBox_btn" tabindex="0">
+                <button type="button"><p>바로가기</p></button>
+              </div>
+            </div>  
+          </div>    
         </div>
 
-        <div class="slideBox_nextbtn"></div>
-        <div class="slideBox_prevbtn"></div>
       </div>
     </section>
 
@@ -57,22 +67,51 @@
       </p>
 
       <div class="introBox_card_wrap">
-        <div class="introBox_nextbtn">
-          <div class="intro_arrow_next"></div>
+        <div class="introBox_nextbtn_area">
+          <button class="introBox_nextbtn">
+            <span class="blind">인트로박스 다음 버튼</span>
+          </button>
         </div>
-        <div class="introBox_prevbtn">
-          <div class="intro_arrow_prev"></div>
+        <div class="introBox_prevbtn_area">
+          <button class="introBox_prevbtn">
+            <span class="blind">인트로박스 이전 버튼</span>
+          </button>
         </div>
 
-        <div class="dividing_box"></div>
-
-        <h3 class="introBox_card_title">편안한 공간</h3>
-        <p class="introBox_card_contents">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium nihil doloribus harum illum molestiae.
-        </p>
-        <div class="introBox_card_btn">
-          <button type="button"><p>자세히보기</p></button>
+        <div class="dividing_box">
+          <!-- laptop 이상의 해상도(너비 1024px 이상)에서 인트로박스에 잘라지는 효과를 주기 위해 생성 -->
         </div>
+
+        <div class="introBox_contents introBox_contents_01">
+          <h3 class="introBox_card_title">편안한 공간</h3>
+          <p class="introBox_card_contents">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium nihil doloribus harum illum molestiae.
+          </p>
+          <div class="introBox_card_btn">
+            <button type="button"><p>자세히보기</p></button>
+          </div>
+        </div>
+
+        <div class="introBox_contents introBox_contents_02">
+          <h3 class="introBox_card_title">글짓기 및 출판</h3>
+          <p class="introBox_card_contents">
+            Odit quidem magnam sit mollitia, ipsum totam illum possimus ipsa quos quaerat, sapiente maiores.
+          </p>
+          <div class="introBox_card_btn">
+            <button type="button"><p>자세히보기</p></button>
+          </div>
+        </div>
+
+        <div class="introBox_contents introBox_contents_03">
+          <h3 class="introBox_card_title">다양한 만남</h3>
+          <p class="introBox_card_contents">
+            temporibus nesciunt dolorem omnis enim corrupti! Vel aperiam facere a numquam, nemo laudantium impedit earum?
+          </p>
+          <div class="introBox_card_btn">
+            <button type="button"><p>자세히보기</p></button>
+          </div>
+        </div>
+        
       </div>
 
       
@@ -90,21 +129,48 @@
       </p>
       
       <div class="booklistBox_wrap">
-        <div class="booklistBox_nextbtn"></div>
-        <div class="booklistBox_prevbtn"></div>
+        <div>
+          <button type="button" class="booklistBox_nextbtn">
+            <span class="blind">인기도서 다음버튼</span>
+          </button>
+          <button type="button" class="booklistBox_prevbtn">
+            <span class="blind">인기도서 이전버튼</span>
+          </button>
+        </div>
 
-        <div class="booklistBox_card_inner_01">
-          <div class="booklistBox_card_img_01"></div>
-          <div class="booklistBox_card_title_01"><p>vulputate</p></div>
+        <div class="card_visible_area">
+          <div class="booklistBox_cards_total">
+            <div class="booklistBox_card booklistBox_card_inner_01">
+              <div class="booklistBox_card_img_01"></div>
+              <p class="booklistBox_card_title">Viverra</p>
+            </div>
+            <div class="booklistBox_card booklistBox_card_inner_02">
+              <div class="booklistBox_card_img_02"></div>
+              <p class="booklistBox_card_title">Volutpat</p>
+            </div>
+            <div class="booklistBox_card booklistBox_card_inner_03">
+              <div class="booklistBox_card_img_03"></div>
+              <p class="booklistBox_card_title">Imperdiet</p>
+            </div>
+            <div class="booklistBox_card booklistBox_card_inner_04">
+              <div class="booklistBox_card_img_04"></div>
+              <p class="booklistBox_card_title">Tempor</p>
+            </div>
+            <div class="booklistBox_card booklistBox_card_inner_05">
+              <div class="booklistBox_card_img_05"></div>
+              <p class="booklistBox_card_title">massa</p>
+            </div>
+            <div class="booklistBox_card booklistBox_card_inner_06">
+              <div class="booklistBox_card_img_06"></div>
+              <p class="booklistBox_card_title">fermentum</p>
+            </div>
+            <div class="booklistBox_card booklistBox_card_inner_07">
+              <div class="booklistBox_card_img_07"></div>
+              <p class="booklistBox_card_title">congue</p>
+            </div>
+          </div>
         </div>
-        <div class="booklistBox_card_inner_02">
-          <div class="booklistBox_card_img_02"></div>
-          <div class="booklistBox_card_title_02"><p>amet</p></div>
-        </div>
-        <div class="booklistBox_card_inner_03">
-          <div class="booklistBox_card_img_03"></div>
-          <div class="booklistBox_card_title_03"><p>Volutpat</p></div>
-        </div>
+
       </div>
     </section>
 
@@ -123,30 +189,64 @@
         현재 한누리에서 진행 중인 이벤트에 대해 알아보세요. 언제든 참여하세요! <br />
       </p>
 
-      
 
-      <div class="eventBox_card_wrap_01">
-        <div class="eventBox_img_area"></div>
-        <div class="eventBox_nextbtn"></div>
-        <div class="eventBox_prevbtn"></div>
+      <div class="eventBox_card_total">
+        <button class="eventBox_nextbtn"></button>
+        <button class="eventBox_prevbtn"></button>  
+        <div class="eventBox_card_wrap_01">
+          <div class="eventBox_img_area"></div>
+          <div class="eventBox_content_area">
+            <h3 class="eventBox_card_title">글쓰기 그룹원 모집</h3>
+            <p class="eventBox_card_contents">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium nihil doloribus.
+            </p>
 
-        <div class="eventBox_content_area">
-          <h3 class="eventBox_card_title">글쓰기 그룹원 모집</h3>
-          <p class="eventBox_card_contents">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium nihil doloribus.
-          </p>
+              <button type="button" class="eventBox_card_viewbtn">
+                자세히보기
+              </button>
+              <button type="button" class="eventBox_card_joinbtn">
+                참여하기
+              </button>
 
-          <div class="eventBox_card_viewbtn">
-            <button type="button"><p>자세히보기</p></button>
-          </div>
-          <div class="eventBox_card_joinbtn">
-            <button type="button"><p>참여하기</p></button>
           </div>
         </div>
-      </div>
 
-      <div class="eventBox_card_wrap_02"></div>
-      <div class="eventBox_card_wrap_03"></div>
+        <div class="eventBox_card_wrap_02">
+          <div class="eventBox_img_area"></div>
+          <div class="eventBox_content_area">
+            <h3 class="eventBox_card_title">
+              저자와의 대화
+            </h3>
+            <p class="eventBox_card_contents">
+              Sequi voluptas nobis impedit adipisci hic, quos atque odio ducimus optio eaque iste blanditiis.
+            </p>
+
+            <div class="eventBox_card_viewbtn">
+              <button type="button"><p>자세히보기</p></button>
+            </div>
+            <div class="eventBox_card_joinbtn">
+              <button type="button"><p>참여하기</p></button>
+            </div>
+          </div>  
+        </div>
+
+        <div class="eventBox_card_wrap_03">
+          <div class="eventBox_img_area"></div>
+          <div class="eventBox_content_area">
+            <h3 class="eventBox_card_title">도서 할인 판매</h3>
+            <p class="eventBox_card_contents">
+              possimus molestias perspiciatis magnam nemo excepturi qui culpa animi numquam ad at autem.
+            </p>  
+
+            <div class="eventBox_card_viewbtn">
+              <button type="button"><p>자세히보기</p></button>
+            </div>
+            <div class="eventBox_card_joinbtn">
+              <button type="button"><p>참여하기</p></button>
+            </div>
+          </div>  
+        </div>
+      </div>  
     </section>
 
     <footer id="footBox"></footer>

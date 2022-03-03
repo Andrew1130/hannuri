@@ -104,9 +104,20 @@
   padding-top: 3.125rem;
 }
 
+
+/* 슬라이드 내용 */
+/** 보이는 영역 */
 .slideBox_wrap {
   position: relative;
   width: 100%; height: 37.5rem;
+  overflow: hidden;
+}
+
+
+/** 움직이는 영역 및 각 항목들 */
+.slideBox_inner { width: 500%; height: 100%; }
+.slideBox_contents_01 { 
+  width: 20%; height: 100%; 
   background-image: url("../../img/main_page/01_smartphone/02_slidebox/slidebox_bg_phone.png");
   background-image: url("../../img/main_page/01_smartphone/02_slidebox/slidebox_bg_phone.svg");
   background-size: cover;
@@ -114,6 +125,8 @@
   background-position: 50% 50%;
 }
 
+
+/** 각 항목 내부 내용 */
 .slideBox_title {
   text-align: center;
   padding-top: 11.0625rem; 
@@ -148,8 +161,9 @@
   }
 
 
-/* 슬라이드 좌우 버튼 */
+/** 좌우 버튼 */
 .slideBox_nextbtn { 
+  display: block;
   position: absolute; top: 0; right: 0;
   width: 1.25rem; height: 37.5rem;
   background-image: url("../../img/main_page/01_smartphone/02_slidebox/slidebox_nextbtn.png");
@@ -161,6 +175,7 @@
  } 
 
 .slideBox_prevbtn { 
+  display: block;
   position: absolute; top: 0; left: 0;
   width: 1.25rem; height: 37.5rem;
   background-image: url("../../img/main_page/01_smartphone/02_slidebox/slidebox_prevbtn.png");
@@ -217,18 +232,38 @@
 
 
 /* 카드 영역 */
+/** 카드 틀 영역 */
 .introBox_card_wrap {
   position: relative;
-  width: 80%; min-width: 17.5rem; height: 23.125rem;
+  width: 80%; min-width: 17.5rem; height: 28.75rem;
   margin: auto;
   border-radius: 0.625rem;
-  padding-top: 5.625rem;
+}
 
-  background-image: url("../../img/main_page/01_smartphone/03_introbox/introbox_wrap.png");
-  background-image: url("../../img/main_page/01_smartphone/03_introbox/introbox_wrap.svg");
-  background-size: cover;
-  background-repeat: no-repepng
-  background-position: 50% 50%;
+/** 카드 내용 (공통) */
+.introBox_contents {
+  padding-top: 5.625rem;
+  box-sizing: border-box;
+  width: 100%; height: 100%; 
+  border-radius: 0.625rem;
+}
+
+.introBox_card_btn {
+  position: absolute;
+  left: 1.875rem; bottom: 2.1875rem;
+  width: 8.625rem; height: 2.5rem;
+  background-color: #FED56D;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.introBox_card_btn > button { width: 100%; height: 100%; }
+
+.introBox_card_btn:active { box-shadow: inset 0.2rem 0.2rem 0.2rem #555; }
+.introBox_card_btn p {
+  display: block;
+  font-size: 1.25rem; text-align: center;
+  font-weight: 700;
 }
 
 .introBox_card_title {
@@ -242,25 +277,45 @@
   margin-left: 2.5rem;
   font-size: 1rem;
 }
-.introBox_card_btn {
-  position: absolute;
-  left: 1.875rem; bottom: 2.1875rem;
-  width: 8.625rem; height: 2.5rem;
-  background-color: #FED56D;
-  border-radius: 0.5rem;
-  cursor: pointer;
+
+
+/** 카드 내용 (개별) */
+.introBox_contents_01 {
+  background-image: url("../../img/main_page/01_smartphone/03_introbox/introbox_contents_01.png");
+  background-image: url("../../img/main_page/01_smartphone/03_introbox/introbox_contents_01.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
-.introBox_card_btn:active { box-shadow: inset 0.2rem 0.2rem 0.2rem #555; }
-.introBox_card_btn p {
-  display: block;
-  margin-top: 0.625rem; margin-left: 1.375rem;
-  font-size: 1.25rem; text-align: center;
-  font-weight: 700;
+
+.introBox_contents_02 {
+  display: none;
+  position: absolute; 
+  top: 0; bottom: 0; left: 0; right: 0;
+  background-image: url("../../img/main_page/01_smartphone/03_introbox/introbox_contents_02.png");
+  background-image: url("../../img/main_page/01_smartphone/03_introbox/introbox_contents_02.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
+
+.introBox_contents_03 {
+  display: none;
+  position: absolute; 
+  top: 0; bottom: 0; left: 0; right: 0;
+  background-image: url("../../img/main_page/01_smartphone/03_introbox/introbox_contents_03.png");
+  background-image: url("../../img/main_page/01_smartphone/03_introbox/introbox_contents_03.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+
+
 
 
 /* 카드 좌상단, 우하단 버튼 */
-.introBox_nextbtn {
+.introBox_nextbtn_area {
   width: 6.25rem; height: 6.25rem;
   position: absolute;
   bottom: 0; right: 0;
@@ -271,7 +326,8 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
-.intro_arrow_next {
+.introBox_nextbtn {
+  display: block;
   margin-top: 4rem; margin-left: 4.1875rem;
   width: 1.125rem; height: 1.125rem;
 
@@ -283,8 +339,8 @@
   cursor: pointer;
 }
 
-.introBox_prevbtn {
-  width: 100px; height: 100px;
+.introBox_prevbtn_area {
+  width: 6.25rem; height: 6.25rem;
   position: absolute;
   top: 0; left: 0;
 
@@ -294,7 +350,9 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
-.intro_arrow_prev {
+
+.introBox_prevbtn {
+  display: block;
   margin-top: 1.0625rem; margin-left: 1.25rem;
   width: 1.125rem; height: 1.125rem;
 
@@ -306,8 +364,8 @@
   cursor: pointer;
 }
 
-  .intro_arrow_next:active,
-  .intro_arrow_prev:active { width: 1.3125rem; height: 1.3125rem; }
+  .introBox_nextbtn:active,
+  .introBox_prevbtn:active { width: 1.3125rem; height: 1.3125rem; }
 
 
 /*? booklistBox ---------------------------- */
@@ -333,49 +391,105 @@
 .booklistBox_bottom_text { display: none; }
 
 
-/* 카드 영역 */
+
+/* 슬라이드 영역 */
+/** 보이는 영역 */
 .booklistBox_wrap {
   position: relative;
   margin: auto;
   width: 17.5rem; height: 25rem;
   background-color: #fff;
   border-radius: 0.625rem;
+  overflow: hidden;
 }
 
-.booklistBox_card_inner_01,
-.booklistBox_card_inner_03 { display: none; }
-.booklistBox_card_inner_02 {
-  position: absolute; top: 3.125rem; left: 50%;
-  transform: translateX(-50%);
+
+/** 슬라이드 전체 영역 */
+.booklistBox_cards_total { 
+  width: 700%; height: 100%; border-radius: 0.625rem;
+}
+
+
+/** 카드 영역 (공통) */
+.booklistBox_card {
+  float: left;
+  margin-top: 3.125rem; margin-left: 2.5rem; margin-right: 2.5rem;
   width: 12.5rem; height: 19.375rem;
 }
 
-.booklistBox_card_img_02 {
+.booklistBox_card_title { 
+  display: block; 
+  width: 11.5rem; height: 2.75rem; margin: auto; 
+  margin: auto; padding-top: 0.5rem;
+  font-size: 1.75rem; font-weight: 700;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+
+/** 카드 영역 (개별) */
+.booklistBox_card > div {
   width: 11.5rem; height: 15rem;
   margin: auto; margin-top: 0.5625rem; margin-bottom: 0.5625rem;
   border-radius: 0.625rem;
+}
 
-  background-image: url("../../img/main_page/01_smartphone/04_booklistbox/booklist_img_01.png");
-  background-image: url("../../img/main_page/01_smartphone/04_booklistbox/booklist_img_01.svg");
-  background-size: cover;
+.booklistBox_card_img_01 {
+  background-image: url("../../img/booklist_page/popular_book_01.png");
+  background-image: url("../../img/booklist_page/popular_book_01.svg");
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.booklistBox_card_img_02 {
+  background-image: url("../../img/booklist_page/popular_book_02.png");
+  background-image: url("../../img/booklist_page/popular_book_02.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.booklistBox_card_img_03 {
+  background-image: url("../../img/booklist_page/popular_book_03.png");
+  background-image: url("../../img/booklist_page/popular_book_03.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.booklistBox_card_img_04 {
+  background-image: url("../../img/booklist_page/popular_book_04.png");
+  background-image: url("../../img/booklist_page/popular_book_04.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.booklistBox_card_img_05 {
+  background-image: url("../../img/booklist_page/popular_book_05.png");
+  background-image: url("../../img/booklist_page/popular_book_05.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.booklistBox_card_img_06 {
+  background-image: url("../../img/booklist_page/popular_book_06.png");
+  background-image: url("../../img/booklist_page/popular_book_06.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.booklistBox_card_img_07 {
+  background-image: url("../../img/booklist_page/popular_book_07.png");
+  background-image: url("../../img/booklist_page/popular_book_07.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
   background-position: 50% 50%;
 }
 
-.booklistBox_card_title_02 { 
-  width: 11.5rem; height: 2.75rem; margin: auto; 
-  text-transform: capitalize;
-}
-.booklistBox_card_title_02 p { 
-  display: block; 
-  margin: auto; margin-top: 0.5rem;
-  text-align: center;
-  font-size: 1.75rem; font-weight: 700;
- }
+
 
 
 /* 카드 좌우 버튼 */
 .booklistBox_nextbtn {
+  display: block;
   position: absolute; top: 10.3125rem; right: 0;
   width: 1.25rem; height: 4.375rem;
   border-radius: 0.3125rem;
@@ -388,6 +502,7 @@
   cursor: pointer;
 }
 .booklistBox_prevbtn {
+  display: block;
   position: absolute; top: 10.3125rem; left: 0;
   width: 1.25rem; height: 4.375rem;
   border-radius: 0.3125rem;
@@ -471,6 +586,7 @@
   width: 11.25rem; height: 2.5rem;
   border-radius: 0.5rem;
   background-color: #FED56D;
+  font-size: 1.125rem; font-weight: 700;
   cursor: pointer;
 }
 
@@ -480,20 +596,13 @@
   width: 11.25rem; height: 2.5rem;
   border-radius: 0.5rem;
   background-color: #FBEC6B;
+  font-size: 1.125rem; font-weight: 700;
   cursor: pointer;
 }
 
 .eventBox_card_viewbtn:active,
 .eventBox_card_joinbtn:active { box-shadow: inset 0.2rem 0.2rem 0.2rem #555; }
 
-  .eventBox_card_viewbtn p,
-  .eventBox_card_joinbtn p {
-    margin-top: 0.6875rem;
-    font-size: 1.125rem; font-weight: 700;
-  }
-
-  .eventBox_card_viewbtn p { margin-left: 3rem; } 
-  .eventBox_card_joinbtn p { margin-left: 3.5rem; } 
 
 
 /* 카드 영역 (접힘) */
@@ -509,6 +618,10 @@
   background-position: 50% 50%;
   cursor: pointer; 
 }
+.eventBox_card_wrap_02 > h3,
+.eventBox_card_wrap_02 > p,
+.eventBox_card_wrap_02 > div { display: none; }
+
 .eventBox_card_wrap_03 {
   width: 80%; min-width: 17.5rem; height: 3.125rem;
   border-radius: 0.625rem;
@@ -521,6 +634,9 @@
   background-position: 50% 50%;
   cursor: pointer;
 }
+.eventBox_card_wrap_03 > h3,
+.eventBox_card_wrap_03 > p,
+.eventBox_card_wrap_03 > div { display: none; }
 
 
 /*? footBox ---------------------------- */
