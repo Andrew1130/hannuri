@@ -41,11 +41,11 @@
   1. jquery-ui.min.js
 - main_page
    - desktop
-    1. slideBox.js
-    1. introBox.js
-    1. booklistBox.js
-    1. eventBox.js
-    1. footBox.js
+      1. slideBox.js
+      1. introBox.js
+      1. booklistBox.js
+      1. eventBox.js
+      1. footBox.js
   - laptop
     1. slideBox.js
     1. introBox.js
@@ -53,14 +53,12 @@
     1. eventBox.js
     1. footBox.js
   - tablet
-    1. headox.js
     1. slideBox.js
     1. introBox.js
     1. booklistBox.js
     1. eventBox.js
     1. footBox.js
   - smartphone
-    1. headox.js
     1. slideBox.js
     1. introBox.js
     1. booklistBox.js
