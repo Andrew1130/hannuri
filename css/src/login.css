@@ -3,7 +3,7 @@
 
 
 #wrap {
-  width: 100%; min-width: 20rem;
+  width: 100%; min-width: 20rem; overflow: auto;
 }  
 
 /*? headBox ---------------------------- */
@@ -55,7 +55,7 @@
 
 /*? loginBox ---------------------------- */
 .loginBox_wrap {
-  width: 100%; height: 75rem; padding-top: 6.25rem;
+  width: 90rem; height: 75rem; padding-top: 6.25rem;
   background-image: url("../../img/login_page/loginbox_wrap.png");
   background-image: url("../../img/login_page/loginbox_wrap.svg");
   background-size: cover;
@@ -156,7 +156,8 @@ legend { display: none; }
 /*? footBox ---------------------------- */
 #footBox {
   position: relative;
-  width: 100%;
+  /* width: 100%; */
+  width: 90rem;
   min-width: 20rem; height: 28.125rem;
   background-color: #171717;
   border-top: 1px solid #171717;

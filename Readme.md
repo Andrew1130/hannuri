@@ -39,8 +39,8 @@
   1. jquery_rwd_set.js (반응형 js를 위한 설정)
   1. jquery-3.6.0.min.js
   1. jquery-ui.min.js
-- src
-  - desktop
+- main_page
+   - desktop
     1. slideBox.js
     1. introBox.js
     1. booklistBox.js
@@ -66,11 +66,27 @@
     1. booklistBox.js
     1. eventBox.js
     1. footBox.js
-  1. login.js (로그인 페이지 js)
-  1. join.js (회원가입 페이지 js)
-  1. intro.js (한누리소개 페이지 js)
-  1. booklist.js (도서목록 페이지 js)
-  1. event.js (이벤트 페이지 js)
+- src
+  1. common_import.js
+  1. main_import.js
+  1. navbtn.js
+- sub_page
+  - login
+    - desktop
+        1. login.js (로그인 페이지 js)
+  - join
+    - desktop
+        1. join.js (회원가입 페이지 js)
+  - intro
+    - desktop
+        1. intro.js (한누리소개 페이지 js)
+  - booklist
+    - desktop
+        1. booklist.js (도서목록 페이지 js)
+  - event
+    - desktop
+        1. event.js (이벤트 페이지 js)
+
 
 ### json
 - intro

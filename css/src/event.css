@@ -188,7 +188,7 @@
   width: 100%; height: 100%;
   font-size: 2.75rem; font-weight: 700; text-align: center;
   color: #fff;
-  text-decoration: none;
+  text-decoration: none; 
 }
 .event_anytime li > div {
   width: 100%; height: 100%;

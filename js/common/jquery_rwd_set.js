@@ -74,7 +74,7 @@ var deviceCheckFn = function(){
   }
   // console.log(checkType)
   return $.check_Type = checkType;
-  //TODO : &.이름 = 
+  //TODO : $.이름 = 
   //* 함수 내부의 값이라 하더라도 함수 외부 혹은 다른 js 파일에서 사용할 수 있도록 해 주는 기능
   //* 간혹 여기서 쓰는 이름이 jquery와 jquery ui에서 겹칠 수가 있으므로, 이를 방지하기 위해서는 이름을 짓기 전에 위 두개 파일에서 확인해봐야 한다.
   //* underbar와 camelcase를 같이 쓰면 사실상 겹치지 않는다.
@@ -83,7 +83,7 @@ var deviceCheckFn = function(){
 }; //deviceCheckFn();
 
 var beforeDevice = deviceCheckFn()
-// console.log(beforeDevice)
+console.log(beforeDevice)
 
 
 //? 이벤트 -----------
