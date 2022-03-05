@@ -9,11 +9,11 @@
 setTimeout(function(){
 
 var headBoxWrap = $(".headBox_wrap")
-console.log(headBoxWrap)
+// console.log(headBoxWrap)
 var navBtn_head = headBoxWrap.find(".headbox_navbtn")
-console.log(navBtn_head)
+// console.log(navBtn_head)
 var navBox = headBoxWrap.find(".navBox")
-console.log(navBox)
+// console.log(navBox)
 var navBtn_navBox = navBox.find(".navBox_navbtn")
 var timed = 500;
 
@@ -28,6 +28,6 @@ navBtn_navBox.on('click', function(){
   navBox.stop().slideUp(timed);
 })
 
-}, 1000) // setTimeout()
+}, 200) // setTimeout()
 
 })(jQuery);

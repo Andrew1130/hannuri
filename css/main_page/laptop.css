@@ -77,14 +77,23 @@
     margin: auto;  margin-top: 100px;
     overflow: hidden;
   }
+  .slideBox_wrap::before{
+    content: "";
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    opacity: 0.3;
+    background-color: #fff;
+  }
 
 
   /** 움직이는 영역 및 각 항목들 */
-  .slideBox_inner { width: 500%; height: 100%; }
-  .slideBox_contents_01 { 
-    width: 20%; height: 100%; 
-    background-image: url("../../img/main_page/03_laptop/02_slidebox/slidebox_wrap_01.png");
-    background-image: url("../../img/main_page/03_laptop/02_slidebox/slidebox_wrap_01.svg");
+  .slideBox_inner { width: 400%; height: 100%; }
+  .slideBox_inner > div { 
+    float: left;
+    width: 25%; height: 100%; 
+  }
+  .cards_img { 
+    height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -93,6 +102,7 @@
   
   /** 각 항목 내부 내용 */
   .slideBox_title {
+    position: relative;
     text-align: center;
     padding-top: 6.875rem;
     margin-bottom: 1rem;
@@ -100,6 +110,7 @@
   }
   
   .slideBox_contents {
+    position: relative;
     width: 60%; min-width: 13.75rem; height: auto;
     margin: auto; margin-bottom: 2.8125rem;
     font-size: 1.125rem;

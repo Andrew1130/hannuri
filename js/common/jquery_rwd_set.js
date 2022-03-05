@@ -83,7 +83,7 @@ var deviceCheckFn = function(){
 }; //deviceCheckFn();
 
 var beforeDevice = deviceCheckFn()
-console.log(beforeDevice)
+// console.log(beforeDevice)
 
 
 //? 이벤트 -----------

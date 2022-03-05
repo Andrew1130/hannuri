@@ -43,7 +43,7 @@ headBox.load(baseUrl + common_import_Arr[0], function(){
   //* 스크립트 변수 
   var navBtnScript = '<script src="../js/src/navbtn.js" class="navBtnScript"></script>'
 
-  console.log(deviceCk)
+  // console.log(deviceCk)
   if(deviceCk === 'smartphone' || deviceCk === 'tablet'){
     body.append(navBtnScript)
   } else {
@@ -82,10 +82,10 @@ if(deviceCk === 'smartphone'){
   body.remove($('.tablet_js'));
   body.remove($('.smartphone_js'));
 
-  body.append('<script src="../js/main_page/labtop/slideBox.js" class="slideBox_labtop labtop_js"></script>')
-  body.append('<script src="../js/main_page/labtop/introBox.js" class="introBox_labtop labtop_js"></script>')
-  body.append('<script src="../js/main_page/labtop/booklistBox.js" class="booklistBox_labtop labtop_js"></script>')
-  body.append('<script src="../js/main_page/labtop/eventBox.js" class="eventBox_labtop labtop_js"></script>')
+  body.append('<script src="../js/main_page/laptop/slideBox.js" class="slideBox_labtop labtop_js"></script>')
+  body.append('<script src="../js/main_page/laptop/introBox.js" class="introBox_labtop labtop_js"></script>')
+  body.append('<script src="../js/main_page/laptop/booklistBox.js" class="booklistBox_labtop labtop_js"></script>')
+  body.append('<script src="../js/main_page/laptop/eventBox.js" class="eventBox_labtop labtop_js"></script>')
 
 
 } else if (deviceCk === 'desktop') {
@@ -99,6 +99,6 @@ if(deviceCk === 'smartphone'){
   body.append('<script src="../js/main_page/desktop/eventBox.js" class="eventBox_desktop desktop_js"></script>')
 }
 
-}, 1000); // setTimeout()
+}, 500); // setTimeout()
 
 })(jQuery);
