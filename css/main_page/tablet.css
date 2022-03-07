@@ -273,18 +273,34 @@
 
 /** 카드 내용 (공통) */
 .introBox_contents {
+  position: relative;
   padding-top: 4.375rem;
   box-sizing: border-box;
   width: 100%; height: 100%; 
   border-radius: 0.625rem;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.introBox_contents:before,
+.introBox_contents::before {
+  content: "";
+  position: absolute;
+  opacity: 0.5;
+  top: 0px; left: 0px; right: 0px; bottom: 0px;
+  background-color: #fff;
 }
 
 .introBox_card_title {
+  position: relative;
   font-size: 2rem; 
   font-weight: 500;
   margin-bottom: 0.9375rem; margin-left: 6rem;
 }
 .introBox_card_contents {
+  position: relative;
   width: 75%;
   min-width: 21.875rem; height: auto;
   margin-left: 6.25rem;
@@ -352,6 +368,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  z-index: 10;
 }
 .introBox_nextbtn {
   margin-top: 5.9375rem; margin-left: 5.8125rem;
@@ -363,6 +380,7 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
   cursor: pointer;
+  z-index: 10;
 }
 
 .introBox_prevbtn_area {
@@ -375,6 +393,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  z-index: 10;
 }
 .introBox_prevbtn {
   margin-top: 1.4375rem; margin-left: 1.6875rem;
@@ -386,6 +405,7 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
   cursor: pointer;
+  z-index: 10;
 }
 
   .introBox_nextbtn:active,

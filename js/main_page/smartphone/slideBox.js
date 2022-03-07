@@ -45,7 +45,7 @@ for(; i<slideBoxData.length ; i+=1) {
 var headBox = $("#headBox")
 var slideBoxInner = $(".slideBox_inner")
 var slideBoxCards = slideBoxInner.children('div')
-console.log(slideBoxCards)
+// console.log(slideBoxCards)
 
 var nextBtn = $(".slideBox_nextbtn")
 var prevBtn = $(".slideBox_prevbtn")

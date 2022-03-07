@@ -1,0 +1,23 @@
+[
+ {
+   "id": 1,
+   "title": "편안한 공간",
+   "contents": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium nihil doloribus harum illum molestiae.",
+   "img_png": "introbox_contents_01.png",
+   "img_svg": "introbox_contents_01.svg"
+ },
+ {
+   "id": 2,
+   "title": "글짓기 및 출판",
+   "contents": "Odit quidem magnam sit mollitia, ipsum totam illum possimus ipsa quos quaerat, sapiente maiores.",
+   "img_png": "introbox_contents_02.png",
+   "img_svg": "introbox_contents_02.svg"
+ },
+ {
+   "id": 3,
+   "title": "다양한 만남",
+   "contents": "temporibus nesciunt dolorem omnis enim corrupti! Vel aperiam facere a numquam, nemo laudantium impedit earum?",
+   "img_png": "introbox_contents_03.png",
+   "img_svg": "introbox_contents_03.svg"
+ }
+]

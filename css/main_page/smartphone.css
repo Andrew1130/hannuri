@@ -258,11 +258,27 @@
 }
 
 /** 카드 내용 (공통) */
+.introBox_card_wrap .on { display: block; }
 .introBox_contents {
+  position: relative;
+  display: none;
   padding-top: 5.625rem;
   box-sizing: border-box;
   width: 100%; height: 100%; 
   border-radius: 0.625rem;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.introBox_contents:before,
+.introBox_contents::before {
+  content: "";
+  position: absolute;
+  opacity: 0.5;
+  top: 0px; left: 0px; right: 0px; bottom: 0px;
+  background-color: #fff;
 }
 
 .introBox_card_btn {
@@ -278,17 +294,20 @@
 
 .introBox_card_btn:active { box-shadow: inset 0.2rem 0.2rem 0.2rem #555; }
 .introBox_card_btn p {
+  position: relative;
   display: block;
   font-size: 1.25rem; text-align: center;
   font-weight: 700;
 }
 
 .introBox_card_title {
+  position: relative;
   font-size: 1.75rem; 
   font-weight: 500;
   margin-bottom: 0.9375rem; margin-left: 2.5rem;
 }
 .introBox_card_contents {
+  position: relative;
   width: 75%;
   min-width: 12.5rem; height: auto;
   margin-left: 2.5rem;
@@ -342,6 +361,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  z-index: 10;
 }
 .introBox_nextbtn {
   display: block;
@@ -354,6 +374,7 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
   cursor: pointer;
+  z-index: 10;
 }
 
 .introBox_prevbtn_area {
@@ -366,6 +387,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  z-index: 10;
 }
 
 .introBox_prevbtn {
@@ -379,6 +401,7 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
   cursor: pointer;
+  z-index: 10;
 }
 
   .introBox_nextbtn:active,

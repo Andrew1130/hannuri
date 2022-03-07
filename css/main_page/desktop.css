@@ -222,6 +222,7 @@
   position: absolute; top: -0.1875rem; left: 38%;
   width: 7.5%; height: 27.6rem;
   background-color: #fff;
+  z-index: 10;
 }
 
 
@@ -231,18 +232,34 @@
   box-sizing: border-box;
   width: 100%; height: 100%; 
   border-radius: 0.625rem;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
+
+.introBox_contents:before,
+.introBox_contents::before {
+  content: "";
+  position: absolute;
+  opacity: 0.5;
+  top: 0px; left: 0px; right: 0px; bottom: 0px;
+  background-color: #fff;
+}
+
 .introBox_card_title {
   position: absolute; left: 50%;
   font-size: 2rem; 
   font-weight: 500;
 }
+
 .introBox_card_contents {
   position: absolute; left: 50%; top: 8.125rem;
   width: 45%;
   min-width: 26.875rem; height: auto;
   font-size: 1.125rem;
 }
+
 .introBox_card_btn {
   position: absolute;
   left: 50%; bottom: 2.5rem;
@@ -305,6 +322,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  z-index: 10;
 }
 .introBox_nextbtn {
   margin-top: 5.9375rem; margin-left: 5.8125rem;
@@ -316,6 +334,7 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
   cursor: pointer;
+  z-index: 10;
 }
 
 .introBox_prevbtn_area {
@@ -328,6 +347,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  z-index: 10;
 }
 .introBox_prevbtn {
   margin-top: 1.4375rem; margin-left: 1.6875rem;
@@ -339,6 +359,7 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
   cursor: pointer;
+  z-index: 10;
 }
 
   .introBox_nextbtn:hover,
