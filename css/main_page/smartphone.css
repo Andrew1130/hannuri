@@ -555,14 +555,14 @@
 
 
 /* 카드 영역 (펼쳐짐) */
-.eventBox_card_wrap_01 {
+.eventBox_card_wrap {
   position: relative;
   width: 80%; min-width: 17.5rem; height: 23.125rem;
   border-radius: 0.625rem;
   margin: auto; margin-bottom: 1.25rem;
 
-  background-image: url("../../img/main_page/01_smartphone/05_eventbox/eventbox_img_01.png");
-  background-image: url("../../img/main_page/01_smartphone/05_eventbox/eventbox_img_01.svg");
+  /* background-image: url("../../img/main_page/01_smartphone/05_eventbox/eventbox_img_01.png");
+  background-image: url("../../img/main_page/01_smartphone/05_eventbox/eventbox_img_01.svg"); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -605,37 +605,7 @@
 
 
 /* 카드 영역 (접힘) */
-.eventBox_card_wrap_02 {
-  width: 80%; min-width: 17.5rem; height: 3.125rem;
-  border-radius: 0.625rem;
-  margin: auto; margin-bottom: 1.25rem;
 
-  background-image: url("../../img/main_page/01_smartphone/05_eventbox/eventbox_img_02.png");
-  background-image: url("../../img/main_page/01_smartphone/05_eventbox/eventbox_img_02.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  cursor: pointer; 
-}
-.eventBox_card_wrap_02 > h3,
-.eventBox_card_wrap_02 > p,
-.eventBox_card_wrap_02 > div { display: none; }
-
-.eventBox_card_wrap_03 {
-  width: 80%; min-width: 17.5rem; height: 3.125rem;
-  border-radius: 0.625rem;
-  margin: auto;
-
-  background-image: url("../../img/main_page/01_smartphone/05_eventbox/eventbox_img_03.png");
-  background-image: url("../../img/main_page/01_smartphone/05_eventbox/eventbox_img_03.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  cursor: pointer;
-}
-.eventBox_card_wrap_03 > h3,
-.eventBox_card_wrap_03 > p,
-.eventBox_card_wrap_03 > div { display: none; }
 
 
 /*? footBox ---------------------------- */

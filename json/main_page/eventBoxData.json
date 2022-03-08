@@ -1,0 +1,23 @@
+[
+ {
+   "id": 1,
+   "title": "글쓰기 그룹원 모집",
+   "contents": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium nihil doloribus.",
+   "img_png": "eventbox_img_01.png",
+   "img_svg": "eventbox_img_01.svg"
+ },
+ {
+   "id": 2,
+   "title": "저자와의 대화",
+   "contents": "Sequi voluptas nobis impedit adipisci hic, quos atque odio ducimus optio eaque iste blanditiis.",
+   "img_png": "eventbox_img_02.png",
+   "img_svg": "eventbox_img_02.svg"
+ },
+ {
+   "id": 3,
+   "title": "도서 할인 판매",
+   "contents": "possimus molestias perspiciatis magnam nemo excepturi qui culpa animi numquam ad at autem.",
+   "img_png": "eventbox_img_03.png",
+   "img_svg": "eventbox_img_03.svg"
+ }
+]

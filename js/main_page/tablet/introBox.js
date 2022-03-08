@@ -25,12 +25,13 @@ var baseUrl = "../img/main_page/02_tablet/03_introbox/"
 
 //* 함수 -----------------------
 //TODO : svg 미 적용시에는 png가 나타나도록 해보기
-var makeIntroCardFn = function(title, contents, img_png) {
+var makeIntroCardFn = function(title, contents, img_png, img_svg) {
   var makeDiv = document.createElement('div')
   makeDiv.innerHTML = '<div class="introBox_contents"><h3 class="introBox_card_title">'+ title +'</h3><p class="introBox_card_contents">'+ contents +'</p><div class="introBox_card_btn"><button type="button"><p>자세히보기</p></button></div></div>'
 
   var SelImgcon = makeDiv.querySelector('.introBox_contents')
   SelImgcon.style.backgroundImage = 'url('+ baseUrl +''+ img_png +')'
+  SelImgcon.style.backgroundImage = 'url('+ baseUrl +''+ img_svg +')'
 
   introBoxCardWrap.appendChild(makeDiv)
 }
@@ -39,7 +40,7 @@ var makeIntroCardFn = function(title, contents, img_png) {
 //* 반복문으로 여러번 만들기 ---------------
 var i = 0;
 for(; i<introBoxData.length ; i+=1) {
-  makeIntroCardFn(introBoxData[i].title, introBoxData[i].contents, introBoxData[i].img_png)
+  makeIntroCardFn(introBoxData[i].title, introBoxData[i].contents, introBoxData[i].img_png, introBoxData[i].img_svg)
 }
 
 
