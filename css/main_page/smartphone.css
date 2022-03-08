@@ -178,10 +178,10 @@
 .slideBox_nextbtn { 
   display: block;
   position: absolute; top: 0; right: 0;
-  width: 1.25rem; height: 37.5rem;
+  width: 1.5rem; height: 37.5rem;
   background-image: url("../../img/main_page/01_smartphone/02_slidebox/slidebox_nextbtn.png");
   background-image: url("../../img/main_page/01_smartphone/02_slidebox/slidebox_nextbtn.svg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   cursor: pointer;
@@ -191,10 +191,10 @@
 .slideBox_prevbtn { 
   display: block;
   position: absolute; top: 0; left: 0;
-  width: 1.25rem; height: 37.5rem;
+  width: 1.5rem; height: 37.5rem;
   background-image: url("../../img/main_page/01_smartphone/02_slidebox/slidebox_prevbtn.png");
   background-image: url("../../img/main_page/01_smartphone/02_slidebox/slidebox_prevbtn.svg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   cursor: pointer;
@@ -204,7 +204,7 @@
 .slideBox_nextbtn:active {
   background-image: url("../../img/main_page/01_smartphone/02_slidebox/slidebox_nextbtn_act.png");
   background-image: url("../../img/main_page/01_smartphone/02_slidebox/slidebox_nextbtn_act.svg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   box-shadow: inset 0.2rem 0.3rem 0.2rem #777;
@@ -214,7 +214,7 @@
 .slideBox_prevbtn:active {
   background-image: url("../../img/main_page/01_smartphone/02_slidebox/slidebox_prevbtn_act.png");
   background-image: url("../../img/main_page/01_smartphone/02_slidebox/slidebox_prevbtn_act.svg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   box-shadow: inset 0.2rem 0.3rem 0.2rem #777;
