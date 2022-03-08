@@ -156,6 +156,19 @@
   background-position: 50% 50%;
 }
 
+/** 스와이프 기능 안내 */
+.swipe_guide_area {
+  display: none;
+  position: absolute;
+  bottom: 130px; left: 50%;
+  transform: translateX(-50%);
+  width: 200px; height: 50px;
+  /* background-color: #fff;  */
+}
+.swipe_guide_area p {
+  text-align: center;
+  font-size: 1.25rem;
+}
 
 /** 각 항목 내부 내용 */
 .slideBox_title {

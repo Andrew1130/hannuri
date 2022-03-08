@@ -99,6 +99,7 @@
   background-color: #fff;
 }
 
+.swipe_guide_area { display: none; }
 
 /** 각 항목 내부 내용 */
 .slideBox_title {
