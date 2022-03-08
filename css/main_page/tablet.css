@@ -326,16 +326,15 @@
   background-color: #FED56D;
   border-radius: 0.5rem;
   cursor: pointer;
+  font-size: 1.375rem; text-align: center;
+  font-weight: 700;
+  z-index: 10;
 }
 
 .introBox_card_btn > button { width: 100%; height: 100%; }
 
 .introBox_card_btn:active { box-shadow: inset 0.2rem 0.2rem 0.2rem #555; }
-.introBox_card_btn p {
-  display: block;
-  font-size: 1.375rem; text-align: center;
-  font-weight: 700;
-}
+
 
 
 /** 카드 내용 (개별) */

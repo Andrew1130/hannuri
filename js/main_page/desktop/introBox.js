@@ -27,7 +27,7 @@ var baseUrl = "../img/main_page/03_laptop/03_introbox/"
 //TODO : svg 미 적용시에는 png가 나타나도록 해보기
 var makeIntroCardFn = function(title, contents, img_png, img_svg) {
   var makeDiv = document.createElement('div')
-  makeDiv.innerHTML = '<div class="introBox_contents"><h3 class="introBox_card_title">'+ title +'</h3><p class="introBox_card_contents">'+ contents +'</p><div class="introBox_card_btn"><button type="button"><p>자세히보기</p></button></div></div>'
+  makeDiv.innerHTML = '<div class="introBox_contents"><h3 class="introBox_card_title">'+ title +'</h3><p class="introBox_card_contents">'+ contents +'</p><button type="button" class="introBox_card_btn">자세히보기</button></div>'
 
   var SelImgcon = makeDiv.querySelector('.introBox_contents')
   SelImgcon.style.backgroundImage = 'url('+ baseUrl +''+ img_png +')'
