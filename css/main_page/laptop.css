@@ -409,13 +409,29 @@
   .booklistBox_cards_total { 
     width: 700%; height: 100%; border-radius: 0.625rem;
   }
+  .booklistBox_cards_total > div {
+    float: left;
+    width: 17.5rem; height: 25rem;
+  }
 
 
   /** 카드 영역 (공통) */
   .booklistBox_card {
     float: left;
-    width: 13.125rem; height: 18.75rem;
-    padding-top: 3.125rem; margin-left: 3.125rem;
+    width: 14.375rem; height: 18.75rem;
+    padding-top: 3.125rem; 
+    margin-left: 1.5625rem; margin-right: 1.5625rem;
+
+    width: 220px;    
+  }
+
+  .booklistBox_card_img {
+    width: 11.875rem; height: 14.375rem; 
+    margin: auto; margin-top: 0.625rem; margin-bottom: 0.625rem;
+    border-radius: 0.625rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
   }
   
   .booklistBox_card_title {
@@ -427,70 +443,6 @@
     text-transform: capitalize;
   }
   
-
-  /** 카드 영역 (개별) */
-  .booklistBox_card > div {
-    width: 11.875rem; height: 14.375rem; 
-    margin: auto; margin-top: 0.625rem; margin-bottom: 0.625rem;
-    border-radius: 0.625rem;
-  }
-
-  .booklistBox_card_img_01 {
-    background-image: url("../../img/booklist_page/popular_book_01.png");
-    background-image: url("../../img/booklist_page/popular_book_01.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-  }
-
-  .booklistBox_card_img_02 {
-    background-image: url("../../img/booklist_page/popular_book_02.png");
-    background-image: url("../../img/booklist_page/popular_book_02.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-  }
-
-  .booklistBox_card_img_03 {
-    background-image: url("../../img/booklist_page/popular_book_03.png");
-    background-image: url("../../img/booklist_page/popular_book_03.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-  }
-
-  .booklistBox_card_img_04 {
-    background-image: url("../../img/booklist_page/popular_book_04.png");
-    background-image: url("../../img/booklist_page/popular_book_04.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-  }
-
-  .booklistBox_card_img_05 {
-    background-image: url("../../img/booklist_page/popular_book_05.png");
-    background-image: url("../../img/booklist_page/popular_book_05.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-  }
-
-  .booklistBox_card_img_06 {
-    background-image: url("../../img/booklist_page/popular_book_06.png");
-    background-image: url("../../img/booklist_page/popular_book_06.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-  }
-
-  .booklistBox_card_img_07 {
-    background-image: url("../../img/booklist_page/popular_book_07.png");
-    background-image: url("../../img/booklist_page/popular_book_07.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-  }
-
 
   /* 카드 좌우 버튼 */
   .booklistBox_nextbtn {

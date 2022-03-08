@@ -1,0 +1,44 @@
+[
+ {
+   "id": 1,
+   "title": "Viverra",
+   "img_png": "popular_book_01.png",
+   "img_svg": "popular_book_01.svg"
+ },
+ {
+   "id": 2,
+   "title": "Volutpat",
+   "img_png": "popular_book_02.png",
+   "img_svg": "popular_book_02.svg"
+ },
+ {
+   "id": 3,
+   "title": "Imperdiet",
+   "img_png": "popular_book_03.png",
+   "img_svg": "popular_book_03.svg"
+ },
+ {
+   "id": 4,
+   "title": "Tempor",
+   "img_png": "popular_book_04.png",
+   "img_svg": "popular_book_04.svg"
+ },
+ {
+   "id": 5,
+   "title": "massa",
+   "img_png": "popular_book_05.png",
+   "img_svg": "popular_book_05.svg"
+ },
+ {
+   "id": 6,
+   "title": "fermentum",
+   "img_png": "popular_book_06.png",
+   "img_svg": "popular_book_06.svg"
+ },
+ {
+   "id": 7,
+   "title": "congue",
+   "img_png": "popular_book_07.png",
+   "img_svg": "popular_book_07.svg"
+ }
+]
