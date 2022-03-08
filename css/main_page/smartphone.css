@@ -449,20 +449,24 @@
   width: 700%; height: 100%; border-radius: 0.625rem;
 }
 .booklistBox_cards_total > div {
+  position: relative;
   float: left;
-  width: 15rem; height: 25rem;
+  width: 14.285714%; height: 25rem;
 }
 .card_visible_area {
   min-width: 15rem; width: auto;
-  margin-left: 1.25rem; margin-right: 2.5rem;
+  margin-left: 1.25rem; margin-right: 1.25rem;
   overflow: hidden;
 }
 
 
 /** 카드 영역 (공통) */
 .booklistBox_card {
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
   float: left;
-  margin-top: 3.125rem; margin-left: 20px; margin-right: 20px;
+  margin: auto; margin-top: 3.125rem; 
+  /* margin-left: 20px; margin-right: 20px; */
   width: 200px; height: 19.375rem;
 }
 

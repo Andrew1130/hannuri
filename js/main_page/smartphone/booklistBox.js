@@ -59,7 +59,7 @@ var nextBtnFn = function(){
   permission = false;
 
   BookList_cardsTotal.stop().animate({
-    marginLeft :-15 + 'rem'
+    marginLeft :-100 + '%'
   }, function(){
     BookList_cards.eq(0).appendTo(BookList_cardsTotal);
     BookList_cardsTotal.css ({ marginLeft: 0 })
@@ -74,7 +74,7 @@ var prevBtnFn = function(){
   permission = false;
 
   BookList_cards.eq(-1).prependTo(BookList_cardsTotal);
-  BookList_cardsTotal.css({ marginLeft: -15 + 'rem' })
+  BookList_cardsTotal.css({ marginLeft: -100 + '%' })
   BookList_cardsTotal.stop().animate({ marginLeft: 0 },
   function(){
     BookList_cards = BookList_cardsTotal.children('div')
