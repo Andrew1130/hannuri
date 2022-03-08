@@ -135,6 +135,31 @@
 }
 
 
+/** 스와이프 기능 안내 */
+.swipe_guide_area {
+  display: none;
+  position: absolute;
+  bottom: 130px; left: 50%;
+  transform: translateX(-50%);
+  width: 200px; height: 50px;
+  /* background-color: #fff;  */
+}
+.swipe_guide_area p {
+  text-align: center;
+  font-size: 1.25rem;
+} 
+.pointer {
+  display: none;
+  width: 50px; height: 50px;
+  float: right;
+  background-image: url("../../img/main_page/01_smartphone/02_slidebox/hand-pointer.png");
+  background-image: url("../../img/main_page/01_smartphone/02_slidebox/hand-pointer.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  cursor: pointer;
+}
+
 
 /** 각 항목 내부 내용 */
 .slideBox_title {
