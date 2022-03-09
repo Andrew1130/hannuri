@@ -1,0 +1,35 @@
+[
+ {
+   "id": 1,
+   "title": "책과 간식이 함께하는 편안한 공간, 한누리",
+   "contents_01": "Aliquam, tempus, odio ullamcorper et. Dignissim egestas metus non turpis congue interdum sapien, ut. Lorem urna, iaculis id sit adipiscing facilisis. Sed blandit tempor at vitae molestie diam amet dui. Urna nunc, egestas urna ac enim egestas. Felis magnis scelerisque cras odio pharetra sagittis enim nam quam.",
+   "contents_02": "Nulla sit at nulla in sem enim. Ornare vulputate eu mi tortor imperdiet lectus nulla. Massa amet, gravida quam morbi elementum et. Pharetra ac facilisi gravida volutpat etiam. Enim, purus consectetur risus arcu facilisis vitae. Nisl pellentesque lectus quam dictum vel, quis. ",
+   "contents_03": "Enim pharetra leo dictum ultrices aliquam turpis pulvinar. Cursus vulputate eleifend nulla feugiat ut libero. Fermentum parturient vestibulum commodo morbi. At tincidunt diam nulla maecenas. Leo ornare dignissim mattis tempor pulvinar id. Enim, neque enim ac orci risus.",
+   "img_01_png": "id1_modal_img_01.png",
+   "img_01_svg": "id1_modal_img_01.svg",
+   "img_02_png": "id1_modal_img_02.png",
+   "img_02_svg": "id1_modal_img_02.svg"
+ },
+ {
+   "id": 2,
+   "title": "모임에서 함께 글을 쓰고 책으로 만들어 보세요.",
+   "contents_01": "Morbi adipiscing sagittis, etiam integer imperdiet lorem ultrices. Pellentesque amet sed egestas nulla sit purus in tristique tellus. Quam blandit erat aenean dapibus turpis ut. Non magna eu non ultrices nunc, scelerisque nascetur curabitur dui.",
+   "contents_02": "Id in sed odio id quis morbi lorem dictum. Ullamcorper velit ultrices donec cras. Pellentesque et ac phasellus aenean. Iaculis dignissim eget sapien leo nibh massa accumsan.",
+   "contents_03": "Aliquet luctus bibendum nibh risus odio phasellus posuere. Diam egestas mauris auctor semper ultricies elementum. Ante nunc, proin tellus nulla sed nam pharetra, est. Pharetra, risus gravida pretium faucibus venenatis cras in aenean.",
+   "img_01_png": "id2_modal_img_01.png",
+   "img_01_svg": "id2_modal_img_01.svg",
+   "img_02_png": "id2_modal_img_02.png",
+   "img_02_svg": "id2_modal_img_02.svg"
+ },
+ {
+   "id": 3,
+   "title": "글과 책을 주제로 하는 다양한 모임에 참여하세요.",
+   "contents_01": "Fringilla eu, massa arcu consectetur amet, faucibus bibendum. Sapien, a quisque purus tortor. Mattis eget dictumst vestibulum nunc, in. Nibh lorem morbi amet, etiam lacus mauris blandit viverra interdum.",
+   "contents_02": "Morbi enim augue eleifend amet pulvinar convallis. Molestie aliquam, turpis sapien maecenas accumsan enim a pellentesque gravida. A ullamcorper id ut ultricies varius consectetur bibendum congue. Faucibus duis mattis ut elit odio ultricies est.",
+   "contents_03": "Habitasse sed gravida egestas adipiscing aenean. Senectus praesent nisi, rhoncus mattis eleifend egestas. Ultricies facilisi sapien, malesuada volutpat, urna cursus sollicitudin. Malesuada luctus at pharetra, tellus justo, vel porta sit facilisi.",
+   "img_01_png": "id3_modal_img_01.png",
+   "img_01_svg": "id3_modal_img_01.svg",
+   "img_02_png": "id3_modal_img_02.png",
+   "img_02_svg": "id3_modal_img_02.svg"
+ }
+]

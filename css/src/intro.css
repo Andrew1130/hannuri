@@ -2,6 +2,7 @@
 
 
 #wrap {
+  position: relative;
   width: 100%; min-width: 90rem; overflow: auto;
 }  
 
@@ -17,7 +18,6 @@
 
 .headBox_wrap {
   width: 85%; height: 6.25rem;
-  min-width: 90rem;
   max-width: 93.75rem;
   margin: auto;
 }
@@ -164,6 +164,109 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
+
+
+
+/* 모달윈도우 */
+/** 레이아웃 */
+#modalWindow {
+  position: absolute; 
+  top: 0; bottom: 0; left: 0; right: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 3000;
+}
+
+#modalWindow > div {
+  position: fixed;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1280px; height: 60%;
+  border-radius: 10px;
+  background-color: #fff;
+  overflow: auto;
+}
+
+
+/** 제목 영역 */
+.modal_closebtn_title {
+  width: 3.125rem; height: 3.125rem;
+  position: absolute;
+  top: 2.5rem; right: 3.4375rem;
+  background-image: url("../../img/intro_page/modal_closebtn_title.png");
+  background-image: url("../../img/intro_page/modal_closebtn_title.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.title_area {
+  position: relative;
+  width: 70rem; height: 11.5625rem; margin: auto;
+  border-bottom: 2px solid #171717;
+}
+.title_area > h2 { 
+  padding-top: 68px;
+  font-size: 40px; font-weight: 700; 
+  text-align: center;
+}
+
+
+/** 내용 영역 */
+.contents_area {
+  width: 65rem; height: auto; margin: auto; 
+}
+.contents_area > p:nth-of-type(1) { 
+  width: 100%; height: auto; 
+  line-height: 180%;
+  margin-top: 4.0625rem; margin-bottom: 4.0625rem;
+  font-size: 1.75rem;
+}
+.contents_area > .img_01 {
+  width: 65rem; height: 34.375rem;
+  border-radius: 0.625rem;
+  margin-bottom: 5rem;
+}
+
+.contents_area > p:nth-of-type(2) {
+  width: 100%; height: auto; 
+  line-height: 180%;
+  margin-bottom: 5rem;
+  font-size: 1.75rem;
+}
+.contents_area > .img_02 {
+  float: left;
+  width: 32.5rem; height: 32.5rem;
+  margin-right: 3.75rem;
+  border-radius: 0.625rem;
+  margin-bottom: 6.875rem;
+}
+
+.contents_area > p:nth-of-type(3) {
+  float: right;
+  padding-top: 1.875rem; padding-bottom: 1.875rem;
+  box-sizing: border-box;
+  width: 28.75rem; height: auto;
+  line-height: 180%;
+  margin-bottom: 6.875rem;
+  font-size: 1.75rem;
+}
+
+.modal_closebtn_contents {
+  display: block;
+  width: 34.375rem; height: 5.625rem; 
+  background-color: #FED56D;
+  border-radius: 0.625rem;
+  margin: auto;
+  margin-bottom: 5rem;
+
+  font-size: 2.25rem; text-align: center;
+  color: #171717; font-weight: 700;
+}
+.modal_closebtn_contents:active 
+{ box-shadow: inset 0.2rem 0.2rem 0.2rem #555; }
 
 
 
