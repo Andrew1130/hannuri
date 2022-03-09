@@ -58,12 +58,6 @@ var modalCloseContents = modalMakeDiv.find('.modal_closebtn_contents')
 
 
 
-//? 사전 기능 실행 -------------
-// 모달윈도우는 모달바를 눌렀을 경우에만 나타나야 하므로, 초기에는 일단 숨겨져 있도록 처리한다.
-modalWindow.css({ display:"none" })
-modalMakeDiv.css({ display:"none" })
-
-
 //? 이벤트 -----------
 modalBar.on('click', function(e){
   e.preventDefault()

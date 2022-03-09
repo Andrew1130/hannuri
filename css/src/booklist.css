@@ -117,7 +117,7 @@
 }
 
 .slideBox_slide_inner {
-  width: 135rem; height: 100%; background-color: #fff;
+  width: 106.75rem; height: 100%; background-color: #fff;
   border-radius: 1.875rem;
 }
 
@@ -142,60 +142,6 @@
 }
 
 
-/** 슬라이드 카드 : 이미지 */
-.card_image_01_popular {
-  background-image: url("../../img/booklist_page/popular_book_01.png");
-  background-image: url("../../img/booklist_page/popular_book_01.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-}
-.card_image_02_popular {
-  background-image: url("../../img/booklist_page/popular_book_02.png");
-  background-image: url("../../img/booklist_page/popular_book_02.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-}
-.card_image_03_popular {
-  background-image: url("../../img/booklist_page/popular_book_03.png");
-  background-image: url("../../img/booklist_page/popular_book_03.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-}
-.card_image_04_popular {
-  background-image: url("../../img/booklist_page/popular_book_04.png");
-  background-image: url("../../img/booklist_page/popular_book_04.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-}
-.card_image_05_popular {
-  background-image: url("../../img/booklist_page/popular_book_05.png");
-  background-image: url("../../img/booklist_page/popular_book_05.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-}
-.card_image_06_popular {
-  background-image: url("../../img/booklist_page/popular_book_06.png");
-  background-image: url("../../img/booklist_page/popular_book_06.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-}
-.card_image_07_popular {
-  background-image: url("../../img/booklist_page/popular_book_07.png");
-  background-image: url("../../img/booklist_page/popular_book_07.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-}
-
-
-
-
 
 /** 슬라이드 버튼 */
 .slideBox_nextBtn {
@@ -203,7 +149,7 @@
   width: 1.875rem; height: 21.25rem;
   background-image: url("../../img/booklist_page/slideBox_nextbtn.png");
   background-image: url("../../img/booklist_page/slideBox_nextbtn.svg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   cursor: pointer;
@@ -211,8 +157,8 @@
 
 .slideBox_nextBtn:hover {
   background-image: url("../../img/booklist_page/slideBox_nextbtn_hover.png");
-  background-image: url("../../img/booklist_page/slideBox_nextbtn_hover.svg")
-  background-size: contain;
+  background-image: url("../../img/booklist_page/slideBox_nextbtn_hover.svg");
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -222,7 +168,7 @@
   width: 1.875rem; height: 21.25rem;
   background-image: url("../../img/booklist_page/slideBox_prevbtn.png");
   background-image: url("../../img/booklist_page/slideBox_prevbtn.svg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   cursor: pointer;
@@ -231,7 +177,7 @@
 .slideBox_prevBtn:hover {
   background-image: url("../../img/booklist_page/slideBox_prevbtn_hover.png");
   background-image: url("../../img/booklist_page/slideBox_prevbtn_hover.svg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -272,34 +218,36 @@
 /* 카드 영역 */
 /** 카드 영역 레이아웃 */
 .menu_cards_wrap {
-  width: 64rem; height: auto;
-  margin: auto; 
+  width: 64rem; height: 1085px;
+  /* box-sizing: border-box; */
+  margin: auto; margin-top: 110px; margin-bottom: 70px;
+  overflow: hidden;
 }
 
-.menu_cards { 
-  width: 64rem; height: 20.625rem;
-  margin-bottom: 2.8125rem;
+.menu_cards_wrap > ul {
+  /* margin-top: 110px;  */
+  /* margin-bottom: 30px; */
+  /* transform: translateY(-1085px); */
 }
-.menu_cards_01 { margin-top: 6.875rem; }
-.menu_cards_03 { margin-bottom: 4.375rem; }
 
 
 /** 개별 카드 */
 .menu_cards_wrap li {
   float: left;
-  width: 14.6875rem; height: 20.625rem; margin-right: 1.75rem;
+  width: 14.6875rem; height: 20.625rem; 
+  margin-right: 1.75rem; margin-bottom: 45px;
   border-radius: 0.625rem;
   box-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
 }
 
-.menu_cards_wrap .last_li { margin-right: 0; }
+.menu_cards_wrap li:nth-child(4n) { margin-right: 0; }
 
 .menu_cards_wrap .card_image {
   margin-top: 15px; margin-bottom: 10px;
   margin-left: 15px; margin-right: 15px;
   width: 205px; height: 220px; 
-  background-image: url("../../img/booklist_page/sample_book_image.png");
-  background-image: url("../../img/booklist_page/sample_book_image.svg");
+  background-image: url("../../img/booklist_page/sample_book_image_new.png");
+  background-image: url("../../img/booklist_page/sample_book_image_new.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
