@@ -218,7 +218,7 @@
 /* 카드 영역 */
 /** 카드 영역 레이아웃 */
 .menu_cards_wrap {
-  width: 64rem; height: 1085px;
+  width: 64.375rem; height: 67.8125rem;
   /* box-sizing: border-box; */
   margin: auto; margin-top: 110px; margin-bottom: 70px;
   overflow: hidden;
