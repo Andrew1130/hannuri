@@ -265,8 +265,13 @@
 
 /* 인디케이터 */
 .menu_indicator_wrap {
-  width: 270px; height: 50px;
+  width: 380px; height: 50px;
   margin: auto;
+}
+
+.menu_indicator_wrap > ul {
+  display: block;
+  width: auto; margin: auto;
 }
 
 .menu_indicator_wrap li,
@@ -274,6 +279,7 @@
   float: left;
   width: 50px; height: 50px; border-radius: 100%;
   margin-right: 60px;
+  text-align: center;
 }
 
 .menu_indicator_wrap li > a { background-color: #ccc; }
@@ -283,7 +289,9 @@
 
 }
 
-.menu_indicator_wrap li:last-child { margin-right: 0; }
+.menu_indicator_wrap li:last-child, 
+.menu_indicator_wrap li:last-child > a
+{ margin-right: 0; }
 
 
 

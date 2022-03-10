@@ -34,6 +34,12 @@ var menuCardsWrap = document.querySelector(".menu_cards_wrap")
 var menuCardsWrapUl = menuCardsWrap.querySelector('ul')
 
 
+// 인디케이터
+var menuIndicatorWrap = document.querySelector(".menu_indicator_wrap")
+var IndicatorUl = menuIndicatorWrap.querySelector('ul')
+
+
+
 //* 함수 -----------------------
 // 슬라이드 (인기도서)
 var makeSlideCardsFn = function(title, img_png, img_svg){
@@ -61,6 +67,17 @@ var makeTabMenuCardsFn = function(id, category, title, author, company, price, i
 }
 
 
+// 인디케이터
+var makeIndicatorWrapFn = function(n){
+  k=0
+  for(; k<n; k+=1){
+  var makeLi = document.createElement('li')
+  makeLi.innerHTML = '<a href="#"></a>'
+  IndicatorUl.appendChild(makeLi)
+  }
+}
+
+
 
 //* 반복문으로 여러번 만들기 ------------------
 // 슬라이드 (인기도서)
@@ -78,6 +95,8 @@ for(; j<BookListData.length ; j+=1) {
   makeTabMenuCardsFn(BookListData[j].id, BookListData[j].category, BookListData[j].title, BookListData[j].author, BookListData[j].company, BookListData[j].price, BookListData[j].img_png, BookListData[j].img_svg)
   }
 }
+
+// makeIndicatorWrapFn(1);
 
 
 //! Jquery -------------------------------------
@@ -99,8 +118,20 @@ var navArea = $('.nav_area')
 var navContents = navArea.find('li')
 
 
+// 인디케이터
+var menuCardsWrapLi = menuCardsWrapUl.children('li')
+var menuIndicatorWrap = $(".menu_indicator_wrap")
+var IndicatorUl = menuIndicatorWrap.children('ul')
+var IndicatorLi = IndicatorUl.children('li')
+var IndicatorA = IndicatorLi.children('a')
+
+
+
+
 //? 함수 ---------------
+// -------------------------------------------
 // 슬라이드 (인기도서)
+// -------------------------------------------
 var nextBtnFn = function(){
   permission = false;
 
@@ -129,9 +160,12 @@ var prevBtnFn = function(){
 }
 
 
+// -------------------------------------------
 // 탭메뉴 (도서목록)
+// -------------------------------------------
 var makeNewbookMenuFn = function(){
   menuCardsWrapUl.empty()
+  menuCardsWrapUl.css({ transform: "translateY(0px)" })
 
   var j = 0;
   for(; j<BookListData.length ; j+=1) {
@@ -139,10 +173,18 @@ var makeNewbookMenuFn = function(){
   makeTabMenuCardsFn(BookListData[j].id, BookListData[j].category, BookListData[j].title, BookListData[j].author, BookListData[j].company, BookListData[j].price, BookListData[j].img_png, BookListData[j].img_svg)
     }
   }
+
+  menuCardsWrapLi = menuCardsWrapUl.children('li')
+  // 클릭에 의해 도서목록 내 카드 li가 변했다는 것을 전달해주어야 한다.(전달해주지 않으면 위 값에는 최초로 입력된 값만 저장되어 있게 된다.)
+  // 아래의 인디케이터 함수 실행을 위해 필요
+
+  IndiMakeFn()
+  IndicatorLi.eq(0).addClass('on')
 }
 
 var makeSteadybookMenuFn = function(){
   menuCardsWrapUl.empty()
+  menuCardsWrapUl.css({ transform: "translateY(0px)" })
 
   var j = 0;
   for(; j<BookListData.length ; j+=1) {
@@ -150,10 +192,14 @@ var makeSteadybookMenuFn = function(){
   makeTabMenuCardsFn(BookListData[j].id, BookListData[j].category, BookListData[j].title, BookListData[j].author, BookListData[j].company, BookListData[j].price, BookListData[j].img_png, BookListData[j].img_svg)
     }
   }
+
+  menuCardsWrapLi = menuCardsWrapUl.children('li')
+  IndiMakeFn()
 }
 
 var makeDomesticbookMenuFn = function(){
   menuCardsWrapUl.empty()
+  menuCardsWrapUl.css({ transform: "translateY(0px)" })
   
   var j = 0;
   for(; j<BookListData.length ; j+=1) {
@@ -161,10 +207,14 @@ var makeDomesticbookMenuFn = function(){
   makeTabMenuCardsFn(BookListData[j].id, BookListData[j].category, BookListData[j].title, BookListData[j].author, BookListData[j].company, BookListData[j].price, BookListData[j].img_png, BookListData[j].img_svg)
     }
   }
+
+  menuCardsWrapLi = menuCardsWrapUl.children('li')
+  IndiMakeFn()
 }
 
 var makeOverseebookMenuFn = function(){
   menuCardsWrapUl.empty()
+  menuCardsWrapUl.css({ transform: "translateY(0px)" })
   
   var j = 0;
   for(; j<BookListData.length ; j+=1) {
@@ -172,10 +222,14 @@ var makeOverseebookMenuFn = function(){
   makeTabMenuCardsFn(BookListData[j].id, BookListData[j].category, BookListData[j].title, BookListData[j].author, BookListData[j].company, BookListData[j].price, BookListData[j].img_png, BookListData[j].img_svg)
     }
   }
+
+  menuCardsWrapLi = menuCardsWrapUl.children('li')
+  IndiMakeFn()
 }
 
 var makeMemberbookMenuFn = function(){
   menuCardsWrapUl.empty()
+  menuCardsWrapUl.css({ transform: "translateY(0px)" })
   
   var j = 0;
   for(; j<BookListData.length ; j+=1) {
@@ -183,7 +237,63 @@ var makeMemberbookMenuFn = function(){
   makeTabMenuCardsFn(BookListData[j].id, BookListData[j].category, BookListData[j].title, BookListData[j].author, BookListData[j].company, BookListData[j].price, BookListData[j].img_png, BookListData[j].img_svg)
     }
   }
+
+  menuCardsWrapLi = menuCardsWrapUl.children('li')
+  IndiMakeFn()
 }
+
+
+// -------------------------------------------
+// 인디케이터
+// -------------------------------------------
+var IndiMakeFn = function(){
+  IndicatorUl.empty()
+
+  var Lilen = menuCardsWrapLi.length
+  // 도서목록 내 카드 개수가 12개보다 많을 때, 인디케이터 만드는 함수에 [카드 개수/12] 한 값의 정수값 +1 을 대입한다. (+1을 하지 않으면, 페이지 수에 비해 인디케이터가 1개 모자란다.)
+  if(Lilen > 12){ 
+    k = Math.floor(Lilen/12) // 첫 페이지를 제외한 초과된 페이지 수
+    menuIndicatorWrap.css({ width: 50+110*k + "px" })
+    /*
+    50 : 첫번째 인디케이터가 들어갈 너비
+    110 : 추가될 인디케이터가 들어갈 너비 (왼쪽마진 60px, 인디케이터 자체 너비 50px)
+    */
+    makeIndicatorWrapFn(k+1)
+    // 첫 페이지에 대한 인디케이터도 있어야 하므로, k+1을 대입
+  }
+
+  IndicatorLi = IndicatorUl.children('li') 
+  IndicatorA = IndicatorLi.children('a')
+  // console.log(IndicatorLi) 
+  // console.log(IndicatorA) 
+  //! 여기서 만약에 IndicatorLi = IndicatorUl.children('li') 없이 그냥 console.log(IndicatorLi)만 찍으면 빈 값만 나온다. 왜냐면 그냥 썼다는 건 이 함수를 실행해서 li가 변화되었다는 것을 함수 외부의 전역변수에는 전달해주지 않은 것이므로, 전역변수는 초기 실행 당시 담긴 값(빈 값)만 가지고 있기 때문이다.
+
+
+  IndicatorLi.eq(0).addClass('on')
+  // 네비게이션 버튼을 눌러 인디케이터가 출력된 경우, 일단 첫번째 인디케이터가 동작하고 있는 것으로 보이게끔 처리
+
+  IndiOperationFn()
+  
+}
+
+
+var IndiOperationFn = function(){
+  IndicatorA.on('click', function(e){
+
+    e.preventDefault()
+    k = $(this).parent().index()
+    console.log(k)
+
+    IndicatorLi.eq(k).addClass('on')
+    IndicatorLi.eq(k).siblings().removeClass('on')
+
+    menuCardsWrapUl.css({ transform: "translateY(" + (-1125 * k) + "px)" })
+    // 'url('+ baseUrl +''+ img_svg +')'
+    // css("transform", "translateX(" + (tween.pos * 100) + "px)");
+
+  })
+}
+
 
 
 //? 이벤트 -----------
@@ -203,7 +313,7 @@ navContents.on('click', function(e){
   $(this).addClass('on')
   $(this).siblings().removeClass('on')
 
-  console.log($(this).index())
+  // console.log($(this).index())
 
   if($(this).index() === 0){
     makeNewbookMenuFn()
@@ -218,6 +328,13 @@ navContents.on('click', function(e){
   }
 
 });
+
+
+// 인디케이터
+IndicatorA.on('click', function(e){
+  e.preventDefault()
+  console.log($(this).parent().index())
+})
 
 
 })(jQuery);
