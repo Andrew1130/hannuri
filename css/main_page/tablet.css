@@ -468,7 +468,7 @@
 }
 .card_visible_area {
   min-width: 30.625rem; width: auto;
-  margin-left: 1.875rem; margin-right: 3.75rem;
+  margin-left: 1.875rem; margin-right: 1.875rem;
   overflow: hidden;
 }
 
