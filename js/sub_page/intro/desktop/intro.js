@@ -61,8 +61,6 @@ var modalCloseContents = modalMakeDiv.find('.modal_closebtn_contents')
 //? 이벤트 -----------
 modalBar.on('click', function(e){
   e.preventDefault()
-  console.log($(this).index())
-
   modalWindow.fadeIn()
   modalMakeDiv.eq($(this).index()).fadeIn()
 })

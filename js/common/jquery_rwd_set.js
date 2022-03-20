@@ -84,18 +84,18 @@ var deviceCheckFn = function(){
 
 var beforeDevice = deviceCheckFn()
 // console.log(beforeDevice)
-
+// console.log(checkType)
 
 //? 이벤트 -----------
 win.on('resize', function(){
   winW = win.width();
+  // 디바이스가 달라지는 구간에서만 새로고침이 일어날 수 있도록, afterDevice와 beforeDevice를 나누어 처리
   var afterDevice = deviceCheckFn();
   if(beforeDevice !== afterDevice) {
     beforeDevice = afterDevice;
-    console.log(afterDevice);
+    
     location.reload(); 
-    // 새로고침
-    // 외부 데이터를 불러오는 경우 쓸 수 있는 기법
+    // 이벤트로 인해 checkType의 값이 변경되었을 경우, 그 값을 함수 외부에 전달하기 위해 새로고침 메서드를 사용
   }
 });
 

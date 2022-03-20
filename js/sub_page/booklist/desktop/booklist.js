@@ -288,8 +288,6 @@ var IndiOperationFn = function(){
     IndicatorLi.eq(k).siblings().removeClass('on')
 
     menuCardsWrapUl.css({ transform: "translateY(" + (-1125 * k) + "px)" })
-    // 'url('+ baseUrl +''+ img_svg +')'
-    // css("transform", "translateX(" + (tween.pos * 100) + "px)");
 
   })
 }
@@ -312,8 +310,6 @@ navContents.on('click', function(e){
   e.preventDefault()
   $(this).addClass('on')
   $(this).siblings().removeClass('on')
-
-  // console.log($(this).index())
 
   if($(this).index() === 0){
     makeNewbookMenuFn()
