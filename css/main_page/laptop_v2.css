@@ -1,0 +1,14 @@
+/*? laptop_v2.css */
+
+
+/* @media screen and (min-width: 1024px) and (max-width: 1439px) {
+  기준 디바이스 크기 : 1024px
+} */
+
+
+@import url("laptop/headbox.css");
+@import url("laptop/slidebox.css");
+@import url("laptop/introBox.css");
+@import url("laptop/booklistBox.css");
+@import url("laptop/eventBox.css");
+@import url("laptop/footBox.css");

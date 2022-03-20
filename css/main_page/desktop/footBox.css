@@ -1,0 +1,141 @@
+/* footBox.css */
+
+
+@media screen and (min-width: 1440px) {
+  /*? 기준 디바이스 크기 : 1440px */
+
+/*? footBox ---------------------------- */
+#footBox {
+  position: relative;
+  width: 100%;
+  min-width: 20rem; height: 28.125rem;
+  background-color: #171717;
+  border-top: 1px solid #171717;
+}
+
+.footBox_wrap {
+  position: relative;
+  width: 85%; height: 28.125rem;
+  max-width: 93.75rem;
+  margin: auto; padding-top: 5.3125rem;
+  box-sizing: border-box;
+}
+
+.footBox_logo {
+  width: 9.6875rem; height: 5.3125rem; 
+  margin: auto; 
+  /* margin-top: 5.3125rem;  */
+  margin-bottom: 2.1875rem;
+  background-image: url("../../../img/main_page/01_smartphone/06_footbox/hannuri_logo_footbox.png");
+  background-image: url("../../../img/main_page/01_smartphone/06_footbox/hannuri_logo_footbox.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+
+/** info 박스 --------------------- */
+.footBox_info {
+  position: absolute; top: 13.4375rem; left: 2.1875rem;
+  width: 33.75rem; height: 8.75rem;
+}
+
+  .footBox_info_nav { height: 1.875rem; }
+  .footBox_info_nav li {
+    float: left; 
+    font-size: 0.75rem; color: #fff;
+    margin-right: 1rem;
+  }
+  .footBox_info_nav li:first-child { margin-left: 0.25rem; }
+
+  .footBox_info_detail { width: 25rem; height: 3.125rem; }
+  .footBox_info_detail address {
+    font-size: 0.75rem; color: #fff;
+    padding-left: 0.25rem; padding-right: 0.25rem;
+    margin-bottom: 0.25rem;
+  }
+  .footBox_info_detail dt,
+  .footBox_info_detail dd { 
+    float: left; 
+    font-size: 0.75rem; color: #fff;
+    padding-left: 0.25rem; padding-right: 0.25rem;
+    margin-bottom: 0.25rem;
+    text-transform: capitalize;
+  }
+
+  .footBox_info_detail dd { border-right: 0.0625rem solid #fff; }
+  .footBox_info_detail dd:first-of-type { border-right: 0 }
+
+
+/** 사이드박스 ---------------------- */
+.footBox_side {  
+  float: right; margin-right: 1.875rem;
+}
+
+/* SNS */
+.footBox_sns_wrap {
+  width: 11.25rem; height: auto; 
+  margin: auto; margin-bottom: 0.9375rem;
+}
+
+  .footBox_sns_wrap li,
+  .footBox_sns_wrap li a {
+    display: block; float: left;
+    width: 2.5rem; height: 2.5rem; margin-right: 1.875rem;
+    /* background-color: #ccc;  */
+  }
+
+  .footBox_sns_wrap li:nth-child(1) {
+    background-image: url("../../../img/main_page/01_smartphone/06_footbox/facebook.png");
+    background-image: url("../../../img/main_page/01_smartphone/06_footbox/facebook.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  .footBox_sns_wrap li:nth-child(2) {
+    background-image: url("../../../img/main_page/01_smartphone/06_footbox/instagram.png");
+    background-image: url("../../../img/main_page/01_smartphone/06_footbox/instagram.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  .footBox_sns_wrap li:last-child { 
+    background-image: url("../../../img/main_page/01_smartphone/06_footbox/twitter.png");
+    background-image: url("../../../img/main_page/01_smartphone/06_footbox/twitter.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    margin-right: 0; 
+  }
+
+
+/* 패밀리사이트 & bottom box */
+.footBox_family_site {
+  margin: auto; margin-bottom: 0.625rem;
+  width: 11.5625rem; height: 1.875rem;
+  border-radius: 0.1875rem;
+  background-color: #fff;
+}
+  .footBox_family_site p {
+    font-size: 0.75rem; padding-top: 0.5625rem;
+    margin-left: 0.625rem;
+    text-transform: capitalize;
+  }
+.footBox_bottom_smallbox {
+  margin: auto; 
+  width: 11.5625rem; height: 2.8125rem;
+  border-radius: 0.1875rem;
+  background-color: #fff;
+  margin-bottom: 3.75rem;
+}
+
+
+/* rights */
+.footBox_rights { 
+  position: absolute; top: 20.9375rem; left: 2.4375rem;
+  width: 12.6875rem; height: 0.75rem;  }
+.footBox_rights p {
+  font-size: 0.75rem; color: #fff;
+}
+  
+} /* @media screen and (min-width: 1440px) */

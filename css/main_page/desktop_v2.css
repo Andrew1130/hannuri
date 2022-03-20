@@ -1,0 +1,13 @@
+/*? desktop_v2.css */
+
+
+/* @media screen and (min-width: 1440px) {
+  기준 디바이스 크기 : 1440px
+} */
+
+@import url("desktop/headbox.css");
+@import url("desktop/slidebox.css");
+@import url("desktop/introBox.css");
+@import url("desktop/booklistBox.css");
+@import url("desktop/eventBox.css");
+@import url("desktop/footBox.css");

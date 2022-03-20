@@ -1,0 +1,56 @@
+/* headbox.css */
+
+
+@media screen and (min-width: 1440px) {
+  /*? 기준 디바이스 크기 : 1440px */
+  
+  #wrap {
+    width: 100%; min-width: 20rem;
+  }  
+  
+  /*? headBox ---------------------------- */
+  #headBox { 
+    position: fixed; top: 0;
+    width: 100%;
+    min-width: 64rem; height: 6.25rem; 
+    background-color: #fff;
+    box-shadow: 0 0.2rem 0.2rem #999;
+    z-index: 2000;
+  }
+  
+  .headBox_wrap {
+    width: 85%; height: 6.25rem;
+    max-width: 93.75rem;
+    margin: auto;
+  }
+  
+  .headbox_logo {
+    float: left;
+    width: 7.5625rem; height: 5.3125rem;
+    margin-left: 2.5rem; margin-top: 0.3125rem;
+    background-image: url("../../../img/main_page/03_laptop/01_headbox/hannuri_logo.png");
+    background-image: url("../../../img/main_page/03_laptop/01_headbox/hannuri_logo.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  
+    .headbox_logo a {
+      display: block;
+      width: 121px; height: 85px;
+    }
+  
+  
+  /* 네비게이션 영역 */
+  .navBox { 
+    float: right; 
+    margin-top: 2.1875rem; margin-right: 0.75rem;
+    width: auto; height: 1.125rem; 
+  }
+  .nav_contents li {
+    float: left;
+    padding-top: 1rem; padding-bottom: 1rem;
+    margin-right: 1.25rem; font-size: 1.125rem; 
+  }
+  
+} /* @media screen and (min-width: 1440px) */

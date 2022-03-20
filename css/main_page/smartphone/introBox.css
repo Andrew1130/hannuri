@@ -1,0 +1,196 @@
+/* introBox.css */
+
+
+@media screen and (max-width: 599px) {
+  /*? 기준 디바이스 크기 : 320px */
+
+
+/*? introBox ---------------------------- */
+#introBox {
+  width: 100%;
+  min-width: 20rem; height: 43.75rem;
+  background-color: #fff;
+}
+
+.introBox_title {
+  margin-top: 3.125rem; margin-bottom: 0.9375rem; 
+  font-size: 2.25rem; font-weight: 700;
+  text-align: center;
+}
+
+.introBox_bottom_text_phone {
+  display: block;
+  margin: auto; margin-bottom: 2.5rem;
+  width: 15rem; height: 4.6875rem;
+  font-size: 1.125rem;
+  text-align: center;
+}
+
+.introBox_bottom_text,
+.introBox_bottom_text_tablet { display: none; }
+
+
+/* 카드 영역 */
+/** 카드 틀 영역 */
+.introBox_card_wrap {
+  position: relative;
+  width: 80%; min-width: 17.5rem; height: 28.75rem;
+  margin: auto;
+  border-radius: 0.625rem;
+}
+
+/** 카드 내용 (공통) */
+.introBox_card_wrap .on { display: block; }
+.introBox_contents {
+  position: relative;
+  display: none;
+  padding-top: 5.625rem;
+  box-sizing: border-box;
+  width: 100%; height: 100%; 
+  border-radius: 0.625rem;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.introBox_contents:before,
+.introBox_contents::before {
+  content: "";
+  position: absolute;
+  opacity: 0.5;
+  top: 0px; left: 0px; right: 0px; bottom: 0px;
+  background-color: #fff;
+}
+
+.introBox_card_btn {
+  position: absolute;
+  left: 1.875rem; bottom: 2.1875rem;
+  width: 8.625rem; height: 2.5rem;
+  background-color: #FED56D;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1.25rem; text-align: center;
+  font-weight: 700;
+  z-index: 10;
+}
+
+.introBox_card_btn > button { width: 100%; height: 100%; }
+
+.introBox_card_btn:active { box-shadow: inset 0.2rem 0.2rem 0.2rem #555; }
+/* .introBox_card_btn p {
+  position: relative;
+  display: block;
+  font-size: 1.25rem; text-align: center;
+  font-weight: 700;
+} */
+
+.introBox_card_title {
+  position: relative;
+  font-size: 1.75rem; 
+  font-weight: 500;
+  margin-bottom: 0.9375rem; margin-left: 2.5rem;
+}
+.introBox_card_contents {
+  position: relative;
+  width: 75%;
+  min-width: 12.5rem; height: auto;
+  margin-left: 2.5rem;
+  font-size: 1rem;
+}
+
+
+/** 카드 내용 (개별) */
+.introBox_contents_01 {
+  background-image: url("../../../img/main_page/01_smartphone/03_introbox/introbox_contents_01.png");
+  background-image: url("../../../img/main_page/01_smartphone/03_introbox/introbox_contents_01.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.introBox_contents_02 {
+  display: none;
+  position: absolute; 
+  top: 0; bottom: 0; left: 0; right: 0;
+  background-image: url("../../../img/main_page/01_smartphone/03_introbox/introbox_contents_02.png");
+  background-image: url("../../../img/main_page/01_smartphone/03_introbox/introbox_contents_02.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.introBox_contents_03 {
+  display: none;
+  position: absolute; 
+  top: 0; bottom: 0; left: 0; right: 0;
+  background-image: url("../../../img/main_page/01_smartphone/03_introbox/introbox_contents_03.png");
+  background-image: url("../../../img/main_page/01_smartphone/03_introbox/introbox_contents_03.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+
+
+
+
+/* 카드 좌상단, 우하단 버튼 */
+.introBox_nextbtn_area {
+  width: 6.25rem; height: 6.25rem;
+  position: absolute;
+  bottom: 0; right: 0;
+
+  background-image: url("../../../img/main_page/01_smartphone/03_introbox/introbox_nextbtn_bg.png");
+  background-image: url("../../../img/main_page/01_smartphone/03_introbox/introbox_nextbtn_bg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  z-index: 10;
+}
+.introBox_nextbtn {
+  display: block;
+  margin-top: 4rem; margin-left: 4.1875rem;
+  width: 1.125rem; height: 1.125rem;
+
+  background-image: url("../../../img/main_page/01_smartphone/03_introbox/next_arrow.png");
+  background-image: url("../../../img/main_page/01_smartphone/03_introbox/next_arrow.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.introBox_prevbtn_area {
+  width: 6.25rem; height: 6.25rem;
+  position: absolute;
+  top: 0; left: 0;
+
+  background-image: url("../../../img/main_page/01_smartphone/03_introbox/introbox_prevbtn_bg.png");
+  background-image: url("../../../img/main_page/01_smartphone/03_introbox/introbox_prevbtn_bg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  z-index: 10;
+}
+
+.introBox_prevbtn {
+  display: block;
+  margin-top: 1.0625rem; margin-left: 1.25rem;
+  width: 1.125rem; height: 1.125rem;
+
+  background-image: url("../../../img/main_page/01_smartphone/03_introbox/prev_arrow.png");
+  background-image: url("../../../img/main_page/01_smartphone/03_introbox/prev_arrow.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  cursor: pointer;
+  z-index: 10;
+}
+
+  .introBox_nextbtn:active,
+  .introBox_prevbtn:active { width: 1.3125rem; height: 1.3125rem; }
+
+
+} /* @media screen and (max-width: 599px) */

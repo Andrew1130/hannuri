@@ -1,0 +1,15 @@
+/*? tablet_v2.css */
+
+
+/* @media screen and (min-width: 600px) and (max-width: 1023px) {
+  기준 디바이스 크기 : 600px
+} */
+
+@import url("tablet/headbox.css");
+@import url("tablet/slidebox.css");
+@import url("tablet/introBox.css");
+@import url("tablet/booklistBox.css");
+@import url("tablet/eventBox.css");
+@import url("tablet/footBox.css");
+
+

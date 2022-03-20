@@ -1,0 +1,139 @@
+/* slidebox.css */
+
+
+
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  /*? 기준 디바이스 크기 : 600px */
+
+  
+/*? slideBox ---------------------------- */
+#slideBox {
+  width: 100%;
+  min-width: 20rem; height: 37.5rem;
+  padding-top: 3.125rem;
+}
+
+
+/* 슬라이드 내용 */
+/** 보이는 영역 */
+.slideBox_wrap {
+  position: relative;
+  width: 100%; height: 37.5rem;
+  overflow: hidden;
+}
+.slideBox_wrap::before{
+  content: "";
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
+  opacity: 0.5;
+  background-color: #fff;
+}
+
+
+/** 움직이는 영역 및 각 항목들 */
+.slideBox_inner { width: 400%; height: 100%; }
+.slideBox_inner > div { 
+  float: left;
+  width: 25%; height: 100%; 
+}
+.cards_img { 
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+/** 스와이프 기능 안내 */
+.swipe_guide_area {
+  display: none;
+  position: absolute;
+  bottom: 130px; left: 50%;
+  transform: translateX(-50%);
+  width: 200px; height: 50px;
+  /* background-color: #fff;  */
+}
+.swipe_guide_area p {
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+/** 각 항목 내부 내용 */
+.slideBox_title {
+  position: relative;
+  text-align: center;
+  padding-top: 11.5rem; 
+  margin-bottom: 1rem;
+  font-size: 2.5rem; font-weight: 700;
+}
+
+.slideBox_contents {
+  position: relative;
+  width: 75%; min-width: 13.75rem; height: auto;
+  margin: auto; margin-bottom: 2.8125rem;
+  font-size: 1.125rem;
+  text-align: center;
+}
+
+.slideBox_btn {
+  position: relative;
+  width: 13.75rem; height: 3.125rem;
+  margin: auto;
+  border-radius: 0.5rem;
+  background-color: #FED56D;
+  cursor: pointer;
+}
+
+.slideBox_btn:active { box-shadow: inset 0.2rem 0.2rem 0.2rem #555; }
+
+  .slideBox_btn p {
+    position: absolute; left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    font-size: 1.375rem; text-align: center;
+    font-weight: 700;
+  }
+
+
+/** 좌우 버튼 */
+.slideBox_nextbtn { 
+  position: absolute; top: 16.25rem; right: 0;
+  width: 2.5rem; height: 5rem;
+  background-image: url("../../../img/main_page/02_tablet/02_slidebox/slidebox_nextbtn.png");
+  background-image: url("../../../img/main_page/02_tablet/02_slidebox/slidebox_nextbtn.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  cursor: pointer;
+  } 
+
+.slideBox_prevbtn { 
+  position: absolute; top: 16.25rem; left: 0;
+  width: 2.5rem; height: 5rem;
+  background-image: url("../../../img/main_page/02_tablet/02_slidebox/slidebox_prevbtn.png");
+  background-image: url("../../../img/main_page/02_tablet/02_slidebox/slidebox_prevbtn.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  cursor: pointer;
+  }
+
+.slideBox_nextbtn:active {
+  background-image: url("../../../img/main_page/02_tablet/02_slidebox/slidebox_nextbtn_active.png");
+  background-image: url("../../../img/main_page/02_tablet/02_slidebox/slidebox_nextbtn_active.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  box-shadow: inset 0.2rem 0.3rem 0.2rem #777;
+}
+
+.slideBox_prevbtn:active {
+  background-image: url("../../../img/main_page/02_tablet/02_slidebox/slidebox_prevbtn_active.png");
+  background-image: url("../../../img/main_page/02_tablet/02_slidebox/slidebox_prevbtn_active.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  box-shadow: inset 0.2rem 0.3rem 0.2rem #777;
+}
+
+
+} /* @media screen and (min-width: 600px) and (max-width: 1023px) */

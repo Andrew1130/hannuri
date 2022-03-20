@@ -1,0 +1,15 @@
+/*? smartphone_v2.css */
+
+/* @media screen and (max-width: 599px)
+기준 디바이스 크기 : 320px */
+
+
+@import url("smartphone/headbox.css");
+@import url("smartphone/slidebox.css");
+@import url("smartphone/introBox.css");
+@import url("smartphone/booklistBox.css");
+@import url("smartphone/eventBox.css");
+@import url("smartphone/footBox.css");
+
+
+

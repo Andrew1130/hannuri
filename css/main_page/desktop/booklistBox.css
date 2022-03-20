@@ -1,0 +1,130 @@
+/* booklistBox.css */
+
+
+@media screen and (min-width: 1440px) {
+  /*? 기준 디바이스 크기 : 1440px */
+
+/*? booklistBox ---------------------------- */
+#booklistBox {
+  width: 100%;
+  min-width: 20rem; height: 43.75rem;
+  background-color: #F5E6BE;
+}
+
+.booklistBox_title {
+  width: 58.75rem;
+  margin: auto;
+  padding-top: 6.25rem; padding-bottom: 0.625rem; 
+  font-size: 2.5rem; font-weight: 700;
+}
+
+.booklistBox_bottom_text_phone { display: none; }
+.booklistBox_bottom_text {
+  display: block;
+  margin: auto;
+  padding-bottom: 1.5625rem;
+  width: 58.75rem; height: 1.5625rem;
+  font-size: 1.125rem;
+}
+
+
+
+/* 슬라이드 영역 */
+/** 전체 영역 */
+.booklistBox_wrap {
+  position: relative;
+  margin: auto; 
+  width: 58.75rem; height: 25rem;
+  background-color: #fff;
+  border-radius: 0.625rem;
+  overflow: hidden;
+}
+
+
+/** 보이는 영역 */
+.card_visible_area {
+  width: 52.5rem; height: 25rem;
+  background-color: #fff; margin: auto;
+  overflow: hidden;
+}
+
+
+/** 슬라이드 전체 영역 */
+.booklistBox_cards_total { 
+  width: 700%; height: 100%; border-radius: 0.625rem;
+}
+.booklistBox_cards_total > div {
+  float: left;
+  width: 17.5rem; height: 25rem;
+}
+
+
+/** 카드 영역 (공통) */
+.booklistBox_card {
+  float: left;
+  width: 14.375rem; height: 18.75rem;
+  padding-top: 3.125rem; 
+  margin-left: 1.5625rem;  margin-right: 1.5625rem;
+}
+
+.booklistBox_card_img {
+  width: 11.875rem; height: 14.375rem; 
+  margin: auto; margin-top: 0.625rem; margin-bottom: 0.625rem;
+  border-radius: 0.625rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.booklistBox_card_title {
+  display: block;
+  width: 11.875rem; height: 1.375rem; 
+  margin: auto; margin-bottom: 0.625rem;
+  padding-top: 0.5625rem; padding-bottom: 0.5625rem;
+  text-align: center; font-size: 1.375rem; 
+  text-transform: capitalize;
+}
+
+
+/* 카드 좌우 버튼 */
+.booklistBox_nextbtn {
+  position: absolute; top: 10.3125rem; right: 0;
+  width: 1.875rem; height: 4.375rem;
+  border-radius: 0.3125rem;
+
+  background-image: url("../../../img/main_page/02_tablet/04_booklistbox/booklistbox_nextbtn.png");
+  background-image: url("../../../img/main_page/02_tablet/04_booklistbox/booklistbox_nextbtn.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  cursor: pointer;
+}
+.booklistBox_prevbtn {
+  position: absolute; top: 10.3125rem; left: 0;
+  width: 1.875rem; height: 4.375rem;
+  border-radius: 0.3125rem;
+
+  background-image: url("../../../img/main_page/02_tablet/04_booklistbox/booklistbox_prevbtn.png");
+  background-image: url("../../../img/main_page/02_tablet/04_booklistbox/booklistbox_prevbtn.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  cursor: pointer;
+}
+
+.booklistBox_nextbtn:hover {
+  background-image: url("../../../img/main_page/02_tablet/04_booklistbox/booklistbox_nextbtn_active.png");
+  background-image: url("../../../img/main_page/02_tablet/04_booklistbox/booklistbox_nextbtn_active.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  }
+.booklistBox_prevbtn:hover { 
+  background-image: url("../../../img/main_page/02_tablet/04_booklistbox/booklistbox_prevbtn_active.png");
+  background-image: url("../../../img/main_page/02_tablet/04_booklistbox/booklistbox_prevbtn_active.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  }
+  
+} /* @media screen and (min-width: 1440px) */
