@@ -57,8 +57,7 @@ var permission = true;
 //* 스와이프 기능 관련
 var startX, endX
 var swipeGuideArea = $(".swipe_guide_area")
-console.log(swipeGuideArea)
-var pointer = swipeGuideArea.find(".pointer")
+// console.log(swipeGuideArea)
 
 
 //? 함수 -------------
