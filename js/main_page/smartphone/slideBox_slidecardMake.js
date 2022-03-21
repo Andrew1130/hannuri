@@ -1,6 +1,5 @@
 // slideBox_slidecardMake.js
 //! slideBox.js의 슬라이드 기능을 순수 js로 변환 (코드에 대한 자세한 해설은 prev_ver/main_page/smartphone/slideBox.js 참조)
-//! 기존에는 슬라이드 카드 생성, 슬라이드 동작, 스와이프가 모두 1개의 js에 합쳐져 있었으나, 업데이트 하면서 이들을 각각 분리
 
 
 
@@ -22,6 +21,10 @@ jsonData.done(function(data){
 // 슬라이드 카드 생성 관련
 var slideBoxInner = document.querySelector('.slideBox_inner')
 var baseUrl = "../img/main_page/01_smartphone/02_slidebox/"
+var slideBox = document.querySelector("#slideBox");
+var slideBoxWrap = slideBox.querySelector(".slideBox_wrap");
+var slideBoxInner = document.querySelector(".slideBox_inner");
+var slideBoxCards = slideBoxInner.children
 
 // 스와이프 기능 관련
 var startX, endX
@@ -60,31 +63,5 @@ for(; i<slideBoxData.length ; i+=1) {
 setTimeout(function(){
   swipeGuideArea.classList.add('fadeIn');
   }, 2000); // setTimeout()
-
-
-
-//? -------------------------------------------
-//? 이벤트
-//? -------------------------------------------
-
-// 스와이프 기능
-slideBoxWrap.addEventListener('touchstart', function(e){
-  startX = parseInt(e.originalEvent.changedTouches[0].clientX)
-});
-
-slideBoxWrap.addEventListener('touchend', function(e){
-  endX = parseInt(e.originalEvent.changedTouches[0].clientX)
-  var resultX = startX - endX;
-
-  if(resultX > 100) {
-    nextBtnFn()
-  } else if ( resultX < -100 ) {
-    prevBtnFn()
-  }
-
-});
-
-*/
-
 
 }); // jsonData

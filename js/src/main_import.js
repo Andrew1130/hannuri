@@ -61,7 +61,7 @@ if(deviceCk === 'smartphone'){
   body.remove($('.tablet_js'));
 
   body.append('<script src="../js/main_page/smartphone/slideBox_slidecardMake.js" class="slideBox_smartphone smartphone_js"></script>')
-  body.append('<script src="../js/main_page/smartphone/slideBox_slide.js" class="slideBox_smartphone smartphone_js"></script>')
+  body.append('<script src="../js/main_page/smartphone/slideBox_slide_swipe.js" class="slideBox_smartphone smartphone_js"></script>')
   body.append('<script src="../js/main_page/smartphone/introBox.js" class="introBox_smartphone smartphone_js"></script>')
   body.append('<script src="../js/main_page/smartphone/booklistBox.js" class="booklistBox_smartphone smartphone_js"></script>')
   body.append('<script src="../js/main_page/smartphone/eventBox.js" class="eventBox_smartphone smartphone_js"></script>')

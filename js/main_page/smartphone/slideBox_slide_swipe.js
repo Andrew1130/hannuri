@@ -1,6 +1,5 @@
 // slideBox_slide.js
 //! slideBox.js의 슬라이드 기능을 순수 js로 변환 (코드에 대한 자세한 해설은 prev_ver/main_page/smartphone/slideBox.js 참조)
-//! 기존에는 슬라이드 카드 생성, 슬라이드 동작, 스와이프가 모두 1개의 js에 합쳐져 있었으나, 업데이트 하면서 이들을 각각 분리
 
 
 
@@ -19,7 +18,11 @@ var prevBtn = slideBoxWrap.querySelector(".slideBox_prevbtn");
 var swipeGuideArea = document.querySelector(".swipe_guide_area")
 var permission = true;
 
-console.log(slideBoxCards)
+
+// 스와이프 기능 관련
+var startX, endX
+var swipeGuideArea = document.querySelector(".swipe_guide_area");
+var slideBoxWrap = slideBox.querySelector(".slideBox_wrap");
 
 
 
@@ -64,13 +67,12 @@ var nextBtnFn = function(){
     slideBoxInner.append(slideBoxCards[0]);
     slideBoxInner.style.marginLeft = 0;
 
-    slideBoxCards = slideBoxInner.querySelectorAll('div');
+    slideBoxCards = slideBoxInner.children;
 
     nextBtn.disabled = false;
     prevBtn.disabled = false;
-  }, 500);
-
-  
+  }, 800);
+    
 };
 
 var prevBtnFn = function(){
@@ -90,7 +92,7 @@ var prevBtnFn = function(){
 
     nextBtn.disabled = false;
     prevBtn.disabled = false;
-  }, 500);
+  }, 800);
 }
 
 
@@ -104,6 +106,24 @@ nextBtn.addEventListener('click', function(){
 prevBtn.addEventListener('click', function(){
   prevBtnFn()
 })
+
+
+// 스와이프 기능
+slideBoxWrap.addEventListener('touchstart', function(e){
+  startX = parseInt(e.changedTouches[0].clientX)
+});
+
+slideBoxWrap.addEventListener('touchend', function(e){
+  endX = parseInt(e.changedTouches[0].clientX)
+  var resultX = startX - endX;
+
+  if(resultX > 100) {
+    nextBtnFn()
+  } else if ( resultX < -100 ) {
+    prevBtnFn()
+  }
+
+});
 
 
 }, 400) // setTimeout()
