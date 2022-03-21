@@ -47,8 +47,8 @@
 
 /* 네비게이션 박스 */
 .navBox {
-  display: none;
-  position: absolute; top: 0;
+  /* display: none; */
+  position: absolute; top: -35rem;
   width: 100%; height: 35rem;
   z-index: 2100;
   background-image: url("../../../img/main_page/01_smartphone/01_headbox/nav_bg.png");
@@ -56,7 +56,13 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+
+  transition-property: top;
+	transition-duration: 0.8s;
 }
+.navBox_on { top: 0; }
+.navBox_off { top: -35rem }
+
 .navBox_logo {
   float: left;
   width: 5.625rem; height: 2.1875rem; 

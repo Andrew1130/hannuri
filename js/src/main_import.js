@@ -41,7 +41,7 @@ var common_import_Arr = ["headBox.html", "footBox.html"]
 headBox.load(baseUrl + common_import_Arr[0], function(){
 
   //* 스크립트 변수 
-  var navBtnScript = '<script src="../js/src/navbtn.js" class="navBtnScript"></script>'
+  var navBtnScript = '<script src="../js/src/navbtn_vanilaJS.js" class="navBtnScript"></script>'
 
   // console.log(deviceCk)
   if(deviceCk === 'smartphone' || deviceCk === 'tablet'){
@@ -60,7 +60,8 @@ if(deviceCk === 'smartphone'){
   body.remove($('.labtop_js'));
   body.remove($('.tablet_js'));
 
-  body.append('<script src="../js/main_page/smartphone/slideBox.js" class="slideBox_smartphone smartphone_js"></script>')
+  body.append('<script src="../js/main_page/smartphone/slideBox_slidecardMake.js" class="slideBox_smartphone smartphone_js"></script>')
+  body.append('<script src="../js/main_page/smartphone/slideBox_slide.js" class="slideBox_smartphone smartphone_js"></script>')
   body.append('<script src="../js/main_page/smartphone/introBox.js" class="introBox_smartphone smartphone_js"></script>')
   body.append('<script src="../js/main_page/smartphone/booklistBox.js" class="booklistBox_smartphone smartphone_js"></script>')
   body.append('<script src="../js/main_page/smartphone/eventBox.js" class="eventBox_smartphone smartphone_js"></script>')
@@ -99,6 +100,6 @@ if(deviceCk === 'smartphone'){
   body.append('<script src="../js/main_page/desktop/eventBox.js" class="eventBox_desktop desktop_js"></script>')
 }
 
-}, 500); // setTimeout()
+}, 400); // setTimeout()
 
 })(jQuery);

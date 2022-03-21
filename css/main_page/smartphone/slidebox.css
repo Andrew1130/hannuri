@@ -30,7 +30,10 @@
 
 
 /** 움직이는 영역 및 각 항목들 */
-.slideBox_inner { width: 400%; height: 100%; }
+.slideBox_inner { 
+  width: 400%; height: 100%; 
+  margin-left: 0; margin-right: 0;
+}
 .slideBox_inner > div { 
   float: left;
   width: 25%; height: 100%; 
@@ -45,28 +48,21 @@
 
 /** 스와이프 기능 안내 */
 .swipe_guide_area {
-  display: none;
+  opacity: 0;
   position: absolute;
   bottom: 130px; left: 50%;
   transform: translateX(-50%);
   width: 200px; height: 50px;
-  /* background-color: #fff;  */
+  
+  transition-property: opacity;
+	transition-duration: 1s;
 }
 .swipe_guide_area p {
   text-align: center;
   font-size: 1.25rem;
 } 
-.pointer {
-  display: none;
-  width: 50px; height: 50px;
-  float: right;
-  background-image: url("../../../img/main_page/01_smartphone/02_slidebox/hand-pointer.png");
-  background-image: url("../../../img/main_page/01_smartphone/02_slidebox/hand-pointer.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  cursor: pointer;
-}
+.fadeIn { opacity: 1; }
+
 
 
 /** 각 항목 내부 내용 */
