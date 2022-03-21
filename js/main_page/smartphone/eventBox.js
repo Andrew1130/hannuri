@@ -26,7 +26,7 @@ var makeEventCardsFn = function(title, contents, img_png, img_svg){
 
   var SelImgcon = makeDiv.querySelector('.eventBox_card_wrap')
   SelImgcon.style.backgroundImage = 'url('+ baseUrl +''+ img_png +')'
-  SelImgcon.style.backgroundImage = 'url('+ baseUrl +''+ img_svg +')'
+  // SelImgcon.style.backgroundImage = 'url('+ baseUrl +''+ img_svg +')'
 
   eventBoxCardsTotal.appendChild(makeDiv)
 }
