@@ -27,6 +27,7 @@ var makeEventCardsFn = function(title, contents, img_png, img_svg){
   var SelImgcon = makeDiv.querySelector('.eventBox_card_wrap')
   SelImgcon.style.backgroundImage = 'url('+ baseUrl +''+ img_png +')'
   // SelImgcon.style.backgroundImage = 'url('+ baseUrl +''+ img_svg +')'
+  //* 휴대폰 내 삼성 인터넷 앱에서 svg를 지원하지 않아 일단 png로 처리
 
   eventBoxCardsTotal.appendChild(makeDiv)
 }
