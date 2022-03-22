@@ -61,7 +61,7 @@ for(; i<slideBoxData.length ; i+=1) {
 
 // 스와이프 기능 안내
 setTimeout(function(){
-  swipeGuideArea.classList.add('fadeIn');
+  swipeGuideArea.classList.add('fadeIn_swipeGuide');
   }, 2000); // setTimeout()
 
 }); // jsonData

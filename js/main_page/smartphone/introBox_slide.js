@@ -1,0 +1,104 @@
+// introBox_slide.js
+
+
+setTimeout(function() {
+
+
+var jsonData = $.getJSON('../json/main_page/introBoxData.json');
+jsonData.done(function(data){
+  var introBoxData = data;
+
+
+//? 구현할 기능 -----------
+/* 11시 방향 버튼을 이전, 5시 방향 버튼을 다음으로 하여
+해당하는 슬라이드 카드가 밝아지면서 나타나고, 나머지 슬라이드 카드는 흐려지면서 사라지도록 만들기 */
+
+
+//? 변수 ------------
+var introBoxContents = document.querySelectorAll('.introBox_contents')
+var nextBtn = document.querySelector('.introBox_nextbtn')
+var prevBtn = document.querySelector('.introBox_prevbtn')
+var SetNum = 0;
+
+
+//? 함수 ------------
+// 바닐라 js로 jqeury .siblings() 구현하기 (es5)
+var siblings = function(t) {
+  var children = t.parentElement.children;
+  var tempArr = [];
+
+  for (var i = 0; i < children.length; i++) {
+    if(i>=3) { children[i].classList.add('card_css') }
+    tempArr.push(children[i]);
+  }
+
+  return tempArr.filter(function(e){
+    // 여기서 e는 해당 함수 스코프 내에서 지금까지 발생한 이벤트를 의미
+    return e != t;
+    // 모든 형제 중에서 자신과 같지 않은 것들만을 반환
+    
+  });
+}
+
+siblings(introBoxContents[0].parentNode)
+console.log(siblings(introBoxContents[0].parentNode).length)
+
+var testFn = function(){
+  var IntroC = introBoxContents[i]
+  var card_length = siblings(introBoxContents[0].parentNode).length
+  var i = 3
+  for(; i<card_length ; i++) {
+    siblings(IntroC.parentNode)[i].children[0].classList.remove('on');
+  }
+}
+// card_css 클래스를 추가시키기 위해 임의로 1번 작동시킴
+
+
+
+var actionFn = function(i){
+  var card_length = siblings(introBoxContents[0].parentNode).length
+  var k = 3
+  var IntroC = introBoxContents[i]
+  IntroC.classList.add('on');
+
+  // siblings(IntroC.parentNode) 의 결과는 [div.introBox_nextbtn_area, div.introBox_prevbtn_area, div.dividing_box, div, div] 이므로, 카드에 해당하는 3번째 div부터 효과를 적용
+  for(; k<card_length ; k++) {
+    siblings(IntroC.parentNode)[k].children[0].classList.remove('on');
+  }
+}
+
+var actionNumSetFn = function(n){
+  if(n >= introBoxData.length){
+    n = 0;
+    SetNum = n;
+  } else if (n < 0){
+    n = introBoxData.length-1;
+    SetNum = n;
+  }
+  actionFn(n);
+}
+
+
+//? 사전 기능 실행 ------------
+introBoxContents[0].classList.add('on');
+
+
+//? 이벤트 -----------
+nextBtn.addEventListener('click', function(e){
+  e.preventDefault();
+  SetNum+=1;
+  actionNumSetFn(SetNum);
+})
+
+prevBtn.addEventListener('click', function(e){
+  e.preventDefault();
+  SetNum-=1;
+  actionNumSetFn(SetNum);
+})
+
+
+}); // jsonData
+
+
+}, 400) // setTimeout()
+

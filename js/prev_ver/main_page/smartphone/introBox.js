@@ -63,10 +63,12 @@ var makeDiv = introBoxContents.parent('div')
 var nextBtn = $('.introBox_nextbtn')
 var prevBtn = $('.introBox_prevbtn')
 var SetNum = 0;
-var i = 1;
+
 
 
 //? 함수 ------------
+
+
 var actionFn = function(i){
   var IntroC = introBoxContents.eq(i)
   IntroC.stop().fadeIn()
@@ -86,10 +88,12 @@ var actionNumSetFn = function(n){
 
 
 //? 사전 기능 실행 ------------
+/*
 makeDiv.css({ 
   width: 100 + '%', minWidth: 17.5 + 'rem', height: 28.75 + 'rem',
   position: 'absolute', top: 0, bottom: 0, left: 0, right: 0
 })
+*/
 introBoxContents.eq(0).addClass('on')
 
 
