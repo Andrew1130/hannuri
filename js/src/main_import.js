@@ -114,6 +114,6 @@ if(deviceCk === 'smartphone'){
   body.append('<script src="../js/main_page/desktop/eventBox.js" class="eventBox_desktop desktop_js"></script>')
 }
 
-}, 300); // setTimeout()
+}, 400); // setTimeout()
 
 })(jQuery);
