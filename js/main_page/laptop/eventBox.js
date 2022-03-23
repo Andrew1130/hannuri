@@ -44,9 +44,6 @@ for(; i<eventBoxData.length; i+=1) {
 //? 변수 ------------
 var eventBoxCardsTotal = $(".eventBox_card_total")
 var eventBoxMakeDiv = eventBoxCardsTotal.children('div')
-var eventBoxCardWrap = eventBoxCardsTotal.find('.eventBox_card_wrap')
-var eventBoxContentArea = eventBoxCardsTotal.find('.eventBox_content_area')
-var eventBoxImgArea = eventBoxCardsTotal.find('.eventBox_img_area')
 
 var nextBtn = $('.eventBox_nextbtn')
 var prevBtn = $('.eventBox_prevbtn')

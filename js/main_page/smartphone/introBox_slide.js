@@ -42,16 +42,22 @@ var siblings = function(t) {
 
 siblings(introBoxContents[0].parentNode)
 console.log(siblings(introBoxContents[0].parentNode).length)
+// card_css 클래스를 추가시키기 위해 임의로 1번 작동시킴
 
-var testFn = function(){
+
+var ZIndexControlFn = function(i) {
   var IntroC = introBoxContents[i]
+  console.log(IntroC)
+  IntroC.style.zIndex = 10; // opacity=1인 카드
+
   var card_length = siblings(introBoxContents[0].parentNode).length
-  var i = 3
-  for(; i<card_length ; i++) {
-    siblings(IntroC.parentNode)[i].children[0].classList.remove('on');
+  var k = 3
+  for(; k<card_length ; k++) {
+    // siblings(IntroC.parentNode) 의 결과는 [div.introBox_nextbtn_area, div.introBox_prevbtn_area, div.dividing_box, div, div] 이므로, 카드에 해당하는 3번째 div부터 효과를 적용 (여기서 div는 introBoxContents[i]외의 div들을 의미)
+    siblings(IntroC.parentNode)[k].children[0].style.zIndex = 0;
   }
 }
-// card_css 클래스를 추가시키기 위해 임의로 1번 작동시킴
+
 
 
 
@@ -76,11 +82,15 @@ var actionNumSetFn = function(n){
     SetNum = n;
   }
   actionFn(n);
+  ZIndexControlFn(n)
 }
 
 
 //? 사전 기능 실행 ------------
-introBoxContents[0].classList.add('on');
+introBoxContents[0].classList.add('on'); // 맨 첫번째 카드
+introBoxContents[0].style.zIndex = 10; 
+siblings(introBoxContents[0].parentNode)[0].style.zIndex = 15; // 다음버튼
+siblings(introBoxContents[0].parentNode)[1].style.zIndex = 15; // 이전버튼
 
 
 //? 이벤트 -----------

@@ -45,13 +45,48 @@ for(; i<eventBoxData.length; i+=1) {
 //? 변수 ------------
 var eventBoxCardsTotal = $(".eventBox_card_total")
 var eventBoxMakeDiv = eventBoxCardsTotal.children('div')
-var eventBoxCardWrap = eventBoxCardsTotal.find('.eventBox_card_wrap')
-var eventBoxContentArea = eventBoxCardsTotal.find('.eventBox_content_area')
-var eventBoxImgArea = eventBoxCardsTotal.find('.eventBox_img_area')
 
 var nextBtn = $('.eventBox_nextbtn')
 var prevBtn = $('.eventBox_prevbtn')
 var i = 0;
+
+//바닐라js 테스트
+var eventBoxCardsTotalT = document.querySelector(".eventBox_card_total")
+var eventBoxMakeDivFn = function(){
+  var Len = eventBoxCardsTotalT.children.length
+  var MakeDivArr = []
+  var i = 2
+  for(; i<Len ; i++) {
+    MakeDivArr.push(eventBoxCardsTotalT.children[i])
+  }
+
+  return MakeDivArr
+}
+
+var eventBoxMakeDivT = eventBoxMakeDivFn()
+console.log(eventBoxMakeDivT)
+
+
+var siblings = function(t) {
+  var children = t.parentElement.children;
+  var tempArr = [];
+
+  for (var i = 0; i < children.length; i++) {
+    tempArr.push(children[i]);
+  }
+
+  return tempArr.filter(function(e){
+    // 여기서 e는 해당 함수 스코프 내에서 지금까지 발생한 이벤트를 의미
+    return e != t;
+    // 모든 형제 중에서 자신과 같지 않은 것들만을 반환
+  });
+}
+
+console.log(siblings(eventBoxMakeDivT[0]))
+console.log(siblings(eventBoxMakeDivT[0])[2])
+console.log(siblings(eventBoxMakeDivT[0])[3])
+
+//
 
 
 //? 함수 ------------

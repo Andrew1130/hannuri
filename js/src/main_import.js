@@ -100,7 +100,8 @@ if(deviceCk === 'smartphone'){
   body.append('<script src="../js/main_page/laptop/slideBox.js" class="slideBox_labtop labtop_js"></script>')
   body.append('<script src="../js/main_page/laptop/introBox.js" class="introBox_labtop labtop_js"></script>')
   body.append('<script src="../js/main_page/laptop/booklistBox.js" class="booklistBox_labtop labtop_js"></script>')
-  body.append('<script src="../js/main_page/laptop/eventBox.js" class="eventBox_labtop labtop_js"></script>')
+  body.append('<script src="../js/main_page/laptop/eventBox_cardMake.js" class="eventBox_labtop labtop_js"></script>')
+  body.append('<script src="../js/main_page/laptop/eventBox_slide.js" class="eventBox_labtop labtop_js"></script>')
 
 
 } else if (deviceCk === 'desktop') {
@@ -111,7 +112,8 @@ if(deviceCk === 'smartphone'){
   body.append('<script src="../js/main_page/desktop/slideBox.js" class="slideBox_desktop desktop_js"></script>')
   body.append('<script src="../js/main_page/desktop/introBox.js" class="introBox_desktop desktop_js"></script>')
   body.append('<script src="../js/main_page/desktop/booklistBox.js" class="booklistBox_desktop desktop_js"></script>')
-  body.append('<script src="../js/main_page/desktop/eventBox.js" class="eventBox_desktop desktop_js"></script>')
+  body.append('<script src="../js/main_page/desktop/eventBox_cardMake.js" class="eventBox_desktop desktop_js"></script>')
+  body.append('<script src="../js/main_page/desktop/eventBox_slide.js" class="eventBox_desktop desktop_js"></script>')
 }
 
 }, 400); // setTimeout()
