@@ -110,6 +110,10 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
   cursor: pointer;
+  transform: scale(1);
+
+  transition-property: transform;
+  transition-duration: 0.2s;
  } 
 
 .slideBox_prevbtn { 
@@ -121,26 +125,22 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
   cursor: pointer;
+  transform: scale(1);
+
+  transition-property: transform;
+  transition-duration: 0.2s;
  }
 
 .slideBox_nextbtn:hover {
-  border-radius: 0.625rem;
-  background-image: url("../../../img/main_page/03_laptop/02_slidebox/slidebox_nextbtn_hover.png");
-  background-image: url("../../../img/main_page/03_laptop/02_slidebox/slidebox_nextbtn_hover.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  /* box-shadow: inset 0.2rem 0.3rem 0.2rem #777; */
+  transform: scale(1.1);
+  transition-property: transform;
+  transition-duration: 0.2s;
 }
 
 .slideBox_prevbtn:hover {
-  border-radius: 0.625rem;
-  background-image: url("../../../img/main_page/03_laptop/02_slidebox/slidebox_prevbtn_hover.png");
-  background-image: url("../../../img/main_page/03_laptop/02_slidebox/slidebox_prevbtn_hover.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  /* box-shadow: inset 0.2rem 0.3rem 0.2rem #777; */
+  transform: scale(1.1);
+  transition-property: transform;
+  transition-duration: 0.2s;
 }
 
 } /* @media screen and (min-width: 1024px) and (max-width: 1439px) */

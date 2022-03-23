@@ -145,6 +145,10 @@
   background-position: 50% 50%;
   cursor: pointer;
   z-index: 10;
+  transform: scaleX(1);
+
+  transition-property: transform;
+  transition-duration: 0.2s;
 }
 .eventBox_prevbtn {
   position: absolute; top: 0; left: 0;
@@ -157,21 +161,21 @@
   background-position: 50% 50%;
   cursor: pointer;
   z-index: 10;
+  transform: scaleX(1);
+
+  transition-property: transform;
+  transition-duration: 0.2s;
 }
 
 .eventBox_nextbtn:hover {
-  background-image: url("../../../img/main_page/02_tablet/05_eventbox/eventbox_nextbtn_active.png");
-  background-image: url("../../../img/main_page/02_tablet/05_eventbox/eventbox_nextbtn_active.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+  transform: scaleX(1.1);
+  transition-property: transform;
+  transition-duration: 0.2s;
 }
 .eventBox_prevbtn:hover {
-  background-image: url("../../../img/main_page/02_tablet/05_eventbox/eventbox_prevbtn_active.png");
-  background-image: url("../../../img/main_page/02_tablet/05_eventbox/eventbox_prevbtn_active.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+  transform: scaleX(1.1);
+  transition-property: transform;
+  transition-duration: 0.2s;
 }
 
 } /* @media screen and (min-width: 1024px) and (max-width: 1439px) */

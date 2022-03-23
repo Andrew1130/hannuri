@@ -178,7 +178,7 @@
   z-index: 10;
 }
 
-  .introBox_prevbtn:hover,
-  .introBox_nextbtn:hover { width: 1.9rem; height: 1.9rem; }
+  /* .introBox_prevbtn:hover,
+  .introBox_nextbtn:hover { width: 1.9rem; height: 1.9rem; } */
 
 } /* @media screen and (min-width: 1024px) and (max-width: 1439px) */

@@ -110,7 +110,7 @@
   cursor: pointer;
 }
 
-.booklistBox_nextbtn:hover {
+/* .booklistBox_nextbtn:hover {
   background-image: url("../../../img/main_page/02_tablet/04_booklistbox/booklistbox_nextbtn_active.png");
   background-image: url("../../../img/main_page/02_tablet/04_booklistbox/booklistbox_nextbtn_active.svg");
   background-size: cover;
@@ -123,6 +123,6 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
- }
+ } */
 
 } /* @media screen and (min-width: 1024px) and (max-width: 1439px) */

@@ -98,6 +98,11 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
   cursor: pointer;
+  transform: scale(1);
+  z-index: 10;
+
+  transition-property: transform;
+  transition-duration: 0.2s;
 }
 .booklistBox_prevbtn {
   position: absolute; top: 10.3125rem; left: 0;
@@ -111,20 +116,16 @@
   background-position: 50% 50%;
   cursor: pointer;
 }
-
+/* 
 .booklistBox_nextbtn:hover {
-  background-image: url("../../../img/main_page/02_tablet/04_booklistbox/booklistbox_nextbtn_active.png");
-  background-image: url("../../../img/main_page/02_tablet/04_booklistbox/booklistbox_nextbtn_active.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  }
+  transform: scale(1.1);
+  transition-property: transform;
+  transition-duration: 0.2s;
+}
 .booklistBox_prevbtn:hover { 
-  background-image: url("../../../img/main_page/02_tablet/04_booklistbox/booklistbox_prevbtn_active.png");
-  background-image: url("../../../img/main_page/02_tablet/04_booklistbox/booklistbox_prevbtn_active.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  }
+  transform: scale(1.1);
+  transition-property: transform;
+  transition-duration: 0.2s;
+} */
   
 } /* @media screen and (min-width: 1440px) */

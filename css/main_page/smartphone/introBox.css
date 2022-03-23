@@ -205,8 +205,8 @@
   z-index: 10;
 }
 
-  .introBox_nextbtn:active,
-  .introBox_prevbtn:active { width: 1.3125rem; height: 1.3125rem; }
+  /* .introBox_nextbtn:active,
+  .introBox_prevbtn:active { width: 1.3125rem; height: 1.3125rem; } */
 
 
 } /* @media screen and (max-width: 599px) */

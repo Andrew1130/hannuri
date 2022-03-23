@@ -160,6 +160,10 @@
   background-position: 50% 50%;
   cursor: pointer;
   z-index: 10;
+  transform: scale(1);
+
+  transition-property: transform;
+  transition-duration: 0.2s;
 }
 
 .introBox_prevbtn_area {
@@ -187,8 +191,12 @@
   z-index: 10;
 }
 
-  .introBox_nextbtn:hover,
-  .introBox_prevbtn:hover { width: 1.9rem; height: 1.9rem; }
+  /* .introBox_nextbtn:hover,
+  .introBox_prevbtn:hover { 
+    transform: scale(1.2);
+    transition-property: transform;
+    transition-duration: 0.2s; 
+  } */
 
   
 } /* @media screen and (min-width: 1440px) */

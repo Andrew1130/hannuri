@@ -155,13 +155,13 @@
   cursor: pointer;
 }
 
-.slideBox_nextBtn:hover {
+/* .slideBox_nextBtn:hover {
   background-image: url("../../img/booklist_page/slideBox_nextbtn_hover.png");
   background-image: url("../../img/booklist_page/slideBox_nextbtn_hover.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-}
+} */
 
 .slideBox_prevBtn {
   position: absolute; left: 0;
@@ -174,13 +174,13 @@
   cursor: pointer;
 }
 
-.slideBox_prevBtn:hover {
+/* .slideBox_prevBtn:hover {
   background-image: url("../../img/booklist_page/slideBox_prevbtn_hover.png");
   background-image: url("../../img/booklist_page/slideBox_prevbtn_hover.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-}
+} */
 
 
 /*? contentBox ---------------------------- */
