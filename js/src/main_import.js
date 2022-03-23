@@ -22,6 +22,8 @@ setTimeout(function(){
 //* 전체 공통
 var deviceCk = $.check_Type;
 var body = $('body')
+var agent = navigator.userAgent.toLowerCase(); 
+// 익스플로러 감지를 위한 코드
 
 //* main 각 영역
 var headBox = $('#headBox')
@@ -60,8 +62,19 @@ if(deviceCk === 'smartphone'){
   body.remove($('.labtop_js'));
   body.remove($('.tablet_js'));
 
-  body.append('<script src="../js/main_page/smartphone/slideBox_cardMake.js" class="slideBox_smartphone smartphone_js"></script>')
-  body.append('<script src="../js/main_page/smartphone/slideBox_slide_swipe.js" class="slideBox_smartphone smartphone_js"></script>')
+
+  if ( (navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1) ) {
+      // 익스플로러일 경우 호출되는 스크립트
+      body.append('<script src="../js/prev_ver/main_page/smartphone/slideBox.js" class="slideBox_smartphone smartphone_js"></script>')
+    }
+    
+    else {
+      // 익스플로러가 아닐 경우 호출되는 스크립트
+      body.append('<script src="../js/main_page/smartphone/slideBox_cardMake.js" class="slideBox_smartphone smartphone_js"></script>')
+      body.append('<script src="../js/main_page/smartphone/slideBox_slide_swipe.js" class="slideBox_smartphone smartphone_js"></script>')
+    }
+
+
   body.append('<script src="../js/main_page/smartphone/introBox_cardMake.js" class="introBox_smartphone smartphone_js"></script>')
   body.append('<script src="../js/main_page/smartphone/introBox_slide.js" class="introBox_smartphone smartphone_js"></script>')
   body.append('<script src="../js/main_page/smartphone/booklistBox.js" class="booklistBox_smartphone smartphone_js"></script>')
