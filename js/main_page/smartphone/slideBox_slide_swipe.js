@@ -80,10 +80,8 @@ var prevBtnFn = function(){
   prevBtn.disabled = true;
 
   swipeGuideArea.classList.add('none');
-  // slideBoxCards[slideBoxCards.length - 1].prependTo(slideBoxInner);
   slideBoxInner.prepend(slideBoxCards[slideBoxCards.length - 1])
-  //! vanila JS의 prepend는 IE 지원되지 않는다. 
-  // slideBoxInner.classList.add('slidePrevAni')
+  //! vanila JS의 prepend는 IE 지원되지 않는다. (IE의 경우 기존 Jqurey 스크립트를 불러오는 것으로 일단 처리)
   slideBoxInner.style.marginLeft = -100 + '%';
   slidePrevAniFn(slideBoxInner);
 

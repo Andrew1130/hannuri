@@ -49,18 +49,16 @@ var eventBoxCardWrap = eventBoxCardsTotal.find('.eventBox_card_wrap')
 var eventBoxContentArea = eventBoxCardsTotal.find('.eventBox_content_area')
 
 
-
 //? 함수 ------------
 
 
 
 //? 사전 처리 -----------
 // 첫번째 박스는 펼쳐져 있고, 나머지 박스는 접혀 있도록 처리
-eventBoxContentArea.eq(1).css({ display: "none" })
-eventBoxCardWrap.eq(1).css({ height: 3.125 + 'rem' })
-
-eventBoxContentArea.eq(2).css({ display: "none" })
-eventBoxCardWrap.eq(2).css({ height: 3.125 + 'rem' })
+eventBoxContentArea[1].classList.add('off')
+eventBoxCardWrap[1].classList.add('off')
+eventBoxContentArea[2].classList.add('off')
+eventBoxCardWrap[2].classList.add('off')
 
 
 //? 이벤트 -----------

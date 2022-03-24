@@ -39,7 +39,24 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+
+  transition-property: height;
+	transition-duration: 0.5s;
 }
+
+.eventBox_card_wrap.on {
+  height: 23.125rem;
+  transition-property: height;
+	transition-duration: 0.5s;
+}
+.eventBox_card_wrap.off {
+  height: 3.125rem;
+  transition-property: height;
+	transition-duration: 0.5s;
+}
+
+.eventBox_content_area.on { display: block; }
+.eventBox_content_area.off { display: none; }
 
 .eventBox_card_title {
   padding-top: 1.875rem; 

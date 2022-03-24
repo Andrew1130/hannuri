@@ -27,7 +27,6 @@ var slideBoxInner = document.querySelector(".slideBox_inner");
 var slideBoxCards = slideBoxInner.children
 
 // 스와이프 기능 관련
-var startX, endX
 var swipeGuideArea = document.querySelector(".swipe_guide_area")
 
 
