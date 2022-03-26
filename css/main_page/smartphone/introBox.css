@@ -47,15 +47,8 @@
 
 
 /** 카드 내용 (공통) */
-.introBox_card_wrap .on { 
-  /* display: block;  */
-  opacity: 1;
-  transition-property: opacity;
-	transition-duration: 1s;
-}
 .introBox_contents {
   position: relative;
-  /* display: none; */
   opacity: 0;
   padding-top: 5.625rem;
   box-sizing: border-box;
@@ -66,6 +59,11 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
 
+  transition-property: opacity;
+	transition-duration: 1s;
+}
+.introBox_contents.on { 
+  opacity: 1;
   transition-property: opacity;
 	transition-duration: 1s;
 }

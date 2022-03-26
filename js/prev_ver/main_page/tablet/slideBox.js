@@ -42,16 +42,21 @@ for(; i<slideBoxData.length ; i+=1) {
 //! Jquery -------------------------------------
 (function($){
 //? 변수 ------------
-var headBox = $("#headBox")
 var slideBoxInner = $(".slideBox_inner")
 var slideBoxCards = slideBoxInner.children('div')
-// console.log(slideBoxCards)
 
 var nextBtn = $(".slideBox_nextbtn")
 var prevBtn = $(".slideBox_prevbtn")
 
 var permission = true;
 
+
+
+// 바닐라 js 테스트 ------------
+
+
+
+// ----------------------------
 
 //? 함수 -------------
 var nextBtnFn = function(){

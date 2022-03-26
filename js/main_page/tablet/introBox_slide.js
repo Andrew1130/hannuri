@@ -3,6 +3,10 @@
 
 
 
+//? 구현할 기능 -----------
+/* 11시 방향 버튼을 이전, 5시 방향 버튼을 다음으로 하여
+해당하는 슬라이드 카드가 밝아지면서 나타나고, 나머지 슬라이드 카드는 흐려지면서 사라지도록 만들기 */
+
 
 var jsonData = $.getJSON('../json/main_page/introBoxData.json');
 jsonData.done(function(data){
@@ -10,11 +14,6 @@ jsonData.done(function(data){
 
 
 setTimeout(function() {
-
-
-//? 구현할 기능 -----------
-/* 11시 방향 버튼을 이전, 5시 방향 버튼을 다음으로 하여
-해당하는 슬라이드 카드가 밝아지면서 나타나고, 나머지 슬라이드 카드는 흐려지면서 사라지도록 만들기 */
 
 
 //? 변수 ------------
@@ -60,8 +59,6 @@ var ZIndexControlFn = function(i) {
     siblings(IntroC.parentNode)[k].children[0].style.zIndex = 0;
   }
 }
-
-
 
 
 var actionFn = function(i){
@@ -114,7 +111,3 @@ prevBtn.addEventListener('click', function(e){
 
 
 }); // jsonData
-
-
-
-

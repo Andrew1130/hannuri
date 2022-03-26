@@ -79,7 +79,6 @@ if(deviceCk === 'smartphone'){
 
   body.append('<script src="../js/main_page/smartphone/introBox_cardMake.js" class="introBox_smartphone smartphone_js"></script>')
   body.append('<script src="../js/main_page/smartphone/introBox_slide.js" class="introBox_smartphone smartphone_js"></script>')
-
   body.append('<script src="../js/main_page/smartphone/eventBox_cardMake.js" class="eventBox_smartphone smartphone_js"></script>')
   body.append('<script src="../js/main_page/smartphone/eventBox_accordion.js" class="eventBox_smartphone smartphone_js"></script>')
 
@@ -89,8 +88,20 @@ if(deviceCk === 'smartphone'){
   body.remove($('.labtop_js'));
   body.remove($('.smartphone_js'));
 
-  body.append('<script src="../js/main_page/tablet/slideBox.js" class="slideBox_tablet tablet_js"></script>')
-  body.append('<script src="../js/main_page/tablet/introBox.js" class="introBox_tablet tablet_js"></script>')
+  
+  if ( (navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1) ) {
+    // 익스플로러일 경우 호출되는 스크립트
+    body.append('<script src="../js/prev_ver/main_page/tablet/slideBox.js" class="slideBox_tablet tablet_js"></script>')
+  }
+  else {
+    // 익스플로러가 아닐 경우 호출되는 스크립트
+    body.append('<script src="../js/main_page/tablet/slideBox_cardMake.js" class="slideBox_tablet tablet_js"></script>')
+    body.append('<script src="../js/main_page/tablet/slideBox_slide.js" class="slideBox_tablet tablet_js"></script>')
+  }
+  
+  body.append('<script src="../js/main_page/tablet/introBox_cardMake.js" class="introBox_tablet tablet_js"></script>')
+  body.append('<script src="../js/main_page/tablet/introBox_slide.js" class="introBox_tablet tablet_js"></script>')
+  
   body.append('<script src="../js/main_page/tablet/booklistBox.js" class="booklistBox_tablet tablet_js"></script>')
   body.append('<script src="../js/main_page/tablet/eventBox.js" class="eventBox_tablet tablet_js"></script>')
 

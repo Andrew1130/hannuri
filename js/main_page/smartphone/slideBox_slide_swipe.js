@@ -33,7 +33,7 @@ var slideBoxWrap = slideBox.querySelector(".slideBox_wrap");
 //* 슬라이드 애니메이션 함수
 var slideNextAniFn = function(elem) {
   var left = 0
-  var id = setInterval(frame, 1) // draw every 10ms
+  var id = setInterval(frame, 1) // draw every 1ms
 
   function frame() {
       left--  // update parameters
@@ -45,7 +45,7 @@ var slideNextAniFn = function(elem) {
 
 var slidePrevAniFn = function(elem) {
   var left = -100
-  var id = setInterval(frame, 1) // draw every 10ms
+  var id = setInterval(frame, 1) // draw every 1ms
 
   function frame() {
       left++  // update parameters
@@ -61,12 +61,11 @@ var nextBtnFn = function(){
   nextBtn.disabled = true;
   prevBtn.disabled = true;
 
-  swipeGuideArea.classList.add('none');
+  swipeGuideArea.classList.add('none'); // 스와이프 안내문구 지우기
   slideNextAniFn(slideBoxInner);
   setTimeout(function() {
     slideBoxInner.append(slideBoxCards[0]);
     slideBoxInner.style.marginLeft = 0;
-
     slideBoxCards = slideBoxInner.children;
 
     nextBtn.disabled = false;
@@ -79,7 +78,7 @@ var prevBtnFn = function(){
   nextBtn.disabled = true;
   prevBtn.disabled = true;
 
-  swipeGuideArea.classList.add('none');
+  swipeGuideArea.classList.add('none'); // 스와이프 안내문구 지우기
   slideBoxInner.prepend(slideBoxCards[slideBoxCards.length - 1])
   //! vanila JS의 prepend는 IE 지원되지 않는다. (IE의 경우 기존 Jqurey 스크립트를 불러오는 것으로 일단 처리)
   slideBoxInner.style.marginLeft = -100 + '%';
@@ -87,7 +86,6 @@ var prevBtnFn = function(){
 
   setTimeout(function() {
     slideBoxCards = slideBoxInner.children;
-
     nextBtn.disabled = false;
     prevBtn.disabled = false;
   }, 800);
