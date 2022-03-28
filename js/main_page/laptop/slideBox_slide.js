@@ -3,7 +3,6 @@
 
 
 
-
 //? 구현할 기능 -----------
 // 1. 슬라이드박스 양 옆 버튼을 누르면, 슬라이드 기능이 동작하도록 처리
 // 2. 무한 슬라이드(요소 강제이동형) 적용
@@ -15,8 +14,10 @@ setTimeout(function() {
 //? 변수 ------------
 var slideBoxInner = document.querySelector(".slideBox_inner")
 var slideBoxCards = slideBoxInner.children
+
 var nextBtn = document.querySelector(".slideBox_nextbtn")
 var prevBtn = document.querySelector(".slideBox_prevbtn")
+
 
 
 //? 함수 ------------

@@ -39,15 +39,27 @@
   border-radius: 0.625rem;
 }
 
+.introBox_card_wrap > .card_css {
+  width: 58.75rem; height: 23.125rem;
+  position: absolute; 
+  top: 0; bottom: 0; left: 0; right: 0;
+  z-index: 0;
+}
+
+.introBox_card_wrap > .card_css.on {
+  z-index: 10;
+}
+
 .dividing_box {
   position: absolute; top: -0.1875rem; left: 38%;
   width: 7.5%; height: 27.6rem;
   background-color: #fff;
-  z-index: 10;
+  z-index: 15;
 }
 
 /** 카드 내용 (공통) */
 .introBox_contents {
+  opacity: 0;
   padding-top: 2.5rem;
   box-sizing: border-box;
   width: 100%; height: 100%; 
@@ -56,6 +68,13 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  transition-property: opacity;
+  transition-duration: 1s;
+}
+.introBox_contents.on {
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 1s;
 }
 
 .introBox_contents:before,

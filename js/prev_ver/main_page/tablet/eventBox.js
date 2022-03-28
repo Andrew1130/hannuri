@@ -53,6 +53,7 @@ var prevBtn = $('.eventBox_prevbtn')
 var i = 0;
 
 
+
 //? 함수 ------------
 var nextBtnFn = function(){
   i++

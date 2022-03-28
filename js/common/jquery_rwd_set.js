@@ -22,10 +22,14 @@ $.getJSON(jsonData, function(data){
   // console.log(deviceGuide)
 
 
+  
+
 //? 변수 ------------
 var win = $(window);
 var winW = win.width();
 var checkType;
+var agent = navigator.userAgent.toLowerCase(); 
+// 익스플로러 감지를 위한 코드
 
 //* 너비에 따른 기기 확인하기 : if문
 /*
@@ -61,36 +65,69 @@ console.log(checkType)
 
 
 //? 함수 -------------
-var deviceCheckFn = function(){
-  var guideLen = deviceGuide.length;
-  var i = guideLen-1;
-  for(; i >= 0 ; i-=1 ) {
-    if(winW >= deviceGuide[i].size){
-      checkType = deviceGuide[i].type;
-      break; // 조건문이 일치하는 경우 반복을 중지
-    } else {
-      checkType = deviceGuide[i].type;
+if ( (navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1) ) {
+  // 익스플로러일 경우 호출되는 스크립트
+  //! IE11에서는 win.width();이 실제 너비보다 17px 적게 잡히는 이슈가 있어, 익스플로러의 경우는 이를 반영하여 처리
+  var deviceCheckFn = function(){
+    var guideLen = deviceGuide.length;
+    var i = guideLen-1;
+    for(; i >= 0 ; i-=1 ) {
+      if(winW + 17 >= deviceGuide[i].size){
+        checkType = deviceGuide[i].type;
+        break; // 조건문이 일치하는 경우 반복을 중지
+      } else {
+        checkType = deviceGuide[i].type;
+      }
     }
-  }
-  // console.log(checkType)
-  return $.check_Type = checkType;
-  //TODO : $.이름 = 
-  //* 함수 내부의 값이라 하더라도 함수 외부 혹은 다른 js 파일에서 사용할 수 있도록 해 주는 기능
-  //* 간혹 여기서 쓰는 이름이 jquery와 jquery ui에서 겹칠 수가 있으므로, 이를 방지하기 위해서는 이름을 짓기 전에 위 두개 파일에서 확인해봐야 한다.
-  //* underbar와 camelcase를 같이 쓰면 사실상 겹치지 않는다.
-  //* 추가적인 사항은 ../js/src/b_03_rwd_file.js 참조.
+    // console.log(checkType)
+    return $.check_Type = checkType;
+    //TODO : $.이름 = 
+    //* 함수 내부의 값이라 하더라도 함수 외부 혹은 다른 js 파일에서 사용할 수 있도록 해 주는 기능
+    //* 간혹 여기서 쓰는 이름이 jquery와 jquery ui에서 겹칠 수가 있으므로, 이를 방지하기 위해서는 이름을 짓기 전에 위 두개 파일에서 확인해봐야 한다.
+    //* underbar와 camelcase를 같이 쓰면 사실상 겹치지 않는다.
+    //* 추가적인 사항은 ../js/src/b_03_rwd_file.js 참조.
+  
+  }; //deviceCheckFn();
 
-}; //deviceCheckFn();
+}
+else {
+  // 익스플로러가 아닐 경우 호출되는 스크립트
+  var deviceCheckFn = function(){
+    var guideLen = deviceGuide.length;
+    var i = guideLen-1;
+    for(; i >= 0 ; i-=1 ) {
+      if(winW >= deviceGuide[i].size){
+        checkType = deviceGuide[i].type;
+        break; // 조건문이 일치하는 경우 반복을 중지
+      } else {
+        checkType = deviceGuide[i].type;
+      }
+    }
+    // console.log(checkType)
+    return $.check_Type = checkType;
+    //TODO : $.이름 = 
+    //* 함수 내부의 값이라 하더라도 함수 외부 혹은 다른 js 파일에서 사용할 수 있도록 해 주는 기능
+    //* 간혹 여기서 쓰는 이름이 jquery와 jquery ui에서 겹칠 수가 있으므로, 이를 방지하기 위해서는 이름을 짓기 전에 위 두개 파일에서 확인해봐야 한다.
+    //* underbar와 camelcase를 같이 쓰면 사실상 겹치지 않는다.
+    //* 추가적인 사항은 ../js/src/b_03_rwd_file.js 참조.
+  
+  }; //deviceCheckFn();
+
+}
+
 
 var beforeDevice = deviceCheckFn()
-// console.log(beforeDevice)
-// console.log(checkType)
+console.log(beforeDevice)
+console.log(checkType)
+console.log(win.width())
 
 //? 이벤트 -----------
 win.on('resize', function(){
   winW = win.width();
   // 디바이스가 달라지는 구간에서만 새로고침이 일어날 수 있도록, afterDevice와 beforeDevice를 나누어 처리
   var afterDevice = deviceCheckFn();
+  console.log(afterDevice)
+  console.log(win.width())
   if(beforeDevice !== afterDevice) {
     beforeDevice = afterDevice;
     
