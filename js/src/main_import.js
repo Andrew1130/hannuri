@@ -89,7 +89,7 @@ if(deviceCk === 'smartphone'){
 
   
   if ( (navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1) || (agent.indexOf("firefox") != -1) ) {
-    // 익스플로러일 경우 호출되는 스크립트
+    // 익스플로러 및 파이어폭스의 경우 호출되는 스크립트
     body.append('<script src="../js/prev_ver/main_page/tablet/slideBox.js" class="slideBox_tablet tablet_js"></script>')
     body.append('<script src="../js/prev_ver/main_page/tablet/booklistBox.js" class="booklistBox_tablet tablet_js"></script>')
   }
@@ -114,19 +114,21 @@ if(deviceCk === 'smartphone'){
   body.remove($('.smartphone_js'));
 
   if ( (navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1) || (agent.indexOf("firefox") != -1) ) {
-    // 익스플로러일 경우 호출되는 스크립트
+    // 익스플로러 및 파이어폭스일 경우 호출되는 스크립트
     body.append('<script src="../js/prev_ver/main_page/laptop/slideBox.js" class="slideBox_labtop labtop_js"></script>')
+    body.append('<script src="../js/prev_ver/main_page/laptop/booklistBox.js" class="booklistBox_labtop labtop_js"></script>')
   }
   else {
     // 익스플로러가 아닐 경우 호출되는 스크립트
     body.append('<script src="../js/main_page/laptop/slideBox_cardMake.js" class="slideBox_labtop labtop_js"></script>')
     body.append('<script src="../js/main_page/laptop/slideBox_slide.js" class="slideBox_labtop labtop_js"></script>')
+    body.append('<script src="../js/main_page/laptop/booklistBox_cardMake.js" class="booklistBox_labtop labtop_js"></script>')
+    body.append('<script src="../js/main_page/laptop/booklistBox_slide.js" class="booklistBox_labtop labtop_js"></script>')
   }
 
   body.append('<script src="../js/main_page/laptop/introBox_cardMake.js" class="introBox_labtop labtop_js"></script>')
   body.append('<script src="../js/main_page/laptop/introBox_slide.js" class="introBox_labtop labtop_js"></script>')
 
-  body.append('<script src="../js/main_page/laptop/booklistBox.js" class="booklistBox_labtop labtop_js"></script>')
   body.append('<script src="../js/main_page/laptop/eventBox_cardMake.js" class="eventBox_labtop labtop_js"></script>')
   body.append('<script src="../js/main_page/laptop/eventBox_slide.js" class="eventBox_labtop labtop_js"></script>')
 
@@ -143,6 +145,6 @@ if(deviceCk === 'smartphone'){
   body.append('<script src="../js/main_page/desktop/eventBox_slide.js" class="eventBox_desktop desktop_js"></script>')
 }
 
-}, 800); // setTimeout()
+}, 1000); // setTimeout()
 
 })(jQuery);

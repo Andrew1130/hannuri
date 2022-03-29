@@ -61,7 +61,8 @@ var BookList_cardsImg = $(".booklistBox_card_img")
 var BookList_cardsTitle = $(".booklistBox_card_title")
 
 var i = 1
-var timed = 500
+var timed = 1000
+
 
 
 //? 함수 -------------
@@ -74,7 +75,7 @@ var nextBtnFn = function(){
 
   BookList_cardsTotal.stop().animate({
     marginLeft : -17.5 + "rem"
-  }, function(){
+  }, timed, function(){
     BookList_cards.eq(0).appendTo(BookList_cardsTotal);
     BookList_cardsTotal.css ({ marginLeft: 0 })
     BookList_cards = BookList_cardsTotal.children('div')
@@ -97,7 +98,7 @@ var prevBtnFn = function(){
 
   BookList_cards.eq(-1).prependTo(BookList_cardsTotal);
   BookList_cardsTotal.css({ marginLeft: -17.5 + "rem" })
-  BookList_cardsTotal.stop().animate({ marginLeft: 0 },
+  BookList_cardsTotal.stop().animate({ marginLeft: 0 }, timed,
   function(){
     BookList_cards = BookList_cardsTotal.children('div')
 
@@ -188,7 +189,7 @@ nextBtn.on('click', function(){
   nextBtn.attr('disabled', true)
   setTimeout(function(){
     nextBtn.attr('disabled', false)
-  }, 500);
+  }, timed);
   
 
   //* ------------------------------------------------
@@ -217,7 +218,7 @@ prevBtn.on('click', function(){
   prevBtn.attr('disabled', true)
   setTimeout(function(){
     prevBtn.attr('disabled', false)
-  }, 500);
+  }, timed);
 
 });
 

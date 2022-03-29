@@ -63,6 +63,17 @@
   width: 14.375rem; height: 18.75rem;
   padding-top: 3.125rem; 
   margin-left: 1.5625rem; margin-right: 1.5625rem;
+
+  transition-property: all;
+  transition-duration: 1s;
+}
+.booklistBox_card.on {
+  width: 16.25rem; height: 20.625rem;
+  margin-left: 0.625rem; margin-right: 0.625rem;
+  padding-top: 2.5rem;
+
+  transition-property: all;
+  transition-duration: 1s;
 }
 
 .booklistBox_card_img {
@@ -72,6 +83,14 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+
+  transition-property: width, height;
+  transition-duration: 1s;
+}
+.booklistBox_card_img.on {
+  width: 14.75rem; height: 16.625rem;
+  transition-property: width, height;
+  transition-duration: 1s;
 }
 
 .booklistBox_card_title {
@@ -81,6 +100,15 @@
   padding-top: 0.5625rem; padding-bottom: 0.5625rem;
   text-align: center; font-size: 1.375rem; 
   text-transform: capitalize;
+
+  transition-property: width, height, font-size, font-weight;
+  transition-duration: 1s;
+}
+.booklistBox_card_title.on {
+  width: 13.75rem; height: 2.5rem;
+  font-size: 1.75rem; font-weight: 700;
+  transition-property: width, height, font-size, font-weight;
+  transition-duration: 1s;
 }
 
 
