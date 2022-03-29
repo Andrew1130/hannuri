@@ -63,12 +63,11 @@ if(deviceCk === 'smartphone'){
   body.remove($('.tablet_js'));
 
 
-  if ( (navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1) ) {
-      // 익스플로러일 경우 호출되는 스크립트
+  if ( (navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1) || (agent.indexOf("firefox") != -1)  ) {
+      // 익스플로러, 파이어폭스의 경우 호출되는 스크립트
       body.append('<script src="../js/prev_ver/main_page/smartphone/slideBox.js" class="slideBox_smartphone smartphone_js"></script>')
       body.append('<script src="../js/prev_ver/main_page/smartphone/booklistBox.js" class="slideBox_smartphone smartphone_js"></script>')
-    }
-    else {
+    } else {
       // 익스플로러가 아닐 경우 호출되는 스크립트
       body.append('<script src="../js/main_page/smartphone/slideBox_cardMake.js" class="slideBox_smartphone smartphone_js"></script>')
       body.append('<script src="../js/main_page/smartphone/slideBox_slide_swipe.js" class="slideBox_smartphone smartphone_js"></script>')
@@ -89,7 +88,7 @@ if(deviceCk === 'smartphone'){
   body.remove($('.smartphone_js'));
 
   
-  if ( (navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1) ) {
+  if ( (navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1) || (agent.indexOf("firefox") != -1) ) {
     // 익스플로러일 경우 호출되는 스크립트
     body.append('<script src="../js/prev_ver/main_page/tablet/slideBox.js" class="slideBox_tablet tablet_js"></script>')
     body.append('<script src="../js/prev_ver/main_page/tablet/booklistBox.js" class="booklistBox_tablet tablet_js"></script>')
@@ -114,7 +113,7 @@ if(deviceCk === 'smartphone'){
   body.remove($('.tablet_js'));
   body.remove($('.smartphone_js'));
 
-  if ( (navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1) ) {
+  if ( (navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1) || (agent.indexOf("firefox") != -1) ) {
     // 익스플로러일 경우 호출되는 스크립트
     body.append('<script src="../js/prev_ver/main_page/laptop/slideBox.js" class="slideBox_labtop labtop_js"></script>')
   }

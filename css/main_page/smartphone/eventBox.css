@@ -30,6 +30,10 @@
 .eventBox_bottom_text { display: none; }
 
 
+/* 카드 (전체) */
+.eventBox_card_total > div { cursor: pointer; }
+
+
 /* 카드 영역 (펼쳐짐) */
 .eventBox_card_wrap {
   position: relative;

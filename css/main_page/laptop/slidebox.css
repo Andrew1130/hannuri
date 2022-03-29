@@ -25,6 +25,7 @@
   width: 58.75rem; height: 25rem;
   margin: auto;  margin-top: 100px;
   overflow: hidden;
+  border-radius: 0.625rem;
 }
 .slideBox_wrap::before{
   content: "";
@@ -32,6 +33,7 @@
   top: 0; bottom: 0; left: 0; right: 0;
   opacity: 0.3;
   background-color: #fff;
+  border-radius: 0.625rem;
 }
 
 
@@ -41,6 +43,7 @@
   float: left;
   width: 25%; height: 100%; 
   background-color: #fff;
+  border-radius: 0.625rem;
 }
 .cards_img { 
   height: 100%;

@@ -131,7 +131,10 @@ win.on('resize', function(){
   if(beforeDevice !== afterDevice) {
     beforeDevice = afterDevice;
     
-    location.reload(); 
+    setTimeout(function(){
+      window.location.reload();
+    });
+    //* 파이어폭스에서는 location.reload(); 가 작동하지 않아서, 위와 같이 구문을 수정
     // 이벤트로 인해 checkType의 값이 변경되었을 경우, 그 값을 함수 외부에 전달하기 위해 새로고침 메서드를 사용
   }
 });
