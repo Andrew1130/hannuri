@@ -65,6 +65,8 @@ if(deviceCk === 'smartphone'){
 
   if ( (navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1) || (agent.indexOf("firefox") != -1)  ) {
       // 익스플로러, 파이어폭스의 경우 호출되는 스크립트
+      //* 익스플로러의 : 지원하지 않는 메소드 문제 때문에 기존 스크립트(jqeury) 호출. 
+      //* 파이어폭스 : 기존 스크립트가 더 자연스러운 연출로 보임
       body.append('<script src="../js/prev_ver/main_page/smartphone/slideBox.js" class="slideBox_smartphone smartphone_js"></script>')
       body.append('<script src="../js/prev_ver/main_page/smartphone/booklistBox.js" class="slideBox_smartphone smartphone_js"></script>')
     } else {
