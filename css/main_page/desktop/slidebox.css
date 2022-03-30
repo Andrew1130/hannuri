@@ -121,7 +121,7 @@
   transition-duration: 0.2s;
   }
 
-.slideBox_nextbtn:hover {
+/* .slideBox_nextbtn:hover {
   transform: scale(1.1);
   transition-property: transform;
   transition-duration: 0.2s;
@@ -131,6 +131,6 @@
   transform: scale(1.1);
   transition-property: transform;
   transition-duration: 0.2s;
-}
+} */
   
 } /* @media screen and (min-width: 1440px) */
