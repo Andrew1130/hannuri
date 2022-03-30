@@ -118,18 +118,20 @@ if(deviceCk === 'smartphone'){
   if ( (navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1) || (agent.indexOf("firefox") != -1) ) {
     // 익스플로러 및 파이어폭스일 경우 호출되는 스크립트
     body.append('<script src="../js/prev_ver/main_page/laptop/slideBox.js" class="slideBox_labtop labtop_js"></script>')
-    body.append('<script src="../js/prev_ver/main_page/laptop/booklistBox.js" class="booklistBox_labtop labtop_js"></script>')
   }
   else {
     // 익스플로러가 아닐 경우 호출되는 스크립트
     body.append('<script src="../js/main_page/laptop/slideBox_cardMake.js" class="slideBox_labtop labtop_js"></script>')
     body.append('<script src="../js/main_page/laptop/slideBox_slide.js" class="slideBox_labtop labtop_js"></script>')
-    body.append('<script src="../js/main_page/laptop/booklistBox_cardMake.js" class="booklistBox_labtop labtop_js"></script>')
-    body.append('<script src="../js/main_page/laptop/booklistBox_slide.js" class="booklistBox_labtop labtop_js"></script>')
+    // body.append('<script src="../js/main_page/laptop/booklistBox_cardMake.js" class="booklistBox_labtop labtop_js"></script>')
+    // body.append('<script src="../js/main_page/laptop/booklistBox_slide.js" class="booklistBox_labtop labtop_js"></script>')
+    //* 작동해본 결과 이 부분은 기존 제이쿼리 코드가 더 자연스러운 것 같아, 기존 버전을 일단 그대로 유지
   }
 
   body.append('<script src="../js/main_page/laptop/introBox_cardMake.js" class="introBox_labtop labtop_js"></script>')
   body.append('<script src="../js/main_page/laptop/introBox_slide.js" class="introBox_labtop labtop_js"></script>')
+
+  body.append('<script src="../js/prev_ver/main_page/laptop/booklistBox.js" class="booklistBox_labtop labtop_js"></script>')
 
   body.append('<script src="../js/main_page/laptop/eventBox_cardMake.js" class="eventBox_labtop labtop_js"></script>')
   body.append('<script src="../js/main_page/laptop/eventBox_slide.js" class="eventBox_labtop labtop_js"></script>')
