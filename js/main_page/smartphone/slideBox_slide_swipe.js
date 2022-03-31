@@ -5,6 +5,7 @@
 
 setTimeout(function() {
 /* 이 스크립트가 정상 실행되는 전제는, slideBox_slidecardMake.js 스크립트가 먼저 실행이 완료되는 것이므로, 위 스크립트의 실행이 끝난 후에 이 스크립트(slideBox_slide.js)를 실행하기 위하여 setTimeout을 설정 */
+// 전역변수의 사용을 억제하는 효과도 있다.
 
 //? -------------------------------------------
 //? 변수 
@@ -114,13 +115,14 @@ slideBoxWrap.addEventListener('touchend', function(e){
   var resultX = startX - endX;
 
   if(resultX > 100) {
-    nextBtnFn()
+    nextBtn.click();
   } else if ( resultX < -100 ) {
-    prevBtnFn()
+    prevBtn.click();
   }
 
 });
 
 
 }, 400) // setTimeout()
+
 

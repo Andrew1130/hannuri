@@ -6,6 +6,8 @@
 
 
 
+(function() {
+
 //? 변수 -----------------
 var headBoxWrap = document.querySelector(".headBox_wrap");
 var navBtn_head = headBoxWrap.querySelector(".headbox_navbtn");
@@ -26,3 +28,4 @@ navBtn_navBox.addEventListener('click', function(e){
   navBox.className += ' navBox_off';
 })
 
+}())

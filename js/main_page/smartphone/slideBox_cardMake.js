@@ -9,6 +9,9 @@
 // json과 js를 이용하여 슬라이드 내부 카드를 자동으로 생성
 
 
+
+(function() {
+
 var jsonData = $.getJSON('../json/main_page/slideBoxData.json');
 jsonData.done(function(data){
   var slideBoxData = data;
@@ -64,3 +67,5 @@ setTimeout(function(){
   }, 2000); // setTimeout()
 
 }); // jsonData
+
+}())
