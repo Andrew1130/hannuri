@@ -13,6 +13,9 @@
 //* 인디케이터가 1페이지당 1개씩 생성되도록 처리
 
 
+(function() { 
+
+
 var jsonData_PopularBook = $.getJSON('../json/main_page/booklistBoxData.json');
 // 도서목록 페이지 내 인기 도서의 데이터는 메인페이지의 인기 도서와 동일
 jsonData_PopularBook.done(function(data_PopularBook){
@@ -337,3 +340,6 @@ IndicatorA.on('click', function(e){
 
 }); // $.getJSON (jsonData_BookList)
 }); // $.getJSON (jsonData_PopularBook)
+
+
+}());

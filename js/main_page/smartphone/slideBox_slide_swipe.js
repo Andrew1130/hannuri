@@ -17,7 +17,6 @@ var slideBoxCards = slideBoxInner.children
 var nextBtn = slideBoxWrap.querySelector(".slideBox_nextbtn");
 var prevBtn = slideBoxWrap.querySelector(".slideBox_prevbtn");
 var swipeGuideArea = document.querySelector(".swipe_guide_area")
-var permission = true;
 
 
 // 스와이프 기능 관련
@@ -63,16 +62,17 @@ var nextBtnFn = function(){
   prevBtn.disabled = true;
 
   swipeGuideArea.classList.add('none'); // 스와이프 안내문구 지우기
-  slideNextAniFn(slideBoxInner);
+  slideNextAniFn(slideBoxInner); // 1: 왼쪽으로 한 칸 밀기 (marginLeft = -100)
   setTimeout(function() {
-    slideBoxInner.append(slideBoxCards[0]);
-    slideBoxInner.style.marginLeft = 0;
+    slideBoxInner.append(slideBoxCards[0]); // 2: 맨 왼쪽의 카드를 맨 뒤로 붙이기
+    slideBoxInner.style.marginLeft = 0; 
+    // 3: 1,2로 인해 왼쪽으로 2칸 간 셈이므로, marginLeft = 0;으로 하여 1칸 간 것으로 만들기
     slideBoxCards = slideBoxInner.children;
+    // 1~3으로 인해 카드들의 순서가 변경되었으므로, 이 사실을 함수 외부의 변수에 전달
 
     nextBtn.disabled = false;
     prevBtn.disabled = false;
   }, 800);
-    
 };
 
 var prevBtnFn = function(){

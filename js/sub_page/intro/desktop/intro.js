@@ -7,6 +7,8 @@
 // 모달 윈도우에서 x버튼 혹은 밑의 닫기버튼을 누르면 모달윈도우가 닫히도록 하기
 
 
+(function() { 
+
 var jsonData = $.getJSON('../json/sub_page/introData.json');
 jsonData.done(function(data){
   var introData = data;
@@ -81,3 +83,5 @@ modalCloseContents.on('click', function(e){
 
 
 }); // $.getJSON
+
+}());

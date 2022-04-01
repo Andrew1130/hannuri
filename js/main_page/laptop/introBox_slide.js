@@ -84,6 +84,7 @@ var ZIndexControlFn = function(i) {
 }
 
 
+// 기능 함수
 var actionFn = function(i){
   var card_length = siblings(introBoxContents[0].parentNode).length
   var k = 3
@@ -96,6 +97,8 @@ var actionFn = function(i){
   }
 }
 
+
+// 순서 함수 (기능 함수가 순서에 맞게 동작하도록 함)
 var actionNumSetFn = function(n){
   if(n >= introBoxData.length){
     n = 0;

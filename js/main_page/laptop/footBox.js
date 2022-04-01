@@ -1,0 +1,6 @@
+// footBox.js
+
+
+(function() { 
+
+}());
