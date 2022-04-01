@@ -142,8 +142,18 @@ if(deviceCk === 'smartphone'){
   body.remove($('.tablet_js'));
   body.remove($('.smartphone_js'));
 
-  body.append('<script src="../js/main_page/desktop/slideBox.js" class="slideBox_desktop desktop_js"></script>')
-  body.append('<script src="../js/main_page/desktop/introBox.js" class="introBox_desktop desktop_js"></script>')
+  if ( (navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1) || (agent.indexOf("firefox") != -1) ) {
+    // 익스플로러 및 파이어폭스일 경우 호출되는 스크립트
+    body.append('<script src="../js/prev_ver/main_page/desktop/slideBox.js" class="slideBox_desktop desktop_js"></script>')
+  }
+  else {
+    // 익스플로러가 아닐 경우 호출되는 스크립트
+    body.append('<script src="../js/main_page/desktop/slideBox_cardMake.js" class="slideBox_desktop desktop_js"></script>')
+    body.append('<script src="../js/main_page/desktop/slideBox_slide.js" class="slideBox_desktop desktop_js"></script>')
+  }
+
+  body.append('<script src="../js/main_page/desktop/introBox_cardMake.js" class="introBox_desktop desktop_js"></script>')
+  body.append('<script src="../js/main_page/desktop/introBox_slide.js" class="introBox_desktop desktop_js"></script>')
   body.append('<script src="../js/main_page/desktop/booklistBox.js" class="booklistBox_desktop desktop_js"></script>')
   body.append('<script src="../js/main_page/desktop/eventBox_cardMake.js" class="eventBox_desktop desktop_js"></script>')
   body.append('<script src="../js/main_page/desktop/eventBox_slide.js" class="eventBox_desktop desktop_js"></script>')

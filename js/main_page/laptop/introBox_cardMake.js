@@ -8,6 +8,8 @@
 
 
 
+(function() { 
+
 var jsonData = $.getJSON('../json/main_page/introBoxData.json');
 jsonData.done(function(data){
   var introBoxData = data;
@@ -41,4 +43,4 @@ for(; i<introBoxData.length ; i+=1) {
 
 }); // jsonData
 
-
+}());

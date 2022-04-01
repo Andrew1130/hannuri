@@ -2,6 +2,9 @@
 
 
 
+
+(function() {
+
 var jsonData = $.getJSON('../json/main_page/introBoxData.json');
 jsonData.done(function(data){
   var introBoxData = data;
@@ -132,3 +135,5 @@ prevBtn.addEventListener('click', function(e){
 
 
 }); // jsonData
+
+}());

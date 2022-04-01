@@ -6,6 +6,9 @@
 // js로 슬라이드 카드 내용 생성
 
 
+(function() { 
+
+
 var jsonData = $.getJSON('../json/main_page/slideBoxData.json');
 jsonData.done(function(data){
   var slideBoxData = data;
@@ -38,3 +41,6 @@ for(; i<slideBoxData.length ; i+=1) {
 
 
 }); // jsonData
+
+
+}());

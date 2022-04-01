@@ -7,6 +7,10 @@
 // 3. 스와이프 기능 적용 (스마트폰에서 버튼 누르기 힘든 경우가 있으므로, 이를 대비하기 위함)
 
 
+
+(function() { 
+
+
 var jsonData = $.getJSON('../json/main_page/slideBoxData.json');
 jsonData.done(function(data){
   var slideBoxData = data;
@@ -152,3 +156,6 @@ slideBoxWrap.on('touchend', function(e){
 
 
 }); // jsonData
+
+
+}());

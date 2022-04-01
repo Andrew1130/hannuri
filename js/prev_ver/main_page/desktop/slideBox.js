@@ -6,6 +6,9 @@
 // 2. 무한 슬라이드(요소 강제이동형) 적용
 
 
+
+(function() {
+
 var jsonData = $.getJSON('../json/main_page/slideBoxData.json');
 jsonData.done(function(data){
   var slideBoxData = data;
@@ -41,7 +44,6 @@ for(; i<slideBoxData.length ; i+=1) {
 //! Jquery -------------------------------------
 (function($){
 //? 변수 ------------
-var headBox = $("#headBox")
 var slideBoxInner = $(".slideBox_inner")
 var slideBoxCards = slideBoxInner.children('div')
 // console.log(slideBoxCards)
@@ -107,3 +109,5 @@ prevBtn.on('click', function(){
 
 
 }); // jsonData
+
+}())

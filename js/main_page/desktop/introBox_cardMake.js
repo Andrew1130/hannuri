@@ -4,7 +4,7 @@
 
 
 //? 구현할 기능 -----------
-// js로 introBox 내부에 카드 생성
+// introBox 내 카드를 js로 생성
 
 
 (function() { 
@@ -13,17 +13,17 @@ var jsonData = $.getJSON('../json/main_page/introBoxData.json');
 jsonData.done(function(data){
   var introBoxData = data;
 
-
+  
 //? 변수 ------------
 var introBoxCardWrap = document.querySelector('.introBox_card_wrap')
-var baseUrl = "../img/main_page/02_tablet/03_introbox/"
+var baseUrl = "../img/main_page/03_laptop/03_introbox/"
 
 
 //? 함수 ------------
 //TODO : svg 미 적용시에는 png가 나타나도록 해보기
 var makeIntroCardFn = function(title, contents, img_png, img_svg) {
   var makeDiv = document.createElement('div')
-  makeDiv.innerHTML = '<div class="introBox_contents"><h3 class="introBox_card_title">'+ title +'</h3><p class="introBox_card_contents">'+ contents +'</p><button type="button" class="introBox_card_btn"><p>자세히보기</p></button></div>'
+  makeDiv.innerHTML = '<div class="introBox_contents"><h3 class="introBox_card_title">'+ title +'</h3><p class="introBox_card_contents">'+ contents +'</p><button type="button" class="introBox_card_btn">자세히보기</button></div>'
 
   var SelImgcon = makeDiv.querySelector('.introBox_contents')
   SelImgcon.style.backgroundImage = 'url('+ baseUrl +''+ img_png +')'

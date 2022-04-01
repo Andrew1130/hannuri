@@ -11,6 +11,7 @@
 
 
 (function() {
+// 즉시실행함수로 코드 전체를 감싸, var로 선언된 변수가 전역변수로 사용되는 것을 억제
 
 var jsonData = $.getJSON('../json/main_page/slideBoxData.json');
 jsonData.done(function(data){
@@ -68,4 +69,4 @@ setTimeout(function(){
 
 }); // jsonData
 
-}())
+}());

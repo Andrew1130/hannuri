@@ -6,6 +6,10 @@
 // 2. 무한 슬라이드(요소 강제이동형) 적용
 
 
+
+(function() { 
+
+
 var jsonData = $.getJSON('../json/main_page/slideBoxData.json');
 jsonData.done(function(data){
   var slideBoxData = data;
@@ -108,3 +112,6 @@ prevBtn.on('click', function(){
 
 
 }); // jsonData
+
+
+}());
