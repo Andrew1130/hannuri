@@ -38,9 +38,9 @@ var swipeGuideArea = document.querySelector(".swipe_guide_area")
 //? 함수 
 //? -------------------------------------------
 // 슬라이드 카드 생성 관련
-var makeSlideCardsFn = function(title, contents, img_png, img_svg) {
+var makeSlideCardsFn = function(img_description, title, contents, img_png, img_svg) {
   var makeDiv = document.createElement('div')
-  makeDiv.innerHTML = '<div class="cards_img"><div class="slideBox_total_contents"><h3 class="slideBox_title">'+ title +'</h3><p class="slideBox_contents">'+ contents +'</p><div class="slideBox_btn" tabindex="0"><button type="button"><p>바로가기</p></button></div></div></div>'
+  makeDiv.innerHTML = '<div role="img" class="cards_img" alt='+ img_description +' aria-label='+ img_description +' tabindex="0"><div class="slideBox_total_contents"><h3 class="slideBox_title">'+ title +'</h3><p class="slideBox_contents">'+ contents +'</p><div class="slideBox_btn" tabindex="0"><button type="button"><p>바로가기</p></button></div></div></div>'
 
   var SelImgcon = makeDiv.querySelector('.cards_img')
 
@@ -58,7 +58,7 @@ var makeSlideCardsFn = function(title, contents, img_png, img_svg) {
 // 슬라이드 카드 생성 관련
 var i = 0;
 for(; i<slideBoxData.length ; i+=1) {
-  makeSlideCardsFn(slideBoxData[i].title, slideBoxData[i].contents, slideBoxData[i].img_png, slideBoxData[i].img_svg)
+  makeSlideCardsFn(slideBoxData[i].img_description, slideBoxData[i].title, slideBoxData[i].contents, slideBoxData[i].img_png, slideBoxData[i].img_svg)
 }
 
 
