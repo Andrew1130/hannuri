@@ -68,7 +68,6 @@ eventBoxCardWrap[2].classList.add('off')
 
 //? 이벤트 -----------
 for(; j<eventBoxMakeDiv.length ; j++){
-  console.log(eventBoxMakeDiv.length)
   eventBoxMakeDiv[j].addEventListener('click', function(e){
     e.preventDefault()
     var onBoxWrap = this.children[0]
@@ -111,7 +110,57 @@ for(; j<eventBoxMakeDiv.length ; j++){
       onBoxArea.classList.remove('off')
       onBoxArea.classList.add('on')
     },300)
-  })
+
+    console.log(eventBoxMakeDiv)
+    console.log(eventBoxCardWrap)
+  });
+
+  eventBoxMakeDiv[j].addEventListener('focus', function(e){
+    e.preventDefault()
+    var onBoxWrap = this.children[0]
+    var onBoxArea = this.children[0].children[1]
+
+
+    /* $(this).siblings().find('.eventBox_card_wrap') 및
+    $(this).siblings().find('.eventBox_content_area') 구현 */
+    var Len = siblings(this).length
+    var sibWrapArr = []
+    var sibAreaArr = []
+    var i = 2
+    for(; i<Len ; i++){
+      sibWrapArr.push(siblings(this)[i].children[0])
+      sibAreaArr.push(siblings(this)[i].children[0].children[1])
+    }
+    var sibBoxWrap = sibWrapArr
+    var sibBoxArea = sibAreaArr
+
+
+    /* 
+    onBoxWrap.animate({ height: 23.125 + 'rem' })
+    onBoxArea.css({ display: 'block' })
+    sibBoxWrap.animate({ height: 3.125 + 'rem' })
+    sibBoxArea.css({ display: 'none' })  구현 
+    */
+  
+    onBoxWrap.classList.add('on')
+    onBoxWrap.classList.remove('off')
+    
+    var k = 0
+    for(; k<Len-2 ; k++){
+      sibBoxWrap[k].classList.add('off')
+      sibBoxWrap[k].classList.remove('on')
+      sibBoxArea[k].classList.add('off')
+      sibBoxArea[k].classList.remove('on')
+    }
+
+    setTimeout(function(){
+      onBoxArea.classList.remove('off')
+      onBoxArea.classList.add('on')
+    },300)
+
+    console.log(eventBoxMakeDiv)
+    console.log(eventBoxCardWrap)
+  });
 }
 
 

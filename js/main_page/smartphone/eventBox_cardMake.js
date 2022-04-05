@@ -19,9 +19,9 @@ var baseUrl = "../img/main_page/01_smartphone/05_eventbox/"
 
 
 //? 함수 ------------
-var makeEventCardsFn = function(title, contents, img_png, img_svg){
+var makeEventCardsFn = function(img_description, title, contents, img_png, img_svg){
   var makeDiv = document.createElement('div')
-  makeDiv.innerHTML = '<div class="eventBox_card_wrap"><div class="eventBox_img_area"></div><div class="eventBox_content_area"><h3 class="eventBox_card_title">'+ title +'</h3><p class="eventBox_card_contents">'+ contents +'</p><button type="button" class="eventBox_card_viewbtn">자세히보기</button><button type="button" class="eventBox_card_joinbtn">참여하기</button></div></div>'
+  makeDiv.innerHTML = '<div role="img" alt='+ img_description +' class="eventBox_card_wrap" aria-label='+ img_description +' tabindex="0"><div class="eventBox_img_area"></div><div class="eventBox_content_area"><h3 class="eventBox_card_title" tabindex="0">'+ title +'</h3><p class="eventBox_card_contents" tabindex="0">'+ contents +'</p><button type="button" class="eventBox_card_viewbtn">자세히보기</button><button type="button" class="eventBox_card_joinbtn">참여하기</button></div></div>'
 
   var SelImgcon = makeDiv.querySelector('.eventBox_card_wrap')
   SelImgcon.style.backgroundImage = 'url('+ baseUrl +''+ img_png +')'
@@ -35,7 +35,7 @@ var makeEventCardsFn = function(title, contents, img_png, img_svg){
 //? 기능 실행 -----------
 var i = 0
 for(; i<eventBoxData.length; i+=1) {
-  makeEventCardsFn(eventBoxData[i].title, eventBoxData[i].contents, eventBoxData[i].img_png)
+  makeEventCardsFn(eventBoxData[i].img_description, eventBoxData[i].title, eventBoxData[i].contents, eventBoxData[i].img_png)
 }
 
 

@@ -32,6 +32,7 @@
 
 /* 카드 (전체) */
 .eventBox_card_total > div { cursor: pointer; }
+.eventBox_card_total > button { display: none; }
 
 
 /* 카드 영역 (펼쳐짐) */

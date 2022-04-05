@@ -3,42 +3,49 @@
    "id": 1,
    "title": "Viverra",
    "img_png": "popular_book_01.png",
-   "img_svg": "popular_book_01.svg"
+   "img_svg": "popular_book_01.svg",
+   "img_description":"인기도서_1_Viverra"
  },
  {
    "id": 2,
    "title": "Volutpat",
    "img_png": "popular_book_02.png",
-   "img_svg": "popular_book_02.svg"
+   "img_svg": "popular_book_02.svg",
+   "img_description":"인기도서_2_Volutpat"
  },
  {
    "id": 3,
    "title": "Imperdiet",
    "img_png": "popular_book_03.png",
-   "img_svg": "popular_book_03.svg"
+   "img_svg": "popular_book_03.svg",
+   "img_description":"인기도서_3_Imperdiet"
  },
  {
    "id": 4,
    "title": "Tempor",
    "img_png": "popular_book_04.png",
-   "img_svg": "popular_book_04.svg"
+   "img_svg": "popular_book_04.svg",
+   "img_description":"인기도서_4_Tempor"
  },
  {
    "id": 5,
    "title": "massa",
    "img_png": "popular_book_05.png",
-   "img_svg": "popular_book_05.svg"
+   "img_svg": "popular_book_05.svg",
+   "img_description":"인기도서_5_massa"
  },
  {
    "id": 6,
    "title": "fermentum",
    "img_png": "popular_book_06.png",
-   "img_svg": "popular_book_06.svg"
+   "img_svg": "popular_book_06.svg",
+   "img_description":"인기도서_6_fermentum"
  },
  {
    "id": 7,
    "title": "congue",
    "img_png": "popular_book_07.png",
-   "img_svg": "popular_book_07.svg"
+   "img_svg": "popular_book_07.svg",
+   "img_description":"인기도서_7_congue"
  }
 ]
