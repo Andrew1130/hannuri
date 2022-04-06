@@ -3,6 +3,9 @@
 
 
 
+
+setTimeout(function(){
+
 (function($){
 //? 구현할 기능 -----------
 // 너비가 변함에 따라 기기 및 css가 변하는 것에 맞추어, 각 기기 및 css에 적합한 자바스크립트가 동작할 수 있도록 처리
@@ -14,8 +17,6 @@ jquery_rwd_set.js보다 이 js(main_import.js)가 늦게 실행되어야 하므�
 [main_import.js의 정상 작동의 전제 중 하나는 jquery_rwd_set.js에서 쓰이는 checkType 변수가 작동하는 것이므로],
 setTimeout을 걸어 jquery_rwd_set.js가 먼저 실행 완료되도록 한다.
 */
-
-setTimeout(function(){
 
 
 //? 변수 ------------
@@ -159,6 +160,6 @@ if(deviceCk === 'smartphone'){
   body.append('<script src="../js/main_page/desktop/eventBox_slide.js" class="eventBox_desktop desktop_js"></script>')
 }
 
-}, 1000); // setTimeout()
-
 })(jQuery);
+
+}, 1000); // setTimeout()
