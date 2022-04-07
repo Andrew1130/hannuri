@@ -42,7 +42,7 @@
 /* 네비게이션 영역 */
 .navBox { 
   float: right; 
-  margin-top: 2.1875rem; margin-right: 0.75rem;
+  margin-top: 1.5625rem; margin-right: 0.75rem;
   width: auto; height: 1.125rem; 
 }
 .nav_contents li {
