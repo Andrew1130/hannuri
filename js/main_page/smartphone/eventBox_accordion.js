@@ -115,21 +115,22 @@ for(; j<eventBoxMakeDiv.length ; j++){
     console.log(eventBoxCardWrap)
   });
 
-  eventBoxMakeDiv[j].addEventListener('focus', function(e){
+  eventBoxCardWrap[j].addEventListener('focus', function(e){
     e.preventDefault()
-    var onBoxWrap = this.children[0]
-    var onBoxArea = this.children[0].children[1]
+    var onBoxWrap = this
+    var onBoxArea = this.children[1]
 
 
     /* $(this).siblings().find('.eventBox_card_wrap') 및
     $(this).siblings().find('.eventBox_content_area') 구현 */
-    var Len = siblings(this).length
+    // var Len = siblings(this).length
+    var Len = siblings(this.parentNode).length
     var sibWrapArr = []
     var sibAreaArr = []
     var i = 2
     for(; i<Len ; i++){
-      sibWrapArr.push(siblings(this)[i].children[0])
-      sibAreaArr.push(siblings(this)[i].children[0].children[1])
+      sibWrapArr.push(siblings(this.parentNode)[i].children[0])
+      sibAreaArr.push(siblings(this.parentNode)[i].children[0].children[1])
     }
     var sibBoxWrap = sibWrapArr
     var sibBoxArea = sibAreaArr
