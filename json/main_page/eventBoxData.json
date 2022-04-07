@@ -5,7 +5,7 @@
    "contents": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium nihil doloribus.",
    "img_png": "eventbox_img_01.png",
    "img_svg": "eventbox_img_01.svg",
-   "img_description":"첫번째_이벤트"
+   "img_description":"첫번째_이벤트:글쓰기_그룹원_모집"
  },
  {
    "id": 2,
@@ -13,7 +13,7 @@
    "contents": "Sequi voluptas nobis impedit adipisci hic, quos atque odio ducimus optio eaque iste blanditiis.",
    "img_png": "eventbox_img_02.png",
    "img_svg": "eventbox_img_02.svg",
-   "img_description":"두번째_이벤트"
+   "img_description":"두번째_이벤트:저자와의_대화"
  },
  {
    "id": 3,
@@ -21,6 +21,6 @@
    "contents": "possimus molestias perspiciatis magnam nemo excepturi qui culpa animi numquam ad at autem.",
    "img_png": "eventbox_img_03.png",
    "img_svg": "eventbox_img_03.svg",
-   "img_description":"마지막_이벤트"
+   "img_description":"마지막_이벤트:도서_할인_판매"
  }
 ]
