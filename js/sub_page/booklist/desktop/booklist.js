@@ -136,9 +136,10 @@ var IndicatorA = IndicatorLi.children('a')
 // 슬라이드 (인기도서)
 // -------------------------------------------
 var nextBtnFn = function(){
-  permission = false;
+  nextBtn.attr('disabled', true)
+  console.log(nextBtn)
 
-  slideInner.animate({ marginLeft: -15.25 + 'rem'}, 
+  slideInner.stop().animate({ marginLeft: -15.25 + 'rem'}, 
   function(){
     slideMakeDiv.eq(0).appendTo(slideInner)
     slideInner.css({ marginLeft: 0 })
@@ -146,20 +147,20 @@ var nextBtnFn = function(){
     slideMakeDiv = slideInner.children('div')
   })
 
-  permission = true;
+  nextBtn.attr('disabled', false)
 }
 
 var prevBtnFn = function(){
-  permission = false;
+  prevBtn.attr('disabled', true)
+  console.log(prevBtn)
 
   slideMakeDiv.eq(-1).prependTo(slideInner)
   slideInner.css({ marginLeft: -15.25 + 'rem' })
-  slideInner.animate({ marginLeft: 0 },
+  slideInner.stop().animate({ marginLeft: 0 },
   function(){
     slideMakeDiv = slideInner.children('div')
+    prevBtn.attr('disabled', false)
   })
-
-  permission = true;
 }
 
 
