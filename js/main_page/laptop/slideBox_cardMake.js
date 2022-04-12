@@ -25,7 +25,7 @@ var baseUrl = "../img/main_page/03_laptop/02_slidebox/"
 //TODO : svg 미 적용시에는 png가 나타나도록 해보기
 var makeSlideCardsFn = function(img_description, title, contents, img_png, img_svg) {
   var makeDiv = document.createElement('div')
-  makeDiv.innerHTML = '<div role="img" tabindex="0" class="cards_img" alt='+ img_description +' aria-label='+ img_description +'><div class="slideBox_total_contents"><h3 class="slideBox_title" tabindex="0">'+ title +'</h3><p class="slideBox_contents" tabindex="0">'+ contents +'</p><div class="slideBox_btn" tabindex="0"><button type="button"><p>바로가기</p></button></div></div></div>'
+  makeDiv.innerHTML = '<div role="img" tabindex="0" class="cards_img" alt='+ img_description +' aria-label='+ img_description +'><div class="slideBox_total_contents"><h3 class="slideBox_title" tabindex="0">'+ title +'</h3><p class="slideBox_contents" tabindex="0">'+ contents +'</p><button type="button" class="slideBox_btn">바로가기</button></div></div>'
 
   var SelImgcon = makeDiv.querySelector('.cards_img')
 

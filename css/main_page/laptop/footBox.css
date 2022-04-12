@@ -78,7 +78,8 @@
     margin: auto; margin-bottom: 0.9375rem;
   }
   
-    .footBox_sns_wrap li {
+    .footBox_sns_wrap li,
+    .footBox_sns_wrap li a {
       display: block; float: left;
       width: 2.5rem; height: 2.5rem; margin-right: 1.875rem;
       /* background-color: #ccc;  */
