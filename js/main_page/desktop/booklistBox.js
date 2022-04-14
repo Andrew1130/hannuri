@@ -22,9 +22,9 @@ var baseUrl = "../img/booklist_page/"
 
 //* 함수 -----------------------
 //TODO : svg 미 적용시에는 png가 나타나도록 해보기
-var makeBookListCardFn = function(title, img_png, img_svg){
+var makeBookListCardFn = function(img_description, title, img_png, img_svg){
   var makeDiv = document.createElement('div')
-  makeDiv.innerHTML = '<div class="booklistBox_card"><div class="booklistBox_card_img"></div><p class="booklistBox_card_title">'+ title +'</p></div>'
+  makeDiv.innerHTML = '<div class="booklistBox_card" role="img" alt='+ img_description +' aria-label='+ img_description +' tabindex="0"><div class="booklistBox_card_img"></div><p class="booklistBox_card_title">'+ title +'</p></div>'
 
   var SelImgcon = makeDiv.querySelector('.booklistBox_card_img')
   SelImgcon.style.backgroundImage = 'url('+ baseUrl +''+ img_png +')'
@@ -37,7 +37,7 @@ var makeBookListCardFn = function(title, img_png, img_svg){
 //* 반복문으로 여러번 만들기 ---------------
 var i = 0
 for(; i<booklistBoxData.length ; i+=1 ) {
-  makeBookListCardFn(booklistBoxData[i].title, booklistBoxData[i].img_png, booklistBoxData[i].img_svg)
+  makeBookListCardFn(booklistBoxData[i].img_description,booklistBoxData[i].title, booklistBoxData[i].img_png, booklistBoxData[i].img_svg)
 }
 
 
