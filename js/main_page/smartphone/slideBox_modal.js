@@ -102,4 +102,4 @@ Slide_Modal_closebtn_title.on("click", function(e){
 
 })(jQuery);
 
-}, 1500); // setTimeout()
+}, 2000); // setTimeout()
