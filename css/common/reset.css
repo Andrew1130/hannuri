@@ -50,6 +50,7 @@ table {
 
 abbr { text-decoration: none; }
 address { font-style: normal; }
+fieldset { border: 0; }
 
 /* 시멘틱 태그 */
 
