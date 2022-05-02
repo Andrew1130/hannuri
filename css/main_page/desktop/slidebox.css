@@ -128,5 +128,8 @@
   transition-property: transform;
   transition-duration: 0.2s;
 } */
+
+/** 전체 레이아웃 */
+#modalWindow { display: none; }
   
 } /* @media screen and (min-width: 1440px) */

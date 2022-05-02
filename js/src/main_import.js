@@ -165,4 +165,4 @@ if(deviceCk === 'smartphone'){
 
 })(jQuery);
 
-}, 1000); // setTimeout()
+}, 500); // setTimeout()
