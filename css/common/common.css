@@ -27,5 +27,8 @@
 
 
 /** layout */
+#wrap {
+  position: relative;
+}
 
 

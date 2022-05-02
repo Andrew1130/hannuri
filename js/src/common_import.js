@@ -8,13 +8,16 @@
 //? 변수 ------------
 var headBox = $('#headBox')
 var footBox = $('#footBox')
+var modalWindow_slideBox = $('.modalWindow_slideBox')
+console.log(modalWindow_slideBox)
 var baseUrl = "../page/common/"
-var common_import_Arr = ["headBox.html", "footBox.html"]
+var common_import_Arr = ["headBox.html", "footBox.html", "modal_slidebox.html"]
 
 
 //? 기능수행 -----------
 headBox.load(baseUrl + common_import_Arr[0])
 footBox.load(baseUrl + common_import_Arr[1])
+modalWindow_slideBox.load(baseUrl + common_import_Arr[2])
 
 
 //? 이벤트 -----------

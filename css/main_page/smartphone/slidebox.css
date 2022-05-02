@@ -155,4 +155,129 @@
 }
 
 
+/* 모달윈도우 */
+/** 전체 레이아웃 */
+#modalWindow {
+  display: none;
+  position: absolute;
+  top: 0; bottom: 0;
+  left: 0; right: 0;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 3000;
+}
+.modalBox {
+  position: absolute;
+  top: 50px;
+  left: 50%; transform: translateX(-50%);
+  width: 80%; height: auto;
+  border-radius: 0.625rem;
+  background-color: #fff;
+  box-shadow: 0.25rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+}
+
+/** 제목 부분 */
+.modal_title_area {
+  position: relative;
+  width: 85%; height: 2.5rem;
+  margin: auto;
+  padding-top: 2.625rem; padding-bottom: 1.875rem;
+  border-bottom: 0.0625rem solid #171717;
+}
+.modal_title {
+  font-size: 2.25rem; font-weight: 700;
+  text-align: center; color: #171717;
+}
+.modal_closebtn_title {
+  position: absolute; top: 0.9375rem; right: 0;
+  width: 1.5625rem; height: 1.5625rem;
+  background-image: url("../../../img/main_page/01_smartphone/02_slidebox/modal/modal_big_closebtn.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/** 소제목 */
+.slide_modal_contents h3 {
+  font-size: 2rem; font-weight: 700; 
+  text-align: center; color: #171717;
+  padding-top: 4.375rem; padding-bottom: 0.625rem;
+}
+.slide_modal_contents h4 {
+  font-size: 1.75rem; font-weight: 500;
+  text-align: center; color: #171717;
+  margin: auto;
+  margin-top: 3.125rem; margin-bottom: 38px;
+}
+
+
+/** 입력부분(공통) */
+.slide_modal_contents input {
+  display: block;
+  text-align: center;
+  width: 85%; margin: auto;
+  padding: 0; border: 0;
+  font-size: 1rem;
+  padding-top: 22px; padding-bottom: 22px;
+  border-bottom: 0.0625rem solid #171717;
+}
+
+
+/** 입력부분(도서 제작) */
+.user_file_upload {
+  position: relative;
+  width: 85%; margin: auto; 
+  /* height: 66px; */
+  padding-top: 2.5rem; padding-bottom: 1.375rem;
+  border-bottom: 0.0625rem solid #171717;
+}
+.user_file_upload > i {
+  float: right; margin-left: 0.5rem;
+  cursor: pointer;
+}
+.content_box {
+  position: absolute;
+  width: 70%; height: 2.5rem; 
+  /* background-color: #ccc; */
+  top: 0.9375rem; left: 0.3125rem;
+}
+
+
+/** 입력부분(모임 참여) */
+.user_checkbox > i {
+  margin-left: 30px; margin-bottom: 30px;
+}
+.user_checkbox > i:nth-of-type(1) { margin-top: 40px; }
+.meeting_question_container { display: none; }
+
+
+/** 입력부분(기타) */
+#book_request_quantity, #book_make_author {
+  margin-bottom: 3.125rem;
+}
+
+/** '모임 참여' 모달윈도우 내 안내문구 */
+.Notice_contents > li {
+  list-style: disc;
+  margin-left: 50px; margin-right: 40px;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+.Notice_contents > li:first-child {
+  margin-top: 30px;
+}
+
+
+/** 제출버튼 */
+.modal_submit {
+  display: block;
+  margin: auto;
+  margin-top: 6.25rem; margin-bottom: 6.25rem;
+  width: 80%; height: 3.125rem;
+  border-radius: 0.625rem;
+  background-color: #FED56D;
+  font-size: 1.5rem; color: #171717;
+  text-align: center;
+}
+.modal_submit:active { box-shadow: inset 0.2rem 0.2rem 0.2rem #555; }
+
 } /* @media screen and (max-width: 599px) */

@@ -33,10 +33,11 @@ var introBox = $('#introBox')
 var booklistBox = $('#booklistBox')
 var eventBox = $('#eventBox')
 var footBox = $('#footBox')
+var modalBox = $('.modalBox')
 
 //* url 및 배열
 var baseUrl = "../page/common/"
-var common_import_Arr = ["headBox.html", "footBox.html"]
+var common_import_Arr = ["headBox.html", "footBox.html", "modal_slidebox.html"]
 
 
 //? 기능 수행 -----------
@@ -54,6 +55,7 @@ headBox.load(baseUrl + common_import_Arr[0], function(){
   }
 });
 footBox.load(baseUrl + common_import_Arr[1])
+modalBox.load(baseUrl + common_import_Arr[2])
 
 
 // 기기 변화에 맞추어, 그에 맞는 js 호출하기 ---------------
@@ -74,6 +76,7 @@ if(deviceCk === 'smartphone'){
       // 익스플로러가 아닐 경우 호출되는 스크립트
       body.append('<script src="../js/main_page/smartphone/slideBox_cardMake.js" class="slideBox_smartphone smartphone_js"></script>')
       body.append('<script src="../js/main_page/smartphone/slideBox_slide_swipe.js" class="slideBox_smartphone smartphone_js"></script>')
+      body.append('<script src="../js/main_page/smartphone/slideBox_modal.js" class="slideBox_smartphone smartphone_js"></script>')
       body.append('<script src="../js/main_page/smartphone/booklistBox_cardMake.js" class="booklistBox_smartphone smartphone_js"></script>')
       body.append('<script src="../js/main_page/smartphone/booklistBox_slide.js" class="booklistBox_smartphone smartphone_js"></script>')
     }
