@@ -30,7 +30,8 @@ console.log(slideBox_btn)
 
 
 //* 모임 참여
-var circleCheckList = $(".fa-circle-check")
+var Meeting_Object_Join = $(".Object_Join")
+var Meeting_Object_Question = $(".Object_Question")
 var MeetingQ_Container = $(".meeting_question_container")
 
 
@@ -67,15 +68,15 @@ slideBox_btn.eq(2).on("click", function(e){
 }) 
 
 //* 작성목적(체크박스)
-circleCheckList.eq(0).on("click", function(e){
-  e.preventDefault();
+Meeting_Object_Join.on("click", function(e){
+  // e.preventDefault();
   $(this).css('fontWeight','700')
   $(this).siblings().css('fontWeight','500')
   MeetingQ_Container.slideUp()
 })
 
-circleCheckList.eq(1).on("click", function(e){
-  e.preventDefault();
+Meeting_Object_Question.on("click", function(e){
+  // e.preventDefault();
   $(this).css('fontWeight','700')
   $(this).siblings().css('fontWeight','500')
   MeetingQ_Container.slideDown()
@@ -102,4 +103,4 @@ Slide_Modal_closebtn_title.on("click", function(e){
 
 })(jQuery);
 
-}, 2000); // setTimeout()
+}, 800); // setTimeout()

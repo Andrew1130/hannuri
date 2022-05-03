@@ -211,7 +211,8 @@
 
 
 /** 입력부분(공통) */
-.slide_modal_contents input {
+.slide_modal_contents input[type="text"],
+.slide_modal_contents input[type="tel"] {
   display: block;
   text-align: center;
   width: 85%; margin: auto;
@@ -243,11 +244,33 @@
 
 
 /** 입력부분(모임 참여) */
-.user_checkbox > i {
+.Object_Join {
+  position: relative;
+  width: 85%;
+  margin: auto;
+  margin-bottom: 1.25rem;
+}
+.Object_Question {
+  position: relative;
+  width: 85%;
+  margin: auto;
+}
+.meeting input[type="radio"] { 
+  position: absolute; left: 0;
+  width: 1.25rem; height: 1.25rem; margin: 0; padding: 0;
+  margin-right: 0.3125rem;
+}
+.meeting input[type="radio"] + label { 
+  display: block;
+  margin-left: 1.875rem;
+  font-size: 1.125rem;
+}
+.meeting_question_container { display: none; }
+
+/* .user_checkbox > i {
   margin-left: 30px; margin-bottom: 30px;
 }
-.user_checkbox > i:nth-of-type(1) { margin-top: 40px; }
-.meeting_question_container { display: none; }
+.user_checkbox > i:nth-of-type(1) { margin-top: 40px; } */
 
 
 /** 입력부분(기타) */
